@@ -18,7 +18,7 @@
 
 ### id
 
-Graveyard's ID. See [WorldSafeLocs.dbc](worldsafelocs)
+Graveyard's ID. See `WorldSafeLocs.dbc`
 
 ### ghost_zone
 

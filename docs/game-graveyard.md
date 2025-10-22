@@ -17,7 +17,7 @@
 
 ### ID
 
-Graveyard's ID. See [WorldSafeLocs.dbc](worldsafelocs)
+Graveyard's ID. See `WorldSafeLocs.dbc`
 
 ### Map
 

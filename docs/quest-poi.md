@@ -48,7 +48,7 @@ The Map id from [Map.dbc](map)
 
 ### WorldMapAreaId
 
-The ID from [WorldMapArea.dbc](worldmaparea).
+The ID from `WorldMapArea.dbc`.
 
 ### Floor
 
