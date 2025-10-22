@@ -1,7 +1,3 @@
----
-redirect_from: "/Holidays"
----
-
 # Holidays
 
 ## holidays.dbc
@@ -73,6 +69,7 @@ redirect_from: "/Holidays"
 ### priority
 
 ## eventSchedulerType
+
 ```
 eventSchedulerType defines what kind of timer is used for when the event is to stop, start etc. - and if it uses different stages during it's "buildup"-phase (2 stages available)
 -1: event repeats every year based on column11, column12 etc dates - length and possible event stages is taken from the information given in column1 and column2 (adjusted in DBC to keep it in line with **yearly** changes) - if column12=0, use DATE only from field11

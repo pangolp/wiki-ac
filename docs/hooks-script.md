@@ -1,7 +1,3 @@
----
-tableofcontents: 1
----
-
 # The ScriptAI system
 
 The ScriptAI system implemented by AC uses a special [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern) strategy to implement an event-driven programming which is also the **CORE** of our modular system.
@@ -91,7 +87,7 @@ MyScriptType::MyScriptType(const char* name)
 
 Then add a cleanup routine in `ScriptMgr::unload()`
 
-```
+```cpp
 SCR_CLEAR(MyScriptType);
 ```
 
@@ -112,7 +108,9 @@ void OnBeforeSomeEvent(uint32 someArg1, std::string& someArg2);
 void OnAnotherEvent(uint32 someArg);
 ```
 
-{% include note.html content="for certain scripts the method declared inside the ScriptMgr class and the one declared into the related ScriptObject, don't always match. For instance: <b>OnLogin</b> is a hook from the PlayerScript that is declared as <b>OnPlayerLogin</b> when used inside the ScriptMgr class, thus avoid collisions with other methods since the ScriptMgr class collects hooks from allnthe ScriptObjects within the same list." %}
+::: info
+For certain scripts the method declared inside the ScriptMgr class and the one declared into the related ScriptObject, don't always match. For instance: <b>OnLogin</b> is a hook from the PlayerScript that is declared as <b>OnPlayerLogin</b> when used inside the ScriptMgr class, thus avoid collisions with other methods since the ScriptMgr class collects hooks from allnthe ScriptObjects within the same list.
+:::
 
 #### Define your hooks
 
@@ -145,7 +143,7 @@ AC provides a global property called "sScriptMgr" that you can use to call your 
 For instance:
 
 ```cpp
-void CoreClass::SomeEvent() 
+void CoreClass::SomeEvent()
 {
     uint32 arg1=10;
     std::string arg2="something";
@@ -236,7 +234,9 @@ Some modules, such as the auto-balance, allows customizing certain part of their
 
 You can take a look at this file as an example: https://github.com/azerothcore/mod-autobalance/blob/master/src/AutoBalance.h
 
-{% include note.html content="You also need to create your own ScriptMgr implementation and offer a singleton to allow calling your hooks." %}
+::: info
+You also need to create your own ScriptMgr implementation and offer a singleton to allow calling your hooks.
+:::
 
 ### Final considerations
 

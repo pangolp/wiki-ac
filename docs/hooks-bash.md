@@ -1,7 +1,3 @@
----
-redirect_from: "/Hooks-Bash"
----
-
 # Hooks Bash
 
 ## HOOKS FOR COMPILER
@@ -10,16 +6,13 @@ redirect_from: "/Hooks-Bash"
 
 Custom scripts or actions that need to be executed after all build options are determined, but before configuration or compilation starts.
 
-
 ### ON_AFTER_CONFIG
 
 Run custom scripts or actions after CMake configuration is complete, but before the actual build starts. For example, you might want to patch files, generate additional configs, or log configuration details.
 
-
 ### ON_AFTER_BUILD
 
 Run custom scripts or actions after the build is finished, such as copying files, cleaning up, or post-processing build artifacts.
-
 
 ## How to create and register a hook
 
@@ -90,4 +83,3 @@ registerHooks "ON_AFTER_BUILD" copy_custom_config
 ```
 
 This will grab your build output directory (example: `/home/user/build`) under the variable name: `$BINPATH`, and copy the `myconfig.conf` file into the build output directory, so you will see `myconfig.conf` in the build folder.
-
