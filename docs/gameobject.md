@@ -146,7 +146,7 @@ For chests or doors.
 
 Same as gameobject_template.scriptname.
 
-A gameobject.scriptname record will override a [gameobject_template.scriptname](gameobject_template#gameobject_template-scriptname) record.
+A gameobject.scriptname record will override a [gameobject_template.scriptname](gameobject-template#gameobject-template-scriptname) record.
 
 ### VerifiedBuild
 

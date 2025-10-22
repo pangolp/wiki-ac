@@ -6,7 +6,7 @@ This DBC contains all possible races, some of which are unused and unavailable t
 
 **Version is : 3.3.5a**
 
-[How to Import DBC Data onto my Database](how-to-import-dbc-data-in-db)  
+[How to Import DBC Data onto my Database](how-to-import-dbc-data-in-db)
 
 **Table Structure**
 
@@ -72,14 +72,12 @@ This DBC contains all possible races, some of which are unused and unavailable t
 | 4    | Can mount    |
 | 8    | Has bald     |
 
-
 ### Faction values
 
 Alliance only = 1101
 Horde only = 690
 Both factions = 1791 (0 may work)
 
-
 ### How do I get the values?
 
-If you want to learn how bits work you can read the [bit-and-bytes tutorial](Bit-and_bytes-tutorial).
+If you want to learn how bits work you can read the [bit-and-bytes tutorial](bit-and-bytes-tutorial).

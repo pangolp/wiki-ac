@@ -37,7 +37,7 @@ The map ID the instance is in. See [Map.dbc](map).
 ### resettime
 
 The time when the instance will be reset, in Unix time. This field is zero for raid and heroic instances.
-The resettime of raid and heroic instances for every specific group is stored in table [instance\_reset](instance_reset).
+The resettime of raid and heroic instances for every specific group is stored in table [instance\_reset](instance-reset).
 
 ### difficulty
 

@@ -1,7 +1,3 @@
----
-redirect_from: "/MySQLtypesC++"
----
-
 # MySQL Types C++
 
 <div id="main-content" data-inline-comments-target="true" class="wiki-content">
@@ -16,7 +12,7 @@ redirect_from: "/MySQLtypesC++"
                 <tr>
                     <th class="confluenceTh">
                         <p>MySQL type</p>
-                        <th class="confluenceTh">Core type
+                        <th class="confluenceTh">Core type</th>
                     </th>
                     <th class="confluenceTh">Example code</th>
                     <th colspan="1" class="confluenceTh">Variable operators</th>
@@ -199,9 +195,9 @@ redirect_from: "/MySQLtypesC++"
         data-macro-name="code" data-macro-id="">
         <div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div>
         <div class="codeContent panelContent pdl"></div>
-	</div>
+    </div>
 </div>
-		
+
 ```cpp
 // world database query                           0      1      2      3        4
 QueryResult result = WorldDatabase.Query("SELECT guid, entry, name, period, ScriptName FROM transports");
@@ -213,7 +209,6 @@ do
     std::string name = fields[2].GetString();
     uint32 period    = fields[3].GetUInt32();
     uint32 scriptId  = sObjectMgr->GetScriptId(fields[4].GetCString());
-     
     // ...
 }
 while (result->NextRow());

@@ -200,7 +200,7 @@ The gender of the character.
 | 1   | Female      |
 | 2   | Unknown (?) |
 
-`2` is seen in table [creature\_model\_info](creature_model_info) notably.
+`2` is seen in table [creature\_model\_info](creature-model-info) notably.
 
 ### level
 
@@ -421,7 +421,7 @@ Time when a character can be resurrected in case of a server crash or client exi
 
 ### taxi\_path
 
-Stores the players current taxi path ([TaxiPath.dbc](TaxiPath)) if logged off while on one.
+Stores the players current taxi path `TaxiPath.dbc` if logged off while on one.
 
 ### arenaPoints
 
@@ -453,11 +453,11 @@ The amount of players this character killed yesterday.
 
 ### chosenTitle
 
-Current title, using the bit_index field (InGameOrder in [CharTitles.dbc](CharTitles)).
+Current title, using the bit_index field (InGameOrder in `CharTitles.dbc`).
 
 ### knownCurrencies
 
-Known currencies (what to be listed in the Currency tab), bitmask of BitIndexes, see [CurrencyTypes.dbc](CurrencyTypes).
+Known currencies (what to be listed in the Currency tab), bitmask of BitIndexes, see `CurrencyTypes.dbc`.
 
 ### watchedFaction
 
@@ -512,11 +512,11 @@ Character's equipment and bag cache.
 
 ### ammoId
 
-[Template ID](item_template#entry) of the ammo item.
+[Template ID](item-template#entry) of the ammo item.
 
 ### knownTitles
 
-Contains data about known Titles stored in 6 x 16bit integers. To calculate where a knownTitle is in one of those 6 integers you do the following: We select one of the titles from [CharTitles.dbc](CharTitles), take Archmage title for example:
+Contains data about known Titles stored in 6 x 16bit integers. To calculate where a knownTitle is in one of those 6 integers you do the following: We select one of the titles from `CharTitles.dbc`, take Archmage title for example:
 
 | TitleID | UnkRef? | MaleTitle   | FemaleTitle | InGameOrder |
 | ------- | ------- | ----------- | ----------- | ----------- |

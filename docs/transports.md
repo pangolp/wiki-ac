@@ -28,7 +28,7 @@ Unique identifier for transport. Each time you add a new guid simply add one (1)
 
 ### entry
 
-[gameobject_template.entry](gameobject_template#entry) to be used for this transport. It must be a type 15 gameobject.
+[gameobject_template.entry](gameobject-template#entry) to be used for this transport. It must be a type 15 gameobject.
 
 ### name
 

@@ -1,7 +1,3 @@
----
-redirect_from: "/How-to-ask-for-help"
----
-
 # How to ask for help
 
 ## Need help?
@@ -64,10 +60,8 @@ Remember to:
   - **Good** example: `After importing the SQL updates, I get the error "XXX"`
 
 - Choose one or multiple tags that fit your post.
-
 - Be as descriptive as possible in your post to help others help you.
 
 ### Share your knowledge!
 
 If you have encountered an issue and managed to solve it yourself, post the solution to help others!
-

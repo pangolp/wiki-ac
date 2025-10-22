@@ -44,7 +44,7 @@ The GUID of the creature where the auction item was added. See [creature.guid](c
 
 ### itemguid
 
-The GUID of the item that is up for auction. See [item\_instance.guid](item_instance#guid).
+The GUID of the item that is up for auction. See [item\_instance.guid](item-instance#guid).
 
 ### itemowner
 

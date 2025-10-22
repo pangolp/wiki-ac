@@ -6,7 +6,7 @@
 
 This DBC contains information on all of the base factions. These factions are unique and represent a faction with which a player can gain reputation.
 
-**IMPORTANT:** These values are used for **ALL** tables **EXCEPT** the [creature_template](creature_template) and [gameobject_template_addon](gameobject_template_addon) tables.
+**IMPORTANT:** These values are used for **ALL** tables **EXCEPT** the [creature_template](creature-template) and [gameobject_template_addon](gameobject-template-addon) tables.
 
 [How to Import DBC Data onto my Database](how-to-import-dbc-data-in-db)
 
@@ -29,7 +29,7 @@ This DBC contains information on all of the base factions. These factions are un
 | 19     | **parentFactionID** | iRefID                                        | Recursive. i.e. Undercity lists ID 67, which is Horde                                                                                                                                                                                                                                                      |
 | 20     | parentFactionMod    | Float\[2\]                                    |                                                                                                                                                                                                                                                                                                            |
 | 22     | parentFactionCap    | Integer\[2\]                                  |                                                                                                                                                                                                                                                                                                            |
-| 24     | Name                | [Loc](Localization_lang)                      | Display name of the faction                                                                                                                                                                                                                                                                                |
+| 24     | Name                | Loc                                           | Display name of the faction                                                                                                                                                                                                                                                                                |
 | 41     | Description         | [Loc](https://wowdev.wiki/Localization "Loc") | Seen in the reputation-GUI on click.                                                                                                                                                                                                                                                                       |
 
 ### Flags
@@ -46,9 +46,9 @@ This DBC contains information on all of the base factions. These factions are un
 
 ### Content
 
-Note: When refering to a faction IDexample a creature's [faction](creature_template#faction) this refering to
+Note: When refering to a faction IDexample a creature's [faction](creature-template#faction) this refering to
 
-When refering to a creature's [faction](creature_template#faction) we use the [ID](#id) value.
+When refering to a creature's [faction](creature-template#faction) we use the [ID](#id) value.
 
 When refering to a reputation gain (example: `.modify reputation`) we use [Faction](#faction) value.
 

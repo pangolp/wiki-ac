@@ -1,7 +1,3 @@
----
-redirect_from: "/How-to-obtain-free-records"
----
-
 # How to obtain free records
 
 On some occasions, we need to obtain or know records whose values are not being occupied.
@@ -23,9 +19,9 @@ LIMIT 1
 
 We must replace the name of the table, and the attributes we are looking for.
 
-Now let's look at an example. Let's suppose that we want to search the first free record within `creature`
+Now let's look at an example. Let's suppose that we want to search the first free record within `creature`.
 
-The first thing we have to identify is your primary key: `guid`
+The first thing we have to identify is your primary key: `guid`.
 
 ```sql
 SELECT t.`guid` + 1
@@ -40,7 +36,9 @@ LIMIT 1
 
 When running the query, we will get as a result in this case, the number **15**.
 
-{% include note.html content="Currently, the value has changed, and now it is different. But at the time it was number 15." %}
+::: tip
+Currently, the value has changed, and now it is different. But at the time it was number 15.
+:::
 
 What we must do now is to check that this value is not being used, by means of a `SELECT`
 
@@ -70,4 +68,6 @@ To corroborate that the information is correct, I leave you the first 16 records
 
 As you can see, number 15 is available.
 
-{% include note.html content="The table has many more attributes, but we show only some, so that the table would not be so extensive." %}
+::: tip
+The table has many more attributes, but we show only some, so that the table would not be so extensive.
+:::

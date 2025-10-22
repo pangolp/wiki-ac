@@ -1,6 +1,10 @@
-# motd
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# motd
 
 **The \`motd\` table**
 
@@ -17,7 +21,7 @@
 
 ## Description of the fields
 
-### realmid
+## realmid
 
 RealmID for the Motd to be sent
 
@@ -25,6 +29,6 @@ RealmID for the Motd to be sent
 
 A specified realm is superior to -1 (All Realms)
 
-### text
+## text
 
 The text for Motd

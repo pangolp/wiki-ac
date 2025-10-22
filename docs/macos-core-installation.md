@@ -1,9 +1,14 @@
-# macOS Core Installation
+---
+prev:
+  text: 'Step 1: Requirements'
+  link: 'macos-requirements'
 
-| Installation Guide                                                                                                                   |                                         |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 1: Requirements](macos-requirements)                                                                                        | [Step 3: Server Setup >>](macos-server-setup) |
+next:
+  text: 'Step 3: Server Setup'
+  link: 'macos-server-setup'
+---
+
+# macOS Core Installation
 
 ## Required software
 
@@ -13,26 +18,25 @@ See [Requirements](macos-requirements) before you continue.
 
 Choose **ONE** of the following method, run one of the below `git ...` commands in your terminal.
 
-
 1. Clone only the master branch + full history (smaller size - recommended):
 
-    ```sh
-    git clone https://github.com/azerothcore/azerothcore-wotlk.git --branch master --single-branch azerothcore
-    ```
+```sh
+git clone https://github.com/azerothcore/azerothcore-wotlk.git --branch master --single-branch azerothcore
+```
 
 1. Clone only the master branch + no previous history (smallest size):
 
-    ```sh
-    git clone https://github.com/azerothcore/azerothcore-wotlk.git --branch master --single-branch azerothcore --depth 1
-    ```
+```sh
+git clone https://github.com/azerothcore/azerothcore-wotlk.git --branch master --single-branch azerothcore --depth 1
+```
 
-    Note: If you want to get the full history back, use `git fetch --unshallow`.
+Note: If you want to get the full history back, use `git fetch --unshallow`.
 
 1. Clone all branches and all history:
 
-    ```sh
-    git clone https://github.com/azerothcore/azerothcore-wotlk.git azerothcore
-    ```
+```sh
+git clone https://github.com/azerothcore/azerothcore-wotlk.git azerothcore
+```
 
 This will create an `azerothcore-wotlk` directory containing the AC source files.
 
@@ -61,6 +65,7 @@ At this point, you must be in your "build/" directory.
 **Note**: in the follows command the variable `$HOME` is the path of the **current user**, so if you are logged as root, $HOME will be "/root".
 
 For APPLE SILICON CPUs:
+
 ```sh
 export OPENSSL_ROOT_DIR=$(brew --prefix openssl@3)
 cmake ../ \
@@ -77,6 +82,7 @@ cmake ../ \
 ```
 
 For INTEL CPUs:
+
 ```sh
 export OPENSSL_ROOT_DIR=$(brew --prefix openssl@3)
 cmake ../ \
@@ -91,6 +97,7 @@ cmake ../ \
 -DOPENSSL_SSL_LIBRARIES="$OPENSSL_ROOT_DIR/lib/libssl.dylib" \
 -DOPENSSL_CRYPTO_LIBRARIES="$OPENSSL_ROOT_DIR/lib/libcrypto.dylib"
 ```
+
 Then, to build and install:
 
 ```sh
@@ -98,13 +105,4 @@ make -j `nproc`
 make install
 ```
 
-<br>
-
-## Help
-
-{% include help.html %}
-
-| Installation Guide                                                                                                                   |                                         |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 1: Requirements](macos-requirements)                                                                                        | [Step 3: Server Setup >>](macos-server-setup) |
+<!--@include: ./help.md-->

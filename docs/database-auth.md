@@ -2,21 +2,21 @@
 
 ## A
 - [account](account)
-- [account_access](account_access)
-- [account_banned](account_banned)
-- [account_muted](account_muted)
+- [account_access](account-access)
+- [account_banned](account-banned)
+- [account_muted](account-muted)
 - [autobroadcast](autobroadcast)
-- [autobroadcast_locale](autobroadcast_locale)
+- [autobroadcast_locale](autobroadcast-locale)
 
 ## B
-- [build_info](build_info)
+- [build_info](build-info)
 
 ## I
-- [ip_banned](ip_banned)
+- [ip_banned](ip-banned)
 
 ## L
 - [logs](logs)
-- [logs_ip_actions](logs_ip_actions)
+- [logs_ip_actions](logs-ip-actions)
 
 ## M
 
@@ -27,9 +27,9 @@
 - [realmlist](realmlist)
 
 ## S
-- [secret_digest](secret_digest)
+- [secret_digest](secret-digest)
 
 ## U
 - [updates](updates)
-- [updates_include](updates_include)
+- [updates_include](updates-include)
 - [uptime](uptime)

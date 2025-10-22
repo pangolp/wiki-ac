@@ -143,7 +143,7 @@ Default: 0,
 
 When is set to 1, that mail can contain items.
 
-For items look at [mail\_items](mail_items) table.
+For items look at [mail\_items](mail-items) table.
 
 ### expire\_time
 

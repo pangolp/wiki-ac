@@ -1,0 +1,29 @@
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
+
+# secret\_digest
+
+**The \`secret\_digest\` table**
+
+**Table Structure**
+
+| Field       | Type         | Attributes | Key | Null | Default | Extra | Comment |
+| ----------- | ------------ | ---------- | --- | ---- | ------- | ----- | ------- |
+| [id][1]     | INT          | UNSIGNED   | PRI | NO   |         |       |         |
+| [digest][2] | VARCHAR(100) | SIGNED     |     | NO   |         |       |         |
+
+[1]: #id
+[2]: #digest
+
+**Description of the fields**
+
+### id
+
+The id digest.
+
+### digest
+
+`field-no-description|2`

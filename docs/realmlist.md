@@ -1,6 +1,10 @@
-# realmlist
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# realmlist
 
 **The \`realmlist\` table**
 

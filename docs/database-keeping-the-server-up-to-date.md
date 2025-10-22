@@ -1,9 +1,14 @@
-# Database Keeping the Server Up-to-Date
+---
+prev:
+  text: 'Step 6: Final Server Steps'
+  link: 'final-server-steps'
 
-| Installation Guide                                                                                                                   |                                         |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 6: Final Server Steps](final-server-steps)                                                                                  | [Step 8: Client Setup >>](client-setup) |
+next:
+  text: 'Step 8: Client Setup'
+  link: 'client-setup'
+---
+
+# Database Keeping the Server Up-to-Date
 
 1. First make sure that your core is [up-to-date](keeping-the-server-up-to-date).
 
@@ -17,13 +22,4 @@ By default, the Worldserver and Authserver will check for, and execute all new f
 
 To edit the automatic database updater you will find the necessary settings in authserver.conf and worldserver.conf under **UPDATE SETTINGS**.
 
-<br>
-
-## Help
-
-{% include help.html %}
-
-| Installation Guide                                                                                                                   |                                         |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 6: Final Server Steps](final-server-steps)                                                                                  | [Step 8: Client Setup >>](client-setup) |
+<!--@include: ./help.md-->

@@ -1,6 +1,10 @@
-# realmcharacters
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# realmcharacters
 
 **The \`realmcharacters\` table**
 

@@ -1,11 +1,8 @@
----
-redirect_from: "/How-to-create-a-DB-PR"
----
-
 # How to create a DB PR via GitHub
 
 This is a simplified guide to easily create PRs containing DB fixes (SQL code) without bothering with the terminal, 
 an easier alternative to the [traditional way of creating PRs](how-to-create-a-pr).
+
 If you want to submit C++ or other non-SQL kind of fixes, please follow the other guide.
 
 ## Do only ONCE: create your AzerothCore fork
@@ -104,6 +101,8 @@ It's also a good practice to check the "File changes" tab to see that everything
 
 ![AzerothCore - Compare & pull request](http://www.azerothcore.org/wiki/assets/images/pr-tutorial/13.png)
 
-{% include important.html content="We do not respond well to leechers! If your fix comes from another organization or person you should ALWAYS give credit to the original author and commit!" %}
+::: tip Important
+We do not respond well to leechers! If your fix comes from another organization or person you should ALWAYS give credit to the original author and commit!
+:::
 
 That's it!

@@ -1,6 +1,10 @@
-# uptime
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# uptime
 
 **The \`uptime\` table**
 

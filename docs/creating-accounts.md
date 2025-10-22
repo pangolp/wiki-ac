@@ -1,7 +1,3 @@
----
-redirect_from: "/Creating-Accounts"
----
-
 # Creating Accounts
 
 To be able to log in to your new server you need an account. 
@@ -12,13 +8,13 @@ Run the following commands in the Worldserver console.
 
 ## To create an account
 
-```
+```sh
 account create <user> <pass>
 ```
 
 **Example:**
 
-```
+```sh
 account create admin admin
 ```
 
@@ -31,29 +27,33 @@ account create admin admin
 | 2     | SEC_GAMEMASTER    |
 | 3     | SEC_ADMINISTRATOR |
 
-```
+```sh
 account set gmlevel <user> <level> <realm>
 ```
 
-{% include note.html content="If the command was run while the account was logged in you need to relog for the security level to update properly." %}
+::: tip Note
+If the command was run while the account was logged in you need to relog for the security level to update properly.
+:::
 
 **Example:**
 
-```
+```sh
 account set gmlevel admin 3 -1
 ```
 
-{% include note.html content="Use -1 to select all realms, or specify the specific realm id." %}
+::: tip Note
+Use -1 to select all realms, or specify the specific realm id.
+:::
 
 ## Changing password
 
-```
+```sh
 account set password <user> <password> <password>
 ```
 
 **Example:**
 
-```
+```sh
 account set password admin 1234 1234
 ```
 

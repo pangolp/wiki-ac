@@ -1,9 +1,14 @@
-# Linux Core Installation
+---
+prev:
+  text: 'Step 1: Requirements'
+  link: 'linux-requirements'
 
-| Installation Guide                                                                                                                   |                                               |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 1: Requirements](linux-requirements)                                                                                        | [Step 3: Server Setup >>](linux-server-setup) |
+next:
+  text: 'Step 3: Server Setup'
+  link: 'linux-server-setup'
+---
+
+# Linux Core Installation
 
 ## Installation directories
 
@@ -72,7 +77,6 @@ Parameter explanation for advanced users [CMake options](cmake-options).
 
 At this point, you must be in your `$AC_CODE_DIR/build` directory.
 
-
 **Note**: in case you use a non-default package for `clang`, you need to replace it accordingly. For example, if you installed `clang-6.0` then you have to replace `clang` with `clang-6.0` and `clang++` with `clang++-6.0`
 
 ```sh
@@ -117,6 +121,7 @@ Systemd services can help you with managing your AzerothCore server. The service
 Since these commands won't be run with access to the user's variables, the install directory `$AC_CODE_DIR` must be fully expanded to, for example, `/home/azerothuser/azerothcore`. Run `echo $AC_CODE_DIR` as your user if you're not sure what this should be.
 
 Set the user for the units to run as. The username used here is `azerothuser`, and should be substituted for your username.
+
 ```sh
 export AC_UNIT_USER=azerothuser
 ```
@@ -193,11 +198,4 @@ sudo journalctl ac-authserver.service
 sudo journalctl ac-worldserver.service
 ```
 
-## Help
-
-{% include help.html %}
-
-| Installation Guide                                                                                                                   |                                               |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 1: Requirements](linux-requirements)                                                                                        | [Step 3: Server Setup >>](linux-server-setup) |
+<!--@include: ./help.md-->

@@ -1,7 +1,7 @@
 # DBC Index
 
 * [Achievement](achievement)
-* [Achievement_Criteria](achievement_criteria)
+* [Achievement_Criteria](achievement-criteria)
 * [AreaTable](areatable)
 * [AreaTrigger](dbc-areatrigger)
 * [ChrClasses](chrclasses)
@@ -14,6 +14,6 @@
 * [Map](map)
 * [PageTextMaterial](pagetextmaterial)
 * [SkillLine](skillline)
-* [SummonProperties](summonproperties_dbc)
+* [SummonProperties](summonproperties-dbc)
 * [Spell](spell)
 * [TotemCategory](totemcategory)

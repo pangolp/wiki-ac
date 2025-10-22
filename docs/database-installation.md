@@ -1,9 +1,14 @@
-# Database Installation
+---
+prev:
+  text: 'Step 3: Server Setup'
+  link: 'server-setup'
 
-| Installation Guide                                                                                                                   |                                     |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 3: Server Setup](server-setup)                                                                                              | [Step 5: Networking >>](networking) |
+next:
+  text: 'Step 5: Networking'
+  link: 'networking'
+---
+
+# Database Installation
 
 ## Creating the Database in MySQL
 
@@ -12,11 +17,15 @@
 First of all, you need to create the acore user. You need to run the script below within a MySQL client or with the MySQL command-line interface (CLI). 
 You need to run the script as the **root** user of MySQL within a MySQL client or the MySQL cli.
 
-https://github.com/azerothcore/azerothcore-wotlk/blob/master/data/sql/create/create_mysql.sql
+[create_mysql.sql](https://github.com/azerothcore/azerothcore-wotlk/blob/master/data/sql/create/create_mysql.sql)
 
-{% include important.html content="Use the MySQL root user ONLY to run the script above, never run the core as root or administrator!" %}
+::: tip Important
+Use the MySQL root user ONLY to run the script above, never run the core as root or administrator!
+:::
 
-{% include tip.html content="You can change the password of the user you are creating for increased security." %}
+::: tip
+You can change the password of the user you are creating for increased security.
+:::
 
 ## Populating the database
 
@@ -38,13 +47,4 @@ Database "acore_auth" does not exist
 Do you want to create it? [yes (default) / no]:
 ```
 
-<br>
-
-## Help
-
-{% include help.html %}
-
-| Installation Guide                                                                                                                   |                                     |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 3: Server Setup](server-setup)                                                                                              | [Step 5: Networking >>](networking) |
+<!--@include: ./help.md-->

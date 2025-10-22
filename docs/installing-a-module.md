@@ -1,9 +1,10 @@
-# Installing a Module
+---
+prev:
+  text: 'Step 8: Client Setup'
+  link: 'client-setup'
+---
 
-| Installation Guide                                                                                                                   |
-| :----------------------------------------------------------------------------------------------------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 8: Client Setup](client-setup)                                                                                              |
+# Installing a Module
 
 Adding a module is an optional step to alter the blizzlike gameplay offered by AzerothCore by default.
 
@@ -14,7 +15,9 @@ Adding a module is an optional step to alter the blizzlike gameplay offered by A
     - Clone the repository using Git the same way AzerothCore was first cloned in the [Core Installation](core-installation). The repository should be cloned into the \modules\ directory. i.e E:\AzerothCore\modules\
     - Download the ZIP file from the catalog and extract it in the \modules\ directory. i.e E:\AzerothCore\modules\mod-anticheat
 
-{% include note.html content="If your module has a suffix i.e. -master. This needs to be removed in order for the module to work!" %}
+::: info NOTE
+If your module has a suffix i.e. -master. This needs to be removed in order for the module to work!
+:::
 
 ## Recompiling
 
@@ -38,13 +41,4 @@ You should always check the README file of the module to see if any manual steps
     - You can always use the **.server debug** command to see all loaded modules.
     - Always fall back to the README file from the module for the exact installation steps for that module.
 
-<br>
-
-## Help
-
-{% include help.html %}
-
-| Installation Guide                                                                                                                   |
-| :----------------------------------------------------------------------------------------------------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 8: Client Setup](client-setup)                                                                                              |
+<!--@include: ./help.md-->
