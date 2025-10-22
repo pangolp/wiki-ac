@@ -36,7 +36,7 @@ next:
    1. Install extensions
       1. Click **View**->**Extensions**
 
-      ![vsc_extensions](images/vsc-extensions.png)
+      ![vsc_extensions](images/vsc_extensions.png)
 
       1. In Search bar type **C/C++ Extension Pack**
       1. Click on green install button	
