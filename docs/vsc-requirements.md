@@ -28,7 +28,7 @@ next:
 
    To do this, select **Desktop development for C++** under **Workloads -> Desktop & Mobile**.
 
-   ![visualstudio_tools](images/visualstudio-tools.png)
+   ![visualstudio_tools](images/visualstudio_tools.png)
 
 1. [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -41,7 +41,7 @@ next:
       1. In Search bar type **C/C++ Extension Pack**
       1. Click on green install button	
 
-      ![visualstudio_tools](images/visualstudio-tools.png)
+      ![visualstudio_tools](images/visualstudio_tools.png)
 
 1. [CMake](https://cmake.org/)
 
