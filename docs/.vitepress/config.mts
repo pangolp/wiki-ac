@@ -5,6 +5,7 @@ export default defineConfig({
   title: "AzerothCore",
   description: "Wiki and Documentation of the AzerothCore project",
   base: '/wiki-ac/',
+  ignoreDeadLinks: true,
 
   themeConfig: {
     siteTitle: 'Wiki',
