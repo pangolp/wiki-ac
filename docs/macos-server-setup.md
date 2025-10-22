@@ -1,11 +1,16 @@
+---
+prev:
+  text: 'Step 2: Core Installation'
+  link: 'macos-core-installation'
+
+next:
+  text: 'Step 4: Database Installation'
+  link: 'database-installation'
+---
+
 # macOS Server Setup
 
-| Installation Guide                                                                                                                   |                                                           |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 2: Core Installation](macos-core-installation)                                                                                    | [Step 4: Database Installation >>](database-installation) |
-
-**Table of contents**
+## Table of contents
 - [Client Data Files (Download Pre-Extracted)](#option-1-download-pre-extracted-files)
 - [Client Data Extractors (Extract Files Yourself)](#option-2-extract-files-yourself)
 - [Config Files: Worldserver and Authserver](#config-files-worldserver-and-authserver)
@@ -49,7 +54,7 @@ Go to your AzerothCore build directory (e.g. $HOME/azeroth-server/bin/) and copy
 
 **DBC and Maps files**
 
-```
+```sh
 cd <your WoW client directory>
 ./mapextractor
 ```
@@ -58,7 +63,7 @@ cd <your WoW client directory>
 
 You can also extract vmaps which will take quite a while depending on your machine (up to hours on ancient hardware).
 
-```
+```sh
 cd <your WoW client directory>
 ./vmap4extractor
 mkdir vmaps;
@@ -67,14 +72,14 @@ mkdir vmaps;
 
 When this is complete you will receive the following message which can be safely ignored.
 
-```
+```sh
 Processing Map 724
 [################################################################]
 Extracting GameObject models...Extracting World\Wmo\Band\Final_Stage.wmo
 No such file.
 Couldn't open RootWmo!!!
 Done!
-  
+
 Extract V4.00 2012_02. Work complete. No errors.
 ```
 
@@ -82,7 +87,7 @@ Extract V4.00 2012_02. Work complete. No errors.
 
 Extracting mmaps will take quite a while depending on your machine (up to hours).
 
-```
+```sh
 cd <your WoW client directory>
 mkdir mmaps;
 ./mmaps_generator
@@ -97,7 +102,8 @@ First of all you need to find the two default config files (named **worldserver.
 Open the .conf files and scroll down to LoginDatabaseInfo, WorldDatabaseInfo, and CharacterDatabaseInfo and enter MySQL login information for the server to be able to access your database.
 
 On a newly compiled configuration, you will have the following values by default
-```
+
+```sh
 LoginDatabaseInfo     = "127.0.0.1;3306;acore;acore;acore_auth" worldserver.conf / authserver.conf
 WorldDatabaseInfo     = "127.0.0.1;3306;acore;acore;acore_world" worldserver.conf
 CharacterDatabaseInfo = "127.0.0.1;3306;acore;acore;acore_characters" worldserver.conf
@@ -105,20 +111,17 @@ CharacterDatabaseInfo = "127.0.0.1;3306;acore;acore;acore_characters" worldserve
 
 They follow this structure:
 
-```
+```sh
 Variablename = "MySQLIP;Port;Username;Password;database"  
-``` 
+```
 
 The following steps must be verified:
 
 - The hostname (127.0.0.1) can stay the same if AzerothCore is being installed on the same computer that you run WoW on.
   If not, follow the instruction in [Realmlist Table](realmlist).
-
 - The port (3306) is the standard configured value. If you changed the default port in your MySQL settings, you must change it accordingly.
-  The username and password can be variable. You can choose to either: 
-
+  The username and password can be variable. You can choose to either:
     - use default acore / acore username and password pair.
-
     - create a unique login within a User Manager within your preferred database management tool (commonly identified by an icon that looks like a person or people) and give it the necessary permissions (SELECT, INSERT, UPDATE, DELETE permissions are sufficient, and is much safer).
 
 ### Updating DataDir
@@ -127,19 +130,16 @@ The following steps must be verified:
 
 1. Edit it to the path of your folder. i.e **$HOME/azeroth-server/data/**
 
-{% include tip.html content="For most **worldserver.conf** setting changes, you can simply type .reload config in-game to see changes instantly without restarting the server." %}
+::: tip
+For most **worldserver.conf** setting changes, you can simply type .reload config in-game to see changes instantly without restarting the server.
+:::
 
-{% include warning.html content="The AzerothCore Team and Owners DO NOT in any case sponsor nor support illegal public servers. If you use these projects to run an illegal public server and not for testing and learning it is your own personal choice." %}
+::: warning
+The AzerothCore Team and Owners DO NOT in any case sponsor nor support illegal public servers. If you use these projects to run an illegal public server and not for testing and learning it is your own personal choice.
+:::
 
 ### (Optional) Config options by environment variable
 
 It is possible to load config options via environment variables, which you can read about [here](config-overrides-with-env-var).
 
-## Help
-
-{% include help.html %}
-
-| Installation Guide                                                                                                                   |                                                           |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 2: Core Installation](macos-core-installation)                                                                                    | [Step 4: Database Installation >>](database-installation) |
+<!--@include: ./help.md-->
