@@ -1,7 +1,3 @@
----
-redirect_from: "/How-to-test-a-PR"
----
-
 # How to test a PR
 
 ## Introduction
@@ -37,9 +33,11 @@ It is typical to create and clone your own fork of AzerothCore if you are also a
 If that is your case, then you have to 
 
 - add the main AzerothCore remote using:
-```
+
+```sh
 git remote add upstream https://github.com/azerothcore/azerothcore-wotlk.git
 ```
+
 - replace `origin` with `upstream` in all commands listed below
 
 ## Get the PR code to be tested
@@ -56,9 +54,13 @@ git remote add upstream https://github.com/azerothcore/azerothcore-wotlk.git
 
 - Now you need to run the following commands by replacing "XXXX" with the ID of the PR that you want to test:
 
-```git checkout -b pr-XXXX```
+```sh
+git checkout -b pr-XXXX
+```
 
-```git pull origin pull/XXXX/head```
+```sh
+git pull origin pull/XXXX/head
+```
 
 The commands above will create a new local branch called `pr-XXXX` which will contain all the changes that need to be tested.
 
@@ -69,8 +71,9 @@ The terminal will prompt an editor (usually `nano` or `vim`) that asks to save t
 
 You can read more about the `git` configuration and its default editor [here](http://web.mit.edu/6.005/www/fa14/tutorial/git/config.html).
 
-{% include note.html content="Check the message in your console. If it states 'Automatic merge failed; fix conflicts and then commit the result', you should report back to the PR, asking the Developer to please fix the merge conflicts, and remove the 'waiting to be tested' label and attach a 'merge conflict' label" %}
-
+::: info Note
+Check the message in your console. If it states 'Automatic merge failed; fix conflicts and then commit the result', you should report back to the PR, asking the Developer to please fix the merge conflicts, and remove the 'waiting to be tested' label and attach a 'merge conflict' label
+:::
 
 ## Update your local server to apply the changes
 
@@ -94,14 +97,14 @@ Then start the server just the way you always do.
 
 If you are using the Docker setup, you can simply trigger the recompilation by running:
 
-Linux:  ```./bin/acore-docker-build```  
-Windows: ```./acore.sh docker build``` 
+Linux:  ```./bin/acore-docker-build```
+Windows: ```./acore.sh docker build```
 
 then to launch the server you have to destroy and recreate the containers using `docker-compose down` and `docker-compose up`.
 
-{% include note.html content="This will also automatically update your DB." %}
-
------
+::: info Note
+This will also automatically update your DB.
+:::
 
 ## Verify your actual version
 
@@ -148,4 +151,3 @@ You should write:
 ## Finishing Testing
 
 Once you have left a test report, you will want to revert your AC installation back to the base state for further testing. To do this, use `git reset --hard` to remove all unstaged changes, followed by `git checkout master` to go back to the master branch. To tidy up, you can also use `git clean -fd` to get rid of any untracked files. Finally, you can then type `git status` to make sure everything is back to normal.
-

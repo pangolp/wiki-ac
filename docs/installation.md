@@ -1,7 +1,3 @@
----
-redirect_from: "/Installation"
----
-
 # Installation Guide
 
 ## Choosing a setup
@@ -19,9 +15,7 @@ This is the officially supported and complete way to install AzerothCore.
 These guides are for experimental installations and have limited to no support.
 
 - [AzerothCore Bash Dashboard setup](ac-dashboard-core-installation) - the simplest way to install.
-
 - [Docker setup](install-with-docker) - an installation process based on Docker. Previous docker knowledge is recommended.
-
 - [Docker pre-compiled setup](https://www.azerothcore.org/acore-docker/) - a straightforward way of installing AzerothCore. Currently, you can't install C++ modules, only Eluna scripts. Suitable for bug triaging, bug reporting, or domestic usage.
 
 ### Community made <span class="badge badge-info">Unsupported</span>
@@ -29,19 +23,10 @@ These guides are for experimental installations and have limited to no support.
 Beware these guides are made by community members and might not be up-to-date:
 
 - [Debian 12](debian12-install-guide)
-
 - [Amazon Web Services](aws-tutorial)
-
 - [Digital Ocean droplet](digital-ocean-video-tutorial)
-
 - [ArchLinux](arch-linux)
-
 - [FreeBSD](freebsd)
-
 - [Visual Studio Code](vsc-requirements)
 
-<br>
-
-## Help
-
-{% include help.html %}
+<!--@include: ./help.md-->

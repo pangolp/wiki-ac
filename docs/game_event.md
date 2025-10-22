@@ -39,13 +39,14 @@ Absolute end date of the event. The event will stop occurring if the local time 
 
 Number of minutes between 2 occurrences of the event. (2880 = 2 days, 1440 = 1 day, etc)
 
-{% include warning.html content="Value can't be 0 or the server will crash." %}
+::: warning
+Value can't be 0 or the server will crash.
+:::
 
 ### length
 
 Number of minutes the event will last after the start of the occurrence. (2880 = 2 days, 1440 = 1 day, etc)
 This value must be lower than occurrence one or the event will never stop.
-
 
 ### holiday
 
@@ -66,4 +67,3 @@ This is a boolean field that determines if this game event is a world event or n
 | 0     | Don't announce the Event                           |
 | 1     | Announce the description of the Event to the world |
 | 2     | Use the `event.announce` settings from the config  |
-

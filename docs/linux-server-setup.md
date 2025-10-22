@@ -1,9 +1,14 @@
-# Linux Server Setup
+---
+prev:
+  text: 'Step 2: Core Installation'
+  link: 'linux-core-installation'
 
-| Installation Guide                                                                                                                   |                                                           |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 2: Core Installation](linux-core-installation)                                                                                    | [Step 4: Database Installation >>](database-installation) |
+next:
+  text: 'Step 4: Database Installation'
+  link: 'database-installation'
+---
+
+# Linux Server Setup
 
 **Table of contents**
 - [Client Data Files (Download Pre-Extracted)](#option-1-download-pre-extracted-files)
@@ -24,16 +29,16 @@ Some files are optional but highly recommended:
 
 ## Option 1: Download Pre-Extracted Files
 
-
 If you intend to use an enUS client you can download the data files below. If you intend to use any other language client you will need to [extract](#option-2-extract-files-yourself) the data yourself.
 
-<a class="no-icon" href="https://github.com/wowgaming/client-data/releases/" target="_blank"><i class="fa-solid fa-download"></i> Data files enUS (AC Data v17)</a>
+[Data files enUS (AC Data v17)](https://github.com/wowgaming/client-data/releases/)
 
 1. Download archive `data.zip`.
 
 2. Extract the archive directly into the default **$AC_CODE_DIR/env/dist/bin/** directory as specified by DataDir option in **wordserver.conf**. You may choose another folder, but you'll need edit your the [DataDir](#updating-datadir) config option to the location of your folder.
 
 Default folder structure of **$AC_CODE_DIR/env/dist/bin** (as displayed by `tree -L 1`):
+
 ```
 .
 ├── authserver
@@ -64,20 +69,13 @@ vmap4_extractor
 
 4. Launch extractor.sh and select your extractor options.
 
-{{site.data.alerts.important}}
-</br>
-
-   - <b>dbc</b>, <b>maps</b> AND <b>vmaps</b> are needed to make server work properly!
-
-   - Do not attempt to stop <b>vmaps</b> extraction process. It is finished when it prints "Press any key...". It will create two new folders: <b>buildings</b> and <b>vmaps</b> The <b>buildings</b> folder is completely useless post-running and can be safely deleted.
-
-   - Don't run another task before the first is finished or you will have errors.
-
-   - If you stop vmap4extractor before finish you will need to delete the Buildings directory before start again.
-
-   - <b>Optional but extremely recommended: Extract mmaps.</b> Do not attempt to stop this process while it is extracting.
-{{site.data.alerts.end}}
-
+::: tip
+- <b>dbc</b>, <b>maps</b> AND <b>vmaps</b> are needed to make server work properly!
+- Do not attempt to stop <b>vmaps</b> extraction process. It is finished when it prints "Press any key...". It will create two new folders: <b>buildings</b> and <b>vmaps</b> The <b>buildings</b> folder is completely useless post-running and can be safely deleted.
+- Don't run another task before the first is finished or you will have errors.
+- If you stop vmap4extractor before finish you will need to delete the Buildings directory before start again.
+- <b>Optional but extremely recommended: Extract mmaps.</b> Do not attempt to stop this process while it is extracting.
+:::
 
 5. Move the extracted files <b>vmaps</b>, <b>maps</b>, <b>dbc</b> and <b>Cameras</b> into the <b>$AC_CODE_DIR/env/dist/bin/</b> folder or a directory of your choice (remember to update your the [DataDir](#updating-datadir))
 
@@ -90,6 +88,7 @@ First of all you need to find the two default config files (named **worldserver.
 Open the .conf files and scroll down to LoginDatabaseInfo, WorldDatabaseInfo, and CharacterDatabaseInfo and enter MySQL login information for the server to be able to access your database.
 
 On a newly compiled configuration, you will have the following values by default
+
 ```
 LoginDatabaseInfo     = "127.0.0.1;3306;acore;acore;acore_auth" worldserver.conf / authserver.conf
 WorldDatabaseInfo     = "127.0.0.1;3306;acore;acore;acore_world" worldserver.conf
@@ -122,19 +121,16 @@ The following steps must be verified:
 
 1. Edit DataDir to the absolute or relative path of your folder. e.g, **/home/acore/azerothcore/data/** or **./data**
 
-{% include tip.html content="For most **worldserver.conf** setting changes, you can simply type .reload config in-game to see changes instantly without restarting the server." %}
+::: tip
+For most **worldserver.conf** setting changes, you can simply type .reload config in-game to see changes instantly without restarting the server.
+:::
 
-{% include warning.html content="The AzerothCore Team and Owners DO NOT in any case sponsor nor support illegal public servers. If you use these projects to run an illegal public server and not for testing and learning it is your own personal choice." %}
+::: warning
+The AzerothCore Team and Owners DO NOT in any case sponsor nor support illegal public servers. If you use these projects to run an illegal public server and not for testing and learning it is your own personal choice.
+:::
 
 ### (Optional) Config options by environment variable
 
 It is possible to load config options via environment variables, which you can read about [here](config-overrides-with-env-var).
 
-## Help
-
-{% include help.html %}
-
-| Installation Guide                                                                                                                   |                                                           |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 2: Core Installation](linux-core-installation)                                                                                    | [Step 4: Database Installation >>](database-installation) |
+<!--@include: ./help.md-->

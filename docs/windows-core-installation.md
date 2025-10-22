@@ -1,9 +1,14 @@
-# Windows Core Installation
+---
+prev:
+  text: 'Step 1: Requirements'
+  link: 'windows-requirements'
 
-| Installation Guide                                                                                                                   |                                         |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 1: Requirements](windows-requirements)                                                                                      | [Step 3: Server Setup >>](windows-server-setup) |
+next:
+  text: 'Step 3: Server Setup'
+  link: 'windows-server-setup'
+---
+
+# Windows Core Installation
 
 ## Required software
 
@@ -14,14 +19,10 @@ See [Requirements](windows-requirements) before you continue.
 ### Pulling the code
 
 1. Create the directory where the source files will be located. In this guide, we will use **C:\Azerothcore**.
-
-1. Open up Github Desktop
-
-1. Click **File** -> **Clone repository...** in the top left
-
-1. Click **URL**
-
-1. Fill in the data as follow:
+2. Open up Github Desktop
+3. Click **File** -> **Clone repository...** in the top left
+4. Click **URL**
+5. Fill in the data as follow:
 
 ```
 Repository URL or GitHub username and repository: https://github.com/azerothcore/azerothcore-wotlk
@@ -39,28 +40,19 @@ If you encounter an error like **fatal: early EOF** or **fatal: fetch-pack: inva
 Before you begin, create a new directory called **Build**. In this guide, we will use **C:\Build**.
 
 1. Open CMake
+2. Click **Browse Source...** → Select the source directory (**C:\Azerothcore**)
+3. Click **Browse Build...** → Select the build directory (**C:\Build**)
+4. Click **Configure**.
+5. In the dropdown menu, choose the version of the compiler you downloaded in the [Requirements](windows-requirements) section. Be sure to choose the **Win64** version if you work on a 64-bit compilation.
+6. Make sure that **Use default native compilers** is checked.
+7. Click **Finish**.
+8. Make sure **TOOLS_BUILD** is set to `all`. This will compile the extractors needed later in the setup.
+9. Click **Configure** again. As long as you have error(s) typed in red in the log window you will need to check your parameters and re-run it.
+10. Click **Generate**. This will install the selected build files into your **C:\Build** folder.
 
-1. Click **Browse Source...** → Select the source directory (**C:\Azerothcore**)
-
-1. Click **Browse Build...** → Select the build directory (**C:\Build**)
-
-1. Click **Configure**.
-
-1. In the dropdown menu, choose the version of the compiler you downloaded in the [Requirements](windows-requirements) section. Be sure to choose the **Win64** version if you work on a 64-bit compilation.
-
-1. Make sure that **Use default native compilers** is checked.
-
-1. Click **Finish**.
-
-1. Make sure **TOOLS_BUILD** is set to `all`. This will compile the extractors needed later in the setup.
-
-1. Click **Configure** again. As long as you have error(s) typed in red in the log window you will need to check your parameters and re-run it.
-
-1. Click **Generate**. This will install the selected build files into your **C:\Build** folder.
-
-{{site.data.alerts.note}}
-If you were to encounter errors in CMake see <a href="common-errors#core-installation-errors">Common Errors</a>.
-{{site.data.alerts.end}}
+::: info Note
+If you were to encounter errors in CMake see [Common Errors](common-errors#core-installation-errors).
+:::
 
 ### Compiling the Source
 
@@ -106,11 +98,21 @@ libssl-3-x64.dll
 
 There are four DLL files that need to be manually added to this folder, and you need to copy them from the following directories:
 
-{% include callout.html content="<b>libmysql.dll</b> → C:\Program Files\MySQL\MySQL Server 8.x\lib" type="primary" %}
+```
+- libmysql.dll
+(C:\Program Files\MySQL\MySQL Server 8.x\lib)
+```
 
-{% include note.html content="Your libmysql.dll version need to match the MySQL Server version you run. If you update your MySQL server you need to recompile the core and copy the new dll file over." %}
+::: info Note
+Your libmysql.dll version need to match the MySQL Server version you run. If you update your MySQL server you need to recompile the core and copy the new dll file over.
+:::
 
-{% include callout.html content="<b>legacy.dll</b>, <b>libcrypto-3-x64.dll</b> and <b>libssl-3-x64.dll</b> → C:\OpenSSL-Win64\bin" type="primary" %}
+```
+- legacy.dll
+- libcrypto-3-x64.dll
+- libssl-3-x64.dll
+(C:\OpenSSL-Win64\bin)
+```
 
 In the **configs** folder you should find:
 
@@ -123,15 +125,8 @@ worldserver.conf.dist
 
 pdb files only exist if you compile with Debug or RelWithDebInfo configuration. It is not mandatory but it is recommended to compile core with at least the RelWithDebInfo configuration to get proper crash logs.
 
-{% include important.html content="To report crash logs it's MANDATORY to compile with Debug or RelWithDebInfo configuration." %}
+::: tip Important
+To report crash logs it's MANDATORY to compile with Debug or RelWithDebInfo configuration.
+:::
 
-<br>
-
-## Help
-
-{% include help.html %}
-
-| Installation Guide                                                                                                                   |                                         |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------- |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Step 1: Requirements](windows-requirements)                                                                                      | [Step 3: Server Setup >>](windows-server-setup) |
+<!--@include: ./help.md-->

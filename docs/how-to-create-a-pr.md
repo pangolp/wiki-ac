@@ -1,7 +1,3 @@
----
-redirect_from: "/How-to-create-a-PR"
----
-
 # How to create a PR
 
 This guide explains how to open PRs to submit any kind of fixes (C++, SQL, etc...).
@@ -19,7 +15,6 @@ and create a fork of it by clicking in the top-right "Fork" button:
 
 ![Create a fork of AzerothCore](http://www.azerothcore.org/wiki/assets/images/pr-tutorial/1.png)
 
-
 ### 2. Clone your fork to your local machine
 
 Once your fork is ready, you will see a screen showing **YourUsername/azerothcore-wotlk**.
@@ -28,18 +23,17 @@ Click on the "Clone or download" button (on the right) and copy the https addres
 
 ![Copy your AzerothCore fork address](http://www.azerothcore.org/wiki/assets/images/pr-tutorial/2.png)
 
-Now open the **terminal** (if you are on Windows, use the [git bash terminal](https://git-scm.com/downloads)) 
-and type `git clone ` followed by the git address of your fork that you just copied:
+Now open the **terminal** (if you are on Windows, use the [git bash terminal](https://git-scm.com/downloads)) and type `git clone ` followed by the git address of your fork that you just copied:
 
 ![Clone your AzerothCore fork](http://www.azerothcore.org/wiki/assets/images/pr-tutorial/3.png)
 
-```
+```sh
 git clone https://github.com/YourUsername/azerothcore-wotlk.git
 ```
 
 Wait until the download ends and then access the `azerothcore-wotlk` directory:
 
-```
+```sh
 cd azerothcore-wotlk
 ```
 
@@ -73,18 +67,19 @@ In the previous step you just updated your *remote* fork, but you have to sync y
 
 Open your terminal inside the `azerothcore-wotlk` directory and run:
 
-```
+```sh
 git checkout master; git pull
 ```
 
 ### 3. Create a new branch
 
-{% include important.html content="Never commit changes your <b>master</b> branch, it will make your fork messy." %}
+::: info Important
+Never commit changes your master branch, it will make your fork messy.
+:::
 
-When creating a new branch, git will create a copy of your **current** branch. 
-Always make sure you are on `master` branch **before** creating a new branch by typing:
- 
-```
+When creating a new branch, git will create a copy of your **current** branch. Always make sure you are on `master` branch **before** creating a new branch by typing:
+
+```sh
  git checkout master
 ```
 
@@ -92,12 +87,11 @@ Create a new branch giving it a name that is different than any existing branch.
 
 You can give any name you want (replace "xxx" with whatever you are fixing):
 
-```
+```sh
 git checkout -b fix-issue-xxxx
 ```
 
 ![Access the AzerothCore directory](http://www.azerothcore.org/wiki/assets/images/pr-tutorial/5.png)
-
 
 ### 4. Add your C++ changes (if any)
 
@@ -109,7 +103,7 @@ In this guide we will assume that you modified the file `instance_deadmines.cpp`
 
 Now add your file(s) to be committed:
 
-```
+```sh
 git add src/server/scripts/EasternKingdoms/Deadmines/instance_deadmines.cpp
 ```
 
@@ -126,7 +120,7 @@ You can use the `git status` command to check which files have been selected to 
 
 If you don't have any SQL changes, you can skip this. Otherwise, run the following:
 
-```
+```sh
 ./data/sql/updates/pending_db_world/create_sql.sh
 ```
 
@@ -137,9 +131,9 @@ having a unique name that looks like `rev_XXXXXXXXXXXX.sql`
 
 Now add this file to be committed using the `git add path/to/file` command:
 
-```
+```sh
 git add data/sql/updates/pending_db_world/rev_XXXXXXXXXXXX.sql
-``` 
+```
 
 (of course replace `rev_XXXXXXXXXXXX.sql` with the actual name of the file)
 
@@ -150,21 +144,25 @@ git add data/sql/updates/pending_db_world/rev_XXXXXXXXXXXX.sql
 #### Do only ONCE: git config
 
 First of all make sure to use the AC commit template (this should only be necessary once):
-```
+
+```sh
 git config --local commit.template ".git_commit_template.txt"
 ```
 
 When you will write your commit message, it will use the default text editor `Vim` which is very hard to manipulate. You can keep it or you can instead use the much simpler `Nano` editor. Here is how to proceed, type:
-```
+
+```sh
 git config --global core.editor "nano"
 ```
 
 #### Git commit
 
 Then commit your changes by typing:
-```
+
+```sh
 git commit
 ```
+
 You are then prompted to specify an appropriate commit message. Please, follow the format guidelines here (= every line starting by a # that will be ignored in the commit message), and you can refer to a commit like [this](https://github.com/azerothcore/mod-npc-beastmaster/commit/53cf90233091db2191b522f0fa7c4b6009dca22e) as an example.
 If using `Nano`, press [ctrl]+[x] and say yes to save and exit (other commands are written at the bottom in `Nano`, and can be found easily on the net or by typing `man nano` in the terminal).
 
@@ -176,7 +174,7 @@ git will ask to specify which remote branch you want to push to.
 
 So you should give:
 
-```
+```sh
 git push --set-upstream origin fix-issue-xxxx
 ```
 
@@ -184,13 +182,12 @@ git push --set-upstream origin fix-issue-xxxx
 
 ![AzerothCore - git push](http://www.azerothcore.org/wiki/assets/images/pr-tutorial/10.png)
 
-
 ### 7. Open the PR
 
 Go back to the [main AzerothCore repository](https://github.com/azerothcore/azerothcore-wotlk), 
 you will notice that GitHub is smart enough to realize that you are about to open a PR 
 and shows this nice light-yellow box:
- 
+
 ![AzerothCore - Compare & pull request](http://www.azerothcore.org/wiki/assets/images/pr-tutorial/11.png)
 
 click on the "Compare & pull request" green button (located on the right).
@@ -204,7 +201,9 @@ It's also a good practice to check the "File changes" tab to see that everything
 
 ![AzerothCore - Compare & pull request](http://www.azerothcore.org/wiki/assets/images/pr-tutorial/13.png)
 
-{% include important.html content="We do not respond well to leechers! If your fix comes from another organization or person you should ALWAYS give credit to the original author and commit!" %}
+::: tip Important
+We do not respond well to leechers! If your fix comes from another organization or person you should ALWAYS give credit to the original author and commit!
+:::
 
 That's it!
 
@@ -225,7 +224,7 @@ Be careful when creating a new branch: you **must** be in branch `master` first 
 
 If you never updated your fork before, type:
 
-```
+```sh
 git remote add upstream https://github.com/azerothcore/azerothcore-wotlk.git
 ```
 

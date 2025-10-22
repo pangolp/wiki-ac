@@ -1,4 +1,6 @@
-{% include warning.html content="This guide is out-dated as it refers to MariaDB, which is no longer supported." %}
+::: warning
+This guide is out-dated as it refers to MariaDB, which is no longer supported.
+:::
 
 ## Introduction
 
@@ -58,9 +60,11 @@ There is a Step-by-Step YouTube Video which walks you through this entire proces
 
 #### Installing Key Libraries & Additional Apps
 - Next we need to install a bunch of important libraries, applications, and tools needed to Azerothcore. Run the following command: 
-```
+
+```sh
 sudo apt-get update && sudo apt-get install git make gcc g++ clang default-libmysqlclient-dev libssl1.0-dev libbz2-dev libreadline-dev libncurses-dev mysql-server libace-6.* libace-dev g++-7
 ```
+
 - Choose 'Y' for any prompts asking for additional space for the installation.
 - Let's refresh our App List once again before we continue `sudo apt-get update`
 - Let's install Screen, an application that will let us have multiple applications open at once and persist after we log out of the console `sudo apt-get install screen`
@@ -71,7 +75,8 @@ sudo apt-get update && sudo apt-get install git make gcc g++ clang default-libmy
 #### Installing CMake
 - Let's make sure that the no version of CMake exists by removing any previous installations of CMake. `sudo apt remove --purge --auto-remove cmake`
 - Next, we'll begin the process to install CMake. Copy this entire block and paste it into your terminal. If you wish to install a different version of CMake, you can update the version and build number to a different CMake version, which can be found on https://cmake.org/download/
-```
+
+```sh
 version=3.16
 build=2
 mkdir ~/temp
@@ -80,13 +85,16 @@ wget https://cmake.org/files/v$version/cmake-$version.$build.tar.gz
 tar -xzvf cmake-$version.$build.tar.gz
 cd cmake-$version.$build/
 ```
+
 - After a bunch of text, hit 'Return' or 'Enter' once on your keyboard.
 - Now let's install CMake. Copy this entire block and paste it into your terminal.
-```
+
+```sh
 ./bootstrap
 make -j$(nproc)
 sudo make install
 ```
+
 - After the building is complete (and you get the command line back), hit 'Return' or 'Enter' once on your keyboard to install CMake
 - Let's verify that you're running the correct version of CMake by using the `cmake --version` command. Note: If CMake Version doesn't work, close your terminal, reconnect, and try the version command again.
 - Navigate back to your primary directory by typing `cd`.
@@ -97,9 +105,11 @@ sudo make install
 - For the following prompts, answer `[no pass]/N/Y/Y/Y/Y`
 - Once we're back in the command line, type `sudo mysql` to enter the MariaDB Console
 - Once in the MariaDB Console, let's create our User: 
-```
+
+```sh
 GRANT ALL ON *.* TO 'dbadmin'@'%' IDENTIFIED BY 'password1' WITH GRANT OPTION;
 ```
+
 - Choose a Username you want - it can be anything you'd like, it doesn't have to be `dbadmin`. Also, please make sure you choose a very secure password, as `password1` should *NEVER* be used.
 - Let's refresh the permissions for MariaDB `Flush Privileges;`
 - Return to the main Debian console `exit`
@@ -131,15 +141,19 @@ GRANT ALL ON *.* TO 'dbadmin'@'%' IDENTIFIED BY 'password1' WITH GRANT OPTION;
 - We need to make a folder called *build* `mkdir build`
 - Navigate to the new build folder `cd build`
 - Now we run the cmake command, this is the pre-compile step to ensure all cpp files are accounted for before we compile, and it tells the compile what to compile. 
-```
+
+```sh
 cmake ../ -DCMAKE_INSTALL_PREFIX=$HOME/azeroth-server/ -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DTOOLS=0 -DSCRIPTS=static
 ```
+
 - Now we compile AzerothCore - this can take some time depending on the number of CPU cores your Droplet has. This tutorial is based on the 4 CPU core Droplet, which compiles in about 8 minutes. Enter the following command to compile the core and place the assembled items in their new home:
-```
+
+```sh
 MTHREADS=`grep -c ^processor /proc/cpuinfo`; MTHREADS=$(($MTHREADS + 2));
 make -j $MTHREADS;
 make install -j $MTHREADS;
 ```
+
 - After the terminal says `make install -j $MTHREADS` after compiling, hit 'Return' or 'Enter' on your Keyboard to install and finish the compiling process.
 
 #### Data Files

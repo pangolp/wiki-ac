@@ -1,16 +1,12 @@
----
-redirect_from: "/"
----
-
 # Home
 
 Welcome to the [AzerothCore](http://www.azerothcore.org/) project wiki.
 
-Read in: [English :gb:](home) [Spanish :es:](es/home)
-
 ## IMPORTANT NOTE
 
-{% include warning.html content="The AzerothCore Team and Owners DO NOT in any case sponsor nor support illegal public servers. If you use these projects to run an illegal public server and not for testing and learning it is your personal choice." %}
+::: warning
+The AzerothCore Team and Owners DO NOT in any case sponsor nor support illegal public servers. If you use these projects to run an illegal public server and not for testing and learning it is your personal choice.
+:::
 
 ## Getting started
 
@@ -18,7 +14,7 @@ Read in: [English :gb:](home) [Spanish :es:](es/home)
 
 ## Documentation
 
-- [Documentation Index](documentation_index) - All documentation in one place
+- [Documentation Index](documentation-index) - All documentation in one place
 - [Doxygen Docs](https://www.azerothcore.org/doxygen) - Up-to-date API and source code documentation.
 
 ### Database Structure
@@ -41,11 +37,14 @@ We're improving this reliability with continuous development and strict rules to
 We ensure all changes pass the CIs before merging into the master branch.
 
 <a href="https://github.com/azerothcore/azerothcore-wotlk/actions/workflows/core-build-nopch.yml"><img alt="Github CI Core Status" src="https://github.com/azerothcore/azerothcore-wotlk/actions/workflows/core-build-nopch.yml/badge.svg?branch=master"></a>
+
 <a href="https://github.com/azerothcore/azerothcore-wotlk/actions/workflows/windows_build.yml"><img alt="Github CI Windows Status" src="https://github.com/azerothcore/azerothcore-wotlk/actions/workflows/windows_build.yml/badge.svg"></a>
+
 <a href="https://github.com/azerothcore/azerothcore-wotlk/actions/workflows/macos_build.yml"><img alt="Github CI Mac Status" src="https://github.com/azerothcore/azerothcore-wotlk/actions/workflows/macos_build.yml/badge.svg"></a>
+
 <a href="https://github.com/azerothcore/azerothcore-wotlk/actions/workflows/docker_build.yml"><img alt="Github CI Docker Status" src="https://github.com/azerothcore/azerothcore-wotlk/actions/workflows/docker_build.yml/badge.svg"></a>
 
-### Open Source
+## Open Source
 
 The new AzerothCore source components are released under the GNU AGPL 3.0 The old sources based on MaNGOS/TrinityCore are released under the GNU GPL 2.0, both those licenses are free and open source.
 
