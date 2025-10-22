@@ -34,16 +34,16 @@ Entry of creature to be used as Vehicle. Entry from [creature_template](creature
 
 ### accessory\_entry
 
-Entry from [creature_template](creature-template#entry) to be used as the rider/turret/addon to the main vehicle. ID from creature\_template.
+Entry from [creature_template](creature-template#entry) to be used as the rider/turret/addon to the main vehicle. ID from `creature_template`.
 
 ### seat\_id
 
-Vehicle seat in witch the accessory should be spawned. See [VehicleSeat.dbc](VehicleSeat).
+Vehicle seat in witch the accessory should be spawned. See `VehicleSeat.dbc`.
 
 ### minion
 
-If value is 0 accessory will not die when vehicle dies.
-If value is 1 accessory will die when the vehicle dies.
+- If value is 0 accessory will not die when vehicle dies.
+- If value is 1 accessory will die when the vehicle dies.
 
 ### description
 

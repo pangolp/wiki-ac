@@ -16,9 +16,11 @@
 **Description of the fields**
 
 ### ID
-Graveyard's ID. See [WorldSafeLocs.dbc](WorldSafelocs)
+
+Graveyard's ID. See `WorldSafeLocs.dbc`
 
 ### Map
+
 Zone's ID of ghost position before teleportation to graveyard. See Map.dbc column 1
 
 ### x

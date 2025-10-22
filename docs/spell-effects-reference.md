@@ -9,6 +9,7 @@
 **Version is : 3.3.5a**
 
 ### Related Information
+
 [Summon Properties](summonproperties-dbc)
 
 [Spell Aura](spell-aura-reference)
@@ -275,7 +276,7 @@ SPELL_EFFECT_HEAL_MECHANICAL = 75
 SPELL_EFFECT_SUMMON_OBJECT_WILD = 76
 - EffectMiscValueA: [gameobject_template ID](gameobject-template)
 
-SPELL_EFFECT_SCRIPT_EFFECT = 77 Assigned to a [Core Script](/wiki/core-scripts#spell-scripts) in the DB.
+SPELL_EFFECT_SCRIPT_EFFECT = 77 Assigned to a [Core Script](core-scripts#spell-scripts) in the DB.
 
 SPELL_EFFECT_ATTACK = 78
 
@@ -289,6 +290,7 @@ SPELL_EFFECT_CREATE_HOUSE = 81
 SPELL_EFFECT_BIND_SIGHT = 82
 
 SPELL_EFFECT_DUEL = 83
+
 - EffectMiscValueA: [gameobject_template ID](gameobject-template) (Duel Flag)
 
 SPELL_EFFECT_STUCK = 84
@@ -296,14 +298,17 @@ SPELL_EFFECT_STUCK = 84
 SPELL_EFFECT_SUMMON_PLAYER = 85
 
 SPELL_EFFECT_ACTIVATE_OBJECT = 86
+
 - EffectMiscValueA: Unknown
 
 SPELL_EFFECT_GAMEOBJECT_DAMAGE = 87
+
 - BasePoints: Base damage
 
 SPELL_EFFECT_GAMEOBJECT_REPAIR = 88
 
 SPELL_EFFECT_GAMEOBJECT_SET_DESTRUCTION_STATE = 89
+
 - EffectMiscValueA: State
 
 | ID | State      |
@@ -314,16 +319,19 @@ SPELL_EFFECT_GAMEOBJECT_SET_DESTRUCTION_STATE = 89
 | 3  | Rebuilding |
 
 SPELL_EFFECT_KILL_CREDIT = 90
+
 - EffectMiscValueA: [Creature ID](creature-template)
 
 SPELL_EFFECT_THREAT_ALL = 91 // Unused
 
 SPELL_EFFECT_ENCHANT_HELD_ITEM = 92
+
 - EffectMiscValueA: ID from SpellItemEnchantment.dbc
 
 SPELL_EFFECT_FORCE_DESELECT = 93
 
 SPELL_EFFECT_SELF_RESURRECT = 94
+
 - BasePoints: Positive = %, Negative = Flat Value
 - EffectMiscValueA: Mana (Flat Value)
 
@@ -332,40 +340,49 @@ SPELL_EFFECT_SKINNING = 95
 SPELL_EFFECT_CHARGE = 96
 
 SPELL_EFFECT_CAST_BUTTON = 97 (Totem bar since 3.2.2a)
+
 - EffectMiscValueA: Totem combinations = 0,4,8
 - EffectMiscValueB: Unknown (Always 4), possibly totem amount
 
 SPELL_EFFECT_KNOCK_BACK = 98
+
 - BasePoints: Distance
 - EffectMiscValueA: Distance
 
 SPELL_EFFECT_DISENCHANT = 99
 
 SPELL_EFFECT_INEBRIATE = 100
+
 - BasePoints: Drunk power
 
 SPELL_EFFECT_FEED_PET = 101
+
 - BasePoints: Happiness Amount
 - TriggerSpell: Spell ID
 
 SPELL_EFFECT_DISMISS_PET = 102
 
 SPELL_EFFECT_REPUTATION = 103
+
 - BasePoints: Reputation  Amount
 - EffectMiscValueA: ID from [faction.dbc](faction)
 
 SPELL_EFFECT_SUMMON_OBJECT_SLOT1 = 104
+
 - EffectMiscValueA: [gameobject_template ID](gameobject-template) 
 
 SPELL_EFFECT_SUMMON_OBJECT_SLOT2 = 105
+
 - EffectMiscValueA: [gameobject_template ID](gameobject-template) 
 
 SPELL_EFFECT_SUMMON_OBJECT_SLOT3 = 106
+
 - EffectMiscValueA: [gameobject_template ID](gameobject-template) 
 
 SPELL_EFFECT_SUMMON_OBJECT_SLOT4 = 107 // Unused
 
 SPELL_EFFECT_DISPEL_MECHANIC = 108
+
 - EffectMiscValueA: Dispel Mechanic
 
 | ID | Mechanic   | ID | Mechanic   | ID | Mechanic        |
@@ -383,81 +400,101 @@ SPELL_EFFECT_DISPEL_MECHANIC = 108
 | 10 | Sleep      | 21 | Mount      | 31 | Enrage          |
 
 SPELL_EFFECT_RESURRECT_PET = 109
+
 - BasePoints: % base health to heal
 
 SPELL_EFFECT_DESTROY_ALL_TOTEMS = 110
+
 - BasePoints: % mana refund
 
 SPELL_EFFECT_DURABILITY_DAMAGE = 111
+
 - BasePoints: Positive = Durability damage, Negative = Durability restore
 - EffectMiscValueA: Unknown
 
 SPELL_EFFECT_112 = 112 // Unused
 
 SPELL_EFFECT_RESURRECT_NEW = 113
+
 - BasePoints: Health to restore (Flat Value)
 - EffectMiscValueA: Mana (Flat Value)
 
 SPELL_EFFECT_ATTACK_ME = 114
 
 SPELL_EFFECT_DURABILITY_DAMAGE_PCT = 115
+
 - BasePoints: Durability damage %
 - EffectMiscValueA: Unknown
 
 SPELL_EFFECT_SKIN_PLAYER_CORPSE = 116
 
 SPELL_EFFECT_SPIRIT_HEAL = 117
+
 - BasePoints: Health %
 
 SPELL_EFFECT_SKILL = 118
+
 - BasePoints: Unknown
 - EffectMiscValueA: [Skill ID](skillline)
 
 SPELL_EFFECT_APPLY_AREA_AURA_PET = 119
+
 - BasePoints: Depends on [Spell Aura](spell-aura-reference)
 
 SPELL_EFFECT_TELEPORT_GRAVEYARD = 120
 
 SPELL_EFFECT_NORMALIZED_WEAPON_DMG = 121
+
 - BasePoints: Base damage
 - Chain Target: Additional Targets
 
 SPELL_EFFECT_122 = 122 // Unused
 
 SPELL_EFFECT_SEND_TAXI = 123
+
 - EffectMiscValueA: ID from TaxiPath.dbc
 
 SPELL_EFFECT_PULL_TOWARDS = 124
+
 - EffectMiscValueA: Speed of pull
 
 SPELL_EFFECT_MODIFY_THREAT_PERCENT = 125
+
 - BasePoints: Threat %
 
 SPELL_EFFECT_STEAL_BENEFICIAL_BUFF = 126
+
 - BasePoints: Number of buffs to steal
 
 SPELL_EFFECT_PROSPECTING = 127
 
 SPELL_EFFECT_APPLY_AREA_AURA_FRIEND = 128
+
 - BasePoints: Depends on [Spell Aura](spell-aura-reference)
 
 SPELL_EFFECT_APPLY_AREA_AURA_ENEMY = 129
+
 - BasePoints: Depends on [Spell Aura](spell-aura-reference)
 
 SPELL_EFFECT_REDIRECT_THREAT = 130
+
 - BasePoints: % Threat to redirect
-- TargetB: Unit to redirect threat to 
+- TargetB: Unit to redirect threat to
 
 SPELL_EFFECT_PLAY_SOUND = 131
+
 - EffectMiscValueA: ID from SoundEntries.dbc
 
 SPELL_EFFECT_PLAY_MUSIC = 132
+
 - EffectMiscValueA: ID from SoundEntries.dbc
 
 SPELL_EFFECT_UNLEARN_SPECIALIZATION = 133
+
 - TriggerSpell: Spell ID
 
 SPELL_EFFECT_KILL_CREDIT2 = 134
+
 - EffectMiscValueA: [Creature ID](creature-template)
 
 SPELL_EFFECT_CALL_PET = 135

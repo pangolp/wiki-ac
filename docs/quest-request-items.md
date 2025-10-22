@@ -29,11 +29,11 @@ Primary Key for this table. Each quest ID must be unique.
 
 ### EmoteOnComplete
 
-Emote (from [Emotes.dbc](Emotes) played by the quest ender NPC when all quest objectives are completed.
+Emote (from [Emotes.dbc](emotes)) played by the quest ender NPC when all quest objectives are completed.
 
 ### EmoteOnIncomplete
 
-Emote (from [Emotes.dbc](https://trinitycore.atlassian.net/wiki/display/tc/Emotes)) played by the quest ender NPC if any of the quest objectives are incomplete.
+Emote (from [Emotes.dbc](emotes)) played by the quest ender NPC if any of the quest objectives are incomplete.
 
 ### CompletionText
 
@@ -45,8 +45,6 @@ The quest item(s) involved in the quest can either be provided by the quest giv
 This field is used by the TrinityCore DB Team to determine whether a template has been verified from WDB files.
 
 -   If value is 0, it has not been parsed yet.
--   If value is &gt; 0, it has been parsed with WDB files from that specific [Client Build](https://trinitycore.atlassian.net/wiki/display/tc/realmlist#realmlist-gamebuild).
+-   If value is &gt; 0, it has been parsed with WDB files from that specific [Client Build](realmlist#gamebuild).
 -   If value is -1, it is just a place holder until proper data are found on WDBs.
--   If value is -[Client Build](https://trinitycore.atlassian.net/wiki/display/tc/realmlist#realmlist-gamebuild), it was parsed with WDB files from that specific [client build](https://trinitycore.atlassian.net/wiki/display/tc/realmlist#realmlist-gamebuild) and manually edited later for some specific necessity.
-
- 
+-   If value is -[Client Build](realmlist#gamebuild), it was parsed with WDB files from that specific [client build](realmlist#gamebuild) and manually edited later for some specific necessity.
