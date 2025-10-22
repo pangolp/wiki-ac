@@ -65,7 +65,7 @@ This table allows you to define conditions for various systems - Gossip, loot et
 <td><p>0</p></td>
 <td><p><br />
 </p></td>
-<td><p><a href="http://www.azerothcore.org/wiki/smart_scripts#source_type">smart_scripts.source_type</a> <strong>||</strong> 0 for everything else</p></td>
+<td><p><a href="smart_scripts#source_type">smart_scripts.source_type</a> <strong>||</strong> 0 for everything else</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="#elsegroup">ElseGroup</a></p></td>
@@ -220,7 +220,7 @@ if negative, then it is a reference template.
 <th>ID</th>
 <th>SourceGroup</th>
 <th>SourceEntry</th>
-<th><a href="http://www.azerothcore.org/wiki/conditions#condition_source_type_smart_event=22">SourceId</a></th>
+<th><a href="conditions#condition_source_type_smart_event=22">SourceId</a></th>
 <th>ConditionTarget</th>
 <th>Notes</th>
 </tr>
@@ -238,8 +238,8 @@ if negative, then it is a reference template.
 <tr class="even">
 <td>CONDITION_SOURCE_TYPE_CREATURE_LOOT_TEMPLATE</td>
 <td>1</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">creature_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">creature_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -248,8 +248,8 @@ if negative, then it is a reference template.
 <tr class="odd">
 <td>CONDITION_SOURCE_TYPE_DISENCHANT_LOOT_TEMPLATE</td>
 <td>2</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">disenchant_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">disenchant_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -258,8 +258,8 @@ if negative, then it is a reference template.
 <tr class="even">
 <td>CONDITION_SOURCE_TYPE_FISHING_LOOT_TEMPLATE</td>
 <td>3</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">fishing_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">fishing_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -268,8 +268,8 @@ if negative, then it is a reference template.
 <tr class="odd">
 <td>CONDITION_SOURCE_TYPE_GAMEOBJECT_LOOT_TEMPLATE</td>
 <td>4</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">gameobject_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">gameobject_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -278,8 +278,8 @@ if negative, then it is a reference template.
 <tr class="even">
 <td>CONDITION_SOURCE_TYPE_ITEM_LOOT_TEMPLATE</td>
 <td>5</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">item_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">item_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -288,8 +288,8 @@ if negative, then it is a reference template.
 <tr class="odd">
 <td>CONDITION_SOURCE_TYPE_MAIL_LOOT_TEMPLATE</td>
 <td>6</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">mail_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">mail_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -298,8 +298,8 @@ if negative, then it is a reference template.
 <tr class="even">
 <td>CONDITION_SOURCE_TYPE_MILLING_LOOT_TEMPLATE</td>
 <td>7</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">milling_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">milling_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -308,8 +308,8 @@ if negative, then it is a reference template.
 <tr class="odd">
 <td>CONDITION_SOURCE_TYPE_PICKPOCKETING_LOOT_TEMPLATE</td>
 <td>8</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">pickpocketing_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">pickpocketing_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -318,8 +318,8 @@ if negative, then it is a reference template.
 <tr class="even">
 <td>CONDITION_SOURCE_TYPE_PROSPECTING_LOOT_TEMPLATE</td>
 <td>9</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">prospecting_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">prospecting_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -328,8 +328,8 @@ if negative, then it is a reference template.
 <tr class="odd">
 <td>CONDITION_SOURCE_TYPE_REFERENCE_LOOT_TEMPLATE</td>
 <td>10</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -338,8 +338,8 @@ if negative, then it is a reference template.
 <tr class="even">
 <td>CONDITION_SOURCE_TYPE_SKINNING_LOOT_TEMPLATE</td>
 <td>11</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">skinning_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">skinning_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -348,8 +348,8 @@ if negative, then it is a reference template.
 <tr class="odd">
 <td>CONDITION_SOURCE_TYPE_SPELL_LOOT_TEMPLATE</td>
 <td>12</td>
-<td><a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Entry">spell_loot_template.Entry or reference_loot_template.Entry</a></td>
-<td>item id (<a href="http://www.azerothcore.org/wiki/loot_template#loot_template-Item">_loot_template.Item or reference_loot_template.Item)</a></td>
+<td><a href="loot_template#entry">spell_loot_template.Entry or reference_loot_template.Entry</a></td>
+<td>item id (<a href="loot-template#item">_loot_template.Item or reference_loot_template.Item)</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -371,8 +371,8 @@ CONDITION_SOURCE_TYPE_SPELL_IMPLICIT_TARGET</td>
 <tr class="odd">
 <td>CONDITION_SOURCE_TYPE_GOSSIP_MENU</td>
 <td>14</td>
-<td><a href="http://www.azerothcore.org/wiki/gossip_menu#MenuID">gossip_menu.MenuID</a></td>
-<td><a href="http://www.azerothcore.org/wiki/gossip_menu#TextID">gossip_menu.TextID</a> (points to npc_text.ID)</td>
+<td><a href="gossip-menu#menuid">gossip_menu.MenuID</a></td>
+<td><a href="gossip-menu#textid">gossip_menu.TextID</a> (points to npc_text.ID)</td>
 <td>Always 0</td>
 <td><p>0 = Player<br />
 1 = WorldObject</p></td>
@@ -382,8 +382,8 @@ CONDITION_SOURCE_TYPE_SPELL_IMPLICIT_TARGET</td>
 <tr class="even">
 <td>CONDITION_SOURCE_TYPE_GOSSIP_MENU_OPTION</td>
 <td>15</td>
-<td><a href="http://www.azerothcore.org/wiki/gossip_menu_option#MenuID">gossip_menu_option.MenuID</a></td>
-<td><a href="http://www.azerothcore.org/wiki/gossip_menu_option#OptionID">gossip_menu_option.OptionID</a></td>
+<td><a href="gossip-menu-option#menuid">gossip_menu_option.MenuID</a></td>
+<td><a href="gossip-menu-option#optionid">gossip_menu_option.OptionID</a></td>
 <td>Always 0</td>
 <td><p>0 = Player<br />
 1 = WorldObject</p></td>
@@ -394,7 +394,7 @@ CONDITION_SOURCE_TYPE_SPELL_IMPLICIT_TARGET</td>
 <td>CONDITION_SOURCE_TYPE_CREATURE_TEMPLATE_VEHICLE</td>
 <td>16</td>
 <td>Always 0</td>
-<td>creature entry (<a href="http://www.azerothcore.org/wiki/creature_template#creature_template-entry">creature_template.entry</a>)</td>
+<td>creature entry (<a href="creature-template#entry">creature_template.entry</a>)</td>
 <td>Always 0</td>
 <td><p>0 = Player riding vehicle<br />
 1 = Vehicle creature</p></td>
@@ -420,7 +420,7 @@ CONDITION_SOURCE_TYPE_SPELL</td>
 <br />
 <br />
 <br />
-Spell ID from <a href="http://www.azerothcore.org/wiki/Spell">Spell.dbc</a></td>
+Spell ID from <a href="spell">Spell.dbc</a></td>
 <td>Always 0</td>
 <td><br />
 <br />
@@ -437,8 +437,8 @@ Spell ID from <a href="http://www.azerothcore.org/wiki/Spell">Spell.dbc</a></td
 <tr class="odd">
 <td>CONDITION_SOURCE_TYPE_SPELL_CLICK_EVENT</td>
 <td>18</td>
-<td>creature entry (<a href="http://www.azerothcore.org/wiki/npc_spellclick_spells#npc_entry">npc_spellclick_spells.npc_entry</a>)</td>
-<td>Spell (<a href="http://www.azerothcore.org/wiki/npc_spellclick_spells#spell_id">npc_spellclick_spells.spell_id</a>)</td>
+<td>creature entry (<a href="npc-spellclick-spells#npc_entry">npc_spellclick_spells.npc_entry</a>)</td>
+<td>Spell (<a href="npc_spellclick_spells#spell_id">npc_spellclick_spells.spell_id</a>)</td>
 <td>Always 0</td>
 <td>0 = Clicker<br />
 1 =  Spellclick target (clickee)</td>
@@ -449,7 +449,7 @@ Spell ID from <a href="http://www.azerothcore.org/wiki/Spell">Spell.dbc</a></td
 <td>CONDITION_SOURCE_TYPE_QUEST_AVAILABLE</td>
 <td>19</td>
 <td>Always 0</td>
-<td><a href="http://www.azerothcore.org/wiki/quest_template#id">Quest ID</a></td>
+<td><a href="quest-template#id">Quest ID</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td>Condition must be met for quest to be available to player.</td>
@@ -468,9 +468,9 @@ Spell ID from <a href="http://www.azerothcore.org/wiki/Spell">Spell.dbc</a></td
 CONDITION_SOURCE_TYPE_VEHICLE_SPELL</td>
 <td><br />
 21</td>
-<td>creature entry (<a href="http://www.azerothcore.org/wiki/creature_template#creature_template-entry">creature_template.entry</a>)</td>
+<td>creature entry (<a href="creature-template#entry">creature_template.entry</a>)</td>
 <td><br />
-Spell ID from <a href="http://www.azerothcore.org/wiki/Spell">Spell.dbc</a></td>
+Spell ID from <a href="spell">Spell.dbc</a></td>
 <td>Always 0</td>
 <td>0 = Player for whom spell bar is shown1 =  Vehicle creature</td>
 <td><br />
@@ -479,9 +479,9 @@ This will show or hide spells in vehicle spell bar.</td>
 <tr class="odd">
 <td>CONDITION_SOURCE_TYPE_SMART_EVENT</td>
 <td>22</td>
-<td>ID (<a href="http://www.azerothcore.org/wiki/smart_scripts#id">smart_scripts.id</a>) + 1</td>
-<td>EntryOrGuid (<a href="http://www.azerothcore.org/wiki/smart_scripts#entryorguid">smart_scripts.entryorguid</a>)</td>
-<td>SourceType (<a href="http://www.azerothcore.org/wiki/smart_scripts#source_type">smart_scripts.source_type</a>)</td>
+<td>ID (<a href="smart-scripts#id">smart_scripts.id</a>) + 1</td>
+<td>EntryOrGuid (<a href="smart-scripts#entryorguid">smart_scripts.entryorguid</a>)</td>
+<td>SourceType (<a href="smart-scripts#source_type">smart_scripts.source_type</a>)</td>
 <td>0 = Invoker<br />
 1 = Object</td>
 <td><br />
@@ -490,8 +490,8 @@ This will show or hide spells in vehicle spell bar.</td>
 <tr class="even">
 <td>CONDITION_SOURCE_TYPE_NPC_VENDOR</td>
 <td>23</td>
-<td>vendor entry (<a href="http://www.azerothcore.org/wiki/npc_vendor#entry">npc_vendor.entry</a>)</td>
-<td>item entry (<a href="http://www.azerothcore.org/wiki/npc_vendor#item">npc_vendor.item</a>)</td>
+<td>vendor entry (<a href="npc-vendor#entry">npc_vendor.entry</a>)</td>
+<td>item entry (<a href="npc-vendor#item">npc_vendor.item</a>)</td>
 <td>Always 0</td>
 <td>Always 0</td>
 <td><br />
@@ -564,7 +564,7 @@ See above.
 
 ### ElseGroup
 
-Allows building grouped conditions - all entries belonging to the same condition (same [SourceType](#conditions-SourceTypeOrReferenceId), [SourceGroup](#conditions-SourceGroup) and [SourceEntry](#conditions-SourceEntry)) that share the same number in ElseGroup, define one group. The **entire condition** is met when **any of its groups** is met (logical OR). The **group** is met when **all of its entries are met** (logical AND).
+Allows building grouped conditions - all entries belonging to the same condition (same [SourceType](conditions#SourceTypeOrReferenceId), [SourceGroup](conditions#SourceGroup) and [SourceEntry](conditions#SourceEntry)) that share the same number in ElseGroup, define one group. The **entire condition** is met when **any of its groups** is met (logical OR). The **group** is met when **all of its entries are met** (logical AND).
 
 Example:
 
@@ -596,21 +596,21 @@ Two conditions with the same SourceType, SourceGroup and SourceEntry but with a
 <tr class="even">
 <td>CONDITION_AURA</td>
 <td>1</td>
-<td>Spell ID from <a href="http://www.azerothcore.org/wiki/Spell">Spell.dbc</a></td>
+<td>Spell ID from <a href="spell">Spell.dbc</a></td>
 <td>Effect index (0-2)</td>
 <td>Always 0</td>
 </tr>
 <tr class="odd">
 <td>CONDITION_ITEM</td>
 <td>2</td>
-<td>item entry (<a href="http://www.azerothcore.org/wiki/item_template#entry">item_template.entry</a>)</td>
+<td>item entry (<a href="item-template#entry">item_template.entry</a>)</td>
 <td>item count</td>
 <td>0 = not in bank, 1 = in bank</td>
 </tr>
 <tr class="even">
 <td>CONDITION_ITEM_EQUIPPED</td>
 <td>3</td>
-<td>item entry (<a href="http://www.azerothcore.org/wiki/item_template#entry">item_template.entry</a>)</td>
+<td>item entry (<a href="item-template#entry">item_template.entry</a>)</td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
@@ -629,7 +629,7 @@ Two conditions with the same SourceType, SourceGroup and SourceEntry but with a
 <br />
 <br />
 <br />
-Faction template ID from <a href="http://www.azerothcore.org/wiki/Faction">Faction.dbc</a></p></td>
+Faction template ID from <a href="faction">Faction.dbc</a></p></td>
 <td><pre><code>rank:
   1 = Hated
   2 = Hostile
@@ -652,21 +652,21 @@ Faction template ID from <a href="http://www.azerothcore.org/wiki/Faction">Fact
 <tr class="even">
 <td>CONDITION_SKILL</td>
 <td>7</td>
-<td>Required skill. See <a href="http://www.azerothcore.org/wiki/SkillLine">SkillLine.dbc</a> .</td>
+<td>Required skill. See <a href="skillLine">SkillLine.dbc</a> .</td>
 <td>Skill rank value (e.g. from 1 to 450 for the 3.3.5 branch)</td>
 <td>Always 0</td>
 </tr>
 <tr class="odd">
 <td>CONDITION_QUESTREWARDED</td>
 <td>8</td>
-<td>Quest ID - see <a href="http://www.azerothcore.org/wiki/quest_template#id">quest_template.id</a></td>
+<td>Quest ID - see <a href="quest-template#id">quest_template.id</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
 <tr class="even">
 <td>CONDITION_QUESTTAKEN</td>
 <td>9</td>
-<td>Quest ID - see <a href="http://www.azerothcore.org/wiki/quest_template#id">quest_template.id</a></td>
+<td>Quest ID - see <a href="quest-template#id">quest_template.id</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
@@ -687,7 +687,7 @@ Faction template ID from <a href="http://www.azerothcore.org/wiki/Faction">Fact
 <tr class="odd">
 <td>CONDITION_ACTIVE_EVENT</td>
 <td>12</td>
-<td>Event entry (<a href="http://www.azerothcore.org/wiki/game_event#evententry">game_event.eventEntry</a>)</td>
+<td>Event entry (<a href="game-event#evententry">game_event.eventEntry</a>)</td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
@@ -706,14 +706,14 @@ data</strong> (see corresponding script source files for more info)</td>
 <tr class="odd">
 <td>CONDITION_QUEST_NONE</td>
 <td>14</td>
-<td>Quest ID - see <a href="http://www.azerothcore.org/wiki/quest_template#id">quest_template.id</a></td>
+<td>Quest ID - see <a href="quest-template#id">quest_template.id</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
 <tr class="even">
 <td>CONDITION_CLASS</td>
 <td>15</td>
-<td>Class mask from <a href="http://www.azerothcore.org/wiki/chrclasses">ChrClasses.dbc</a><br />
+<td>Class mask from <a href="chrclasses">ChrClasses.dbc</a><br />
 Add flags together for all classes where condition is true.</td>
 <td>Always 0</td>
 <td>Always 0</td>
@@ -721,7 +721,7 @@ Add flags together for all classes where condition is true.</td>
 <tr class="odd">
 <td>CONDITION_RACE</td>
 <td>16</td>
-<td>Race mask from <a href="http://www.azerothcore.org/wiki/chrraces">ChrRaces.dbc</a> .<br />
+<td>Race mask from <a href="chrraces">ChrRaces.dbc</a> .<br />
 Add flags together for all races where condition is true.</td>
 <td>Always 0</td>
 <td>Always 0</td>
@@ -729,14 +729,14 @@ Add flags together for all races where condition is true.</td>
 <tr class="even">
 <td>CONDITION_ACHIEVEMENT</td>
 <td>17</td>
-<td>Achievement ID from <a href="http://www.azerothcore.org/wiki/Achievement">Achievement.dbc</a></td>
+<td>Achievement ID from <a href="achievement">Achievement.dbc</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
 <tr class="odd">
 <td>CONDITION_TITLE</td>
 <td>18</td>
-<td>Title ID from <a href="http://www.azerothcore.org/wiki/CharTitles">CharTitles.dbc</a></td>
+<td>Title ID from <a href="chartitles">CharTitles.dbc</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
@@ -744,7 +744,7 @@ Add flags together for all races where condition is true.</td>
 <td>CONDITION_SPAWNMASK</td>
 <td>19</td>
 <td>spawnMask from<br />
-<a href="http://www.azerothcore.org/wiki/creature#spawnmask">Creature.spawnMask</a> / <a href="http://www.azerothcore.org/wiki/gameobject#spawnmask">Gameobject.spawnMask</a></td>
+<a href="creature#spawnmask">Creature.spawnMask</a> / <a href="gameobject#spawnmask">Gameobject.spawnMask</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
@@ -780,7 +780,7 @@ Add flags together for all races where condition is true.</td>
 <tr class="odd">
 <td>CONDITION_CREATURE_TYPE</td>
 <td>24</td>
-<td><p>Creature type from <a href="http://www.azerothcore.org/wiki/creature_template#creature_template-type">creature_template.type</a></p>
+<td><p>Creature type from <a href="creature-template#type">creature_template.type</a></p>
 <p>True if creature_template.type == ConditionValue1</p></td>
 <td>Always 0</td>
 <td>Always 0</td>
@@ -788,7 +788,7 @@ Add flags together for all races where condition is true.</td>
 <tr class="even">
 <td>CONDITION_SPELL</td>
 <td>25</td>
-<td>Spell ID from <a href="http://www.azerothcore.org/wiki/Spell">Spell.dbc</a></td>
+<td>Spell ID from <a href="spell">Spell.dbc</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
@@ -810,21 +810,21 @@ Add flags together for all races where condition is true.</td>
 <tr class="odd">
 <td>CONDITION_QUEST_COMPLETE</td>
 <td>28</td>
-<td>Quest ID - see <a href="http://www.azerothcore.org/wiki/quest_template#id">quest_template.id</a></td>
+<td>Quest ID - see <a href="quest-template#id">quest_template.id</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
 <tr class="even">
 <td>CONDITION_NEAR_CREATURE</td>
 <td>29</td>
-<td>Creature entry from <a href="http://www.azerothcore.org/wiki/creature_template#creature_template-entry">creature_template.entry</a></td>
+<td>Creature entry from <a href="creature-template#entry">creature_template.entry</a></td>
 <td>Distance in yards</td>
 <td>Alive=0 / Dead=1</td>
 </tr>
 <tr class="odd">
 <td>CONDITION_NEAR_GAMEOBJECT</td>
 <td>30</td>
-<td>Gameobject entry from <a href="http://www.azerothcore.org/wiki/gameobject_template#entry">gameobject_template.entry</a></td>
+<td>Gameobject entry from <a href="gameobject-template#entry">gameobject_template.entry</a></td>
 <td>Distance in yards</td>
 <td>GoState<br/><br/> 0 = ignore, 1 = Ready, 2 = Not Ready</td>
 </tr>
@@ -838,8 +838,8 @@ Add flags together for all races where condition is true.</td>
 7 : TYPEID_CORPSE (player corpse, after spirit release)</p></td>
 <td><p><br />
 0 = Any object of given TypeID<br />
-if TypeID = TYPEID_UNIT =&gt; Creature entry from <a href="http://www.azerothcore.org/wiki/creature_template#creature_template-entry">creature_template.entry<br />
-if TypeID = TYPEID_GAMEOBJECT =&gt; Gameobject entry from </a><a href="http://www.azerothcore.org/wiki/gameobject_template#entry">gameobject_template.entry</a></p></td>
+if TypeID = TYPEID_UNIT =&gt; Creature entry from <a href="creature-template#entry">creature_template.entry<br />
+if TypeID = TYPEID_GAMEOBJECT =&gt; Gameobject entry from </a><a href="gameobject-template#entry">gameobject_template.entry</a></p></td>
 <td><p><br />
 0 = Any object of given type</p>
 <p>1 - 500k : creature / gameobject GUID</p></td>
@@ -944,7 +944,7 @@ and the other is just using an emote to appear dead. </p></td>
 <tr class="even">
 <td>CONDITION_REALM_ACHIEVEMENT</td>
 <td>39</td>
-<td>Achievement ID from <a href="http://www.azerothcore.org/wiki/Achievement">Achievement.dbc</a></td>
+<td>Achievement ID from <a href="achievement">Achievement.dbc</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
@@ -965,7 +965,7 @@ and the other is just using an emote to appear dead. </p></td>
 <tr class="even">
 <td>CONDITION_DAILY_QUEST_DONE</td>
 <td>43</td>
-<td>Quest ID - see <a href="http://www.azerothcore.org/wiki/quest_template#id">quest_template.id</a></td>
+<td>Quest ID - see <a href="quest-template#id">quest_template.id</a></td>
 <td>Always 0</td>
 <td>Always 0</td>
 </tr>
@@ -993,7 +993,7 @@ and the other is just using an emote to appear dead. </p></td>
 <tr class="even">
 <td>CONDITION_QUESTSTATE</td>
 <td>47</td>
-<td>Quest ID - see <a href="http://www.azerothcore.org/wiki/quest_template#id">quest_template.id</a></td>
+<td>Quest ID - see <a href="quest-template#id">quest_template.id</a></td>
 <td>state_mask:
 <li>1 = Not taken</li>
 <li>2 = Completed</li>
@@ -1006,8 +1006,8 @@ and the other is just using an emote to appear dead. </p></td>
 <tr class="odd">
 <td>CONDITION_QUEST_OBJECTIVE_PROGRESS</td>
 <td>48</td>
-<td>Quest ID - see <a href="http://www.azerothcore.org/wiki/quest_template#id">quest_template.id</a></td>
-<td>Quest Objective ID - see <a href="http://www.azerothcore.org/wiki/quest_template#requirednpcorgo">quest_template.RequiredNpcOrGo</a></td>
+<td>Quest ID - see <a href="quest-template#id">quest_template.id</a></td>
+<td>Quest Objective ID - see <a href="quest-template#requirednpcorgo">quest_template.RequiredNpcOrGo</a></td>
 <td>Quest Objective Count</td>
 </tr>
 <tr class="even">
@@ -1065,13 +1065,13 @@ Example: CONDITION\_AURA with NegativeCondition will be true when the player doe
 
 ### ErrorType
 
-Id from [/src/server/game/Miscellaneous/SharedDefines.h#L830](https://github.com/azerothcore/azerothcore-wotlk/blob/97e65bd4479272106bba87364d35233d2e4bd2ef/src/server/game/Miscellaneous/SharedDefines.h#L830). Will be displayed only for the below condition [source type](#conditions-SourceTypeOrReferenceId):
+Id from [/src/server/game/Miscellaneous/SharedDefines.h#L830](https://github.com/azerothcore/azerothcore-wotlk/blob/97e65bd4479272106bba87364d35233d2e4bd2ef/src/server/game/Miscellaneous/SharedDefines.h#L830). Will be displayed only for the below condition [source type](conditions#SourceTypeOrReferenceId):
 
 CONDITION\_SOURCE\_TYPE\_SPELL = 17
 
 ### ErrorTextId
 
-Id from [/src/server/game/Miscellaneous/SharedDefines.h#L1024](https://github.com/azerothcore/azerothcore-wotlk/blob/97e65bd4479272106bba87364d35233d2e4bd2ef/src/server/game/Miscellaneous/SharedDefines.h#L1024). Will be displayed only for the below condition [source type](#conditions-SourceTypeOrReferenceId):
+Id from [/src/server/game/Miscellaneous/SharedDefines.h#L1024](https://github.com/azerothcore/azerothcore-wotlk/blob/97e65bd4479272106bba87364d35233d2e4bd2ef/src/server/game/Miscellaneous/SharedDefines.h#L1024). Will be displayed only for the below condition [source type](conditions#SourceTypeOrReferenceId):
 
 CONDITION\_SOURCE\_TYPE\_SPELL = 17
 
@@ -1087,7 +1087,7 @@ Explanation of this condition or reference
 
 ### Explanation of condition types
 
-The content of the [SourceGroup](#conditions-SourceGroup) and [SourceEntry](#conditions-SourceEntry) fields depends on the [SourceTypeOrReferenceId](#conditions-SourceTypeOrReferenceId)
+The content of the [SourceGroup](conditions#SourceGroup) and [SourceEntry](conditions#SourceEntry) fields depends on the [SourceTypeOrReferenceId](conditions#SourceTypeOrReferenceId)
 
 \***CONDITION\_SOURCE\_TYPE\_NONE = 0**
 
@@ -1104,7 +1104,7 @@ The content of the [SourceGroup](#conditions-SourceGroup) and [SourceEntry](#con
 \***CONDITION\_SOURCE\_TYPE\_SPELL\_IMPLICIT\_TARGET = 13**
 
 -   -   SourceGroup: mask of effects to be affected by condition (1 - EFFECT\_0, 2 - EFFECT\_1, 4 - EFFECT\_2 - don't use wowhead to get number of effects, data from wowhead sometimes doesn't match real effect number)
-    -   SourceEntry: spell (Spell Id from  [Spell.dbc](Spell).)
+    -   SourceEntry: spell (Spell Id from  [Spell.dbc](spell).)
     -   ConditionTarget:
         -   0 - Potential target of the spell
         -   1 - Caster of the spell
@@ -1118,16 +1118,16 @@ Notes:
 
 \***CONDITION\_SOURCE\_TYPE\_GOSSIP\_MENU = 14**
 
--   -   SourceGroup: gossip menu entry ([gossip\_menu.MenuID](http://www.azerothcore.org/wiki/gossip_menu#MenuID))
-    -   SourceEntry: gossip menu text id ([gossip\_menu.TextID](http://www.azerothcore.org/wiki/gossip_menu#TextID))
+-   -   SourceGroup: gossip menu entry ([gossip\_menu.MenuID](gossip-menu#MenuID))
+    -   SourceEntry: gossip menu text id ([gossip\_menu.TextID](gossip-menu#TextID))
     -   ConditionTarget:
         -   0 - Player for which gossip text is shown
         -   1 - WorldObject providing gossip
 
 \***CONDITION\_SOURCE\_TYPE\_GOSSIP\_MENU\_OPTION = 15**
 
--   -   SourceGroup: gossip menu entry ([gossip\_menu\_option.MenuID](http://www.azerothcore.org/wiki/gossip_menu_option#MenuID))
-    -   SourceEntry: gossip menu option id ([gossip\_menu\_option.OptionID](http://www.azerothcore.org/wiki/gossip_menu_option#OptionID))
+-   -   SourceGroup: gossip menu entry ([gossip\_menu\_option.MenuID](gossip-menu-option#MenuID))
+    -   SourceEntry: gossip menu option id ([gossip\_menu\_option.OptionID](gossip-menu-option#OptionID))
     -   ConditionTarget:
         -   0 - Player for which gossip text is shown
         -   1 - WorldObject providing gossip
@@ -1135,7 +1135,7 @@ Notes:
 \***CONDITION\_SOURCE\_TYPE\_CREATURE\_TEMPLATE\_VEHICLE = 16**
 
 -   -   SourceGroup: always 0
-    -   SourceEntry: creature entry ([creature\_template.entry](http://www.azerothcore.org/wiki/creature_template#creature_template-entry))
+    -   SourceEntry: creature entry ([creature\_template.entry](creature-template-entry))
     -   ConditionTarget:
         -   0 - Player riding a vehicle
         -   1 - Vehicle creature
@@ -1145,7 +1145,7 @@ Note: creature entry must be a vehicle. Example: If this is used with CONDITION\
 \***CONDITION\_SOURCE\_TYPE\_SPELL = 17**
 
 -   -   SourceGroup: always 0
-    -   SourceEntry: spell (Spell Id from [Spell.dbc](Spell))
+    -   SourceEntry: spell (Spell Id from [Spell.dbc](spell))
     -   ConditionTarget:
         -   0 - Caster of the spell
         -   1 - Explicit target of the spell (only for spells which take object selected by caster into account)
@@ -1159,8 +1159,8 @@ Notes:
 
 \***CONDITION\_SOURCE\_TYPE\_SPELL\_CLICK\_EVENT = 18**
 
--   -   SourceGroup: creature entry ([npc\_spellclick\_spells.npc\_entry](http://www.azerothcore.org/wiki/npc_spellclick_spells#npc_entry))
-    -   SourceEntry: spell ([npc\_spellclick\_spells.spell\_id](http://www.azerothcore.org/wiki/npc_spellclick_spells#spell_id))
+-   -   SourceGroup: creature entry ([npc\_spellclick\_spells.npc\_entry](npc-spellclick-spells#npc_entry))
+    -   SourceEntry: spell ([npc\_spellclick\_spells.spell\_id](npc-spellclick-spells#spell_id))
     -   ConditionTarget:
         -   0 - Clicker
         -   1 - Spellclick target (clickee)
@@ -1168,19 +1168,19 @@ Notes:
 \***CONDITION\_SOURCE\_TYPE\_QUEST\_ACCEPT = 19**
 
 -   -   SourceGroup: ?
-    -   SourceEntry: Quest [id](http://www.azerothcore.org/wiki/quest_template#id))
+    -   SourceEntry: Quest [id](quest_template#id))
     -   ConditionTarget: always 0
 
 \***CONDITION\_SOURCE\_TYPE\_QUEST\_SHOW\_MARK = 20**
 
 -   -   SourceGroup: ?
-    -   SourceEntry: Quest [id](http://www.azerothcore.org/wiki/quest_template#id))
+    -   SourceEntry: Quest [id](quest_template#id))
     -   ConditionTarget: always 0
 
 \***CONDITION\_SOURCE\_TYPE\_VEHICLE\_SPELL = 21**
 
--   -   SourceGroup: creature entry ([creature\_template.entry](http://www.azerothcore.org/wiki/creature_template#creature_template-entry))
-    -   SourceEntry: spell (Spell Id from [Spell.dbc](Spell))
+-   -   SourceGroup: creature entry ([creature\_template.entry](creature-template-entry))
+    -   SourceEntry: spell (Spell Id from [Spell.dbc](spell))
     -   ConditionTarget:
         -   0 - Player for which spell bar is shown
         -   1 - Vehicle creature
@@ -1189,17 +1189,17 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_SOURCE\_TYPE\_SMART\_EVENT = 22**
 
--   -   SourceGroup: Id ([smart\_scripts.id](http://www.azerothcore.org/wiki/smart_scripts#id)) + 1
-    -   SourceEntry: EntryOrGuid ([smart\_scripts.entryorguid](http://www.azerothcore.org/wiki/smart_scripts#entryorguid))
-    -   SourceId: SourceType ([smart\_scripts.source\_type](http://www.azerothcore.org/wiki/smart_scripts#source_type))
+-   -   SourceGroup: Id ([smart\_scripts.id](smart-scripts#id)) + 1
+    -   SourceEntry: EntryOrGuid ([smart\_scripts.entryorguid](smart-scripts#entryorguid))
+    -   SourceId: SourceType ([smart\_scripts.source\_type](smart-scripts#source_type))
     -   ConditionTarget:
         -   0 - Invoker
         -   1 - Object
 
 \***CONDITION\_SOURCE\_TYPE\_NPC\_VENDOR = 23**
 
--   -   SourceGroup: vendor entry ([npc\_vendor.entry](http://www.azerothcore.org/wiki/npc_vendor#entry))
-    -   SourceEntry: item entry ([npc\_vendor.item](http://www.azerothcore.org/wiki/npc_vendor#item))
+-   -   SourceGroup: vendor entry ([npc\_vendor.entry](npc-vendor#entry))
+    -   SourceEntry: item entry ([npc\_vendor.item](npc-vendor#item))
     -   SourceId: always 0
 
 \***CONDITION\_SOURCE\_TYPE\_SPELL\_PROC = 24**
@@ -1218,19 +1218,19 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_AURA = 1**
 
--   -   ConditionValue1: spell (Spell Id from [Spell.dbc](Spell))
+-   -   ConditionValue1: spell (Spell Id from [Spell.dbc](spell))
     -   ConditionValue2: effect index (0-2)
     -   ConditionValue3: always 0
 
 \***CONDITION\_ITEM = 2**
 
--   -   ConditionValue1: item entry ([item\_template.entry](http://www.azerothcore.org/wiki/item_template#entry))
+-   -   ConditionValue1: item entry ([item\_template.entry](item-template#entry))
     -   ConditionValue2: item count
     -   ConditionValue3: in bank? (true=1)
 
 \***CONDITION\_ITEM\_EQUIPPED = 3**
 
--   -   ConditionValue1: item entry ([item\_template.entry](http://www.azerothcore.org/wiki/item_template#entry))
+-   -   ConditionValue1: item entry ([item\_template.entry](item-template#entry))
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
@@ -1242,7 +1242,7 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_REPUTATION\_RANK = 5**
 
--   -   ConditionValue1: faction template ID (from [Faction.dbc](Faction))
+-   -   ConditionValue1: faction template ID (from [Faction.dbc](faction))
     -   ConditionValue2: rank (Hated - 1, Hostile - 2, Unfriendly - 4, Neutral - 8, Friendly - 16, Honored - 32, Revered - 64, Exalted - 128) Flags can be added together for all ranks the condition should be true in.
     -   ConditionValue3: always 0
 
@@ -1254,19 +1254,19 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_SKILL = 7**
 
--   -   ConditionValue1: skill required, see [SkillLine.dbc](SkillLine)
+-   -   ConditionValue1: skill required, see [SkillLine.dbc](skillline)
     -   ConditionValue2: skill value
     -   ConditionValue3: always 0
 
 \***CONDITION\_QUESTREWARDED = 8**
 
--   -   ConditionValue1: ([quest\_template.id](http://www.azerothcore.org/wiki/quest_template#id))
+-   -   ConditionValue1: ([quest\_template.id](quest-template#id))
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
 \***CONDITION\_QUESTTAKEN = 9**
 
--   -   ConditionValue1: ([quest\_template.id](http://www.azerothcore.org/wiki/quest_template#id))
+-   -   ConditionValue1: ([quest\_template.id](quest-template#id))
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
@@ -1285,7 +1285,7 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_ACTIVE\_EVENT= 12**
 
--   -   ConditionValue1: event entry ([game\_event.eventEntry](http://www.azerothcore.org/wiki/game_event#evententry))
+-   -   ConditionValue1: event entry ([game\_event.eventEntry](game-event#evententry))
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
@@ -1301,7 +1301,7 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_QUEST\_NONE = 14**
 
--   -   ConditionValue1: ([quest\_template.id](http://www.azerothcore.org/wiki/quest_template#id))
+-   -   ConditionValue1: ([quest\_template.id](quest-template#id))
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
@@ -1319,19 +1319,19 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_ACHIEVEMENT = 17**
 
--   -   ConditionValue1: achievement ID from [Achievement.dbc](Achievement)
+-   -   ConditionValue1: achievement ID from [Achievement.dbc](achievement)
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
 \***CONDITION\_TITLE = 18**
 
--   -   ConditionValue1: title ID from [CharTitles.dbc](CharTitles)
+-   -   ConditionValue1: title ID from [CharTitles.dbc](chartitles)
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
 \***CONDITION\_SPAWNMASK = 19**
 
--   -   ConditionValue1: spawnMask (see [Gameobject.spawnMask](http://www.azerothcore.org/wiki/gameobject#spawnmask)/[Creature.spawnMask](http://www.azerothcore.org/wiki/creature#spawnmask))
+-   -   ConditionValue1: spawnMask (see [Gameobject.spawnMask](gameobject#spawnmask)/[Creature.spawnMask](creature#spawnmask))
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
@@ -1361,13 +1361,13 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_CREATURE\_TYPE = 24**
 
--   -   ConditionValue1: Creature type ([creature\_template.type](http://www.azerothcore.org/wiki/creature_template#creature_template-entry)). Condition is true if creature\_template.type == ConditionValue1
+-   -   ConditionValue1: Creature type ([creature\_template.type](creature-template-entry)). Condition is true if creature\_template.type == ConditionValue1
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
 \***CONDITION\_SPELL = 25**
 
--   -   ConditionValue1: spell (Spell Id from [Spell.dbc](Spell))
+-   -   ConditionValue1: spell (Spell Id from [Spell.dbc](spell))
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
@@ -1390,7 +1390,7 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_QUEST\_COMPLETE = 28**
 
--   -   ConditionValue1: Quest [id](http://www.azerothcore.org/wiki/quest_template#id)
+-   -   ConditionValue1: Quest [id](quest-template#id)
     -   ConditionValue2: Always 0
     -   ConditionValue3: always 0
 
@@ -1398,13 +1398,13 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_NEAR\_CREATURE = 29**
 
--   -   ConditionValue1: Creature [entry](http://www.azerothcore.org/wiki/creature_template#creature_template-entry)
+-   -   ConditionValue1: Creature [entry](creature-template#entry)
     -   ConditionValue2: Distance (yd)
     -   ConditionValue3: 0 = Alive , 1 = Dead
 
 \***CONDITION\_NEAR\_GAMEOBJECT = 30**
 
--   -   ConditionValue1: Gameobject [entry](http://www.azerothcore.org/wiki/gameobject_template#entry)
+-   -   ConditionValue1: Gameobject [entry](gameobject-template#entry)
     -   ConditionValue2: Distance (yd)
     -   ConditionValue3: GoState, 0 = ignore, 1 = Ready, 2 = Not Ready
 
@@ -1417,8 +1417,8 @@ Note: it will show or hide spells in vehicle spell bar.
         -   7 - TYPEID\_CORPSE (player corpse, after released spirit)
     -   ConditionValue2: Entry
         -   0 for any object of given type
-        -   [Gameobject entry](http://www.azerothcore.org/wiki/gameobject_template#entry) for TypeID = TYPEID\_GAMEOBJECT
-        -   [Creature entry](http://www.azerothcore.org/wiki/creature_template#creature_template-entry) for TypeID = TYPEID\_UNIT
+        -   [Gameobject entry](gameobject-template#entry) for TypeID = TYPEID\_GAMEOBJECT
+        -   [Creature entry](creature-template#entry) for TypeID = TYPEID\_UNIT
     -   ConditionValue3 0 for any object of given type, any other value to match that guid
 
 \***CONDITION\_TYPE\_MASK= 32**
@@ -1503,7 +1503,7 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_REALM\_ACHIEVEMENT = 39**
 
--   -   ConditionValue1: achievement ID from [Achievement.dbc](Achievement)
+-   -   ConditionValue1: achievement ID from [Achievement.dbc](achievement)
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
@@ -1539,7 +1539,7 @@ Note: it will show or hide spells in vehicle spell bar.
     -   SourceGroup  : always 0
     -   SourceEntry  : always 0
     -   ElseGroup  : OR modifier
-    -   ConditionTypeOrReference: [ConditionTypeOrReference](#conditions-ConditionTypeOrReference)
+    -   ConditionTypeOrReference: [ConditionTypeOrReference](conditions#ConditionTypeOrReference)
     -   ConditionValue1  : see above
     -   ConditionValue2  : see above
     -   ConditionValue3  : see above
@@ -1547,7 +1547,4 @@ Note: it will show or hide spells in vehicle spell bar.
     -   ErrorTextId  : see above
     -   Comment  : see above
 
-<!-- -->
-
 -   0 (If target needs to be on land)
-
