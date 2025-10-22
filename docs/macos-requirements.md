@@ -1,17 +1,22 @@
+---
+prev:
+  text: 'Start: Installation Guide'
+  link: 'classic-installation'
+
+next:
+  text: 'Step 2: Core Installation'
+  link: 'macos-core-installation'
+---
+
 # macOS Requirements
 
-| Installation Guide                                                                                                                   |                                                         |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------ |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Start: Installation Guide](classic-installation)                                                                                 | [Step 2: Core Installation >>](macos-core-installation) |
-
-|               |
-| :------------ |
-| MacOS ≥ 11    |
-| OpenSSL ≥ 3.0 |
-| Boost ≥ 1.74  |
-| MySQL ≥ 8.0.0 |
-| CMake ≥ 3.16  |
+```
+- MacOS ≥ 11
+- OpenSSL ≥ 3.0
+- Boost ≥ 1.74
+- MySQL ≥ 8.0.0
+- CMake ≥ 3.16
+```
 
 - Install XCode using the App Store, then open the terminal and type:
 
@@ -50,13 +55,4 @@ You can install Sequel Ace with:
 brew install --cask sequel-ace
 ```
 
-<br>
-
-## Help
-
-{% include help.html %}
-
-| Installation Guide                                                                                                                   |                                                         |
-| :----------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------ |
-| This article is a part of the Installation Guide. You can read it alone or click the previous link to easily move between the steps. |
-| [<< Start: Installation Guide](classic-installation)                                                                                 | [Step 2: Core Installation >>](macos-core-installation) |
+<!--@include: ./help.md-->
