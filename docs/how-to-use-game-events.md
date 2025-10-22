@@ -12,37 +12,16 @@ We're going to assume you're using the `mysql` commandline tool to manipulate th
 
 Login to the game world using the WoW client and start by teleporting to the area we intend on working in. Use the following GM command, which might require `.gm on` first: `.go xyz -9168.486 86.90783 77.05649 0 0.006`. You'll see three NPCs walking around a tent, like this:
 
-![NPCs Visible](assets/images/tutorials/game_event_example/npcs.png)
+![NPCs Visible](../assets/images/tutorials/game_event_example/npcs.png)
 
 Next, connect to the AzerothCore MySQL database and ensure you're using the correct table: \`use acore_world\`.
 
 Next, apply the following SQL to create a new event with ID 91 to your world (**note**: this will delete any existing event entry with an ID of 91):
 
 ```sql
-DELETE FROM game_event WHERE eventEntry = 91;
-INSERT INTO game_event (
-	eventEntry,
-	start_time,
-	end_time,
-	occurence,
-	length,
-	holiday,
-	holidayStage,
-	description,
-	world_event,
-	announce
-) VALUES (
-	91,
-	"2000-01-01 14:00:00",
-	"2030-12-31 14:00:00",
-	2,
-	1,
-	0,
-	0,
-	"TESTING EVENT",
-	0,
-	1
-);
+DELETE FROM `game_event` WHERE `eventEntry`=91;
+INSERT INTO `game_event` (`eventEntry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `holidayStage`, `description`, `world_event`, `announce`) VALUES
+(91, "2000-01-01 14:00:00", "2030-12-31 14:00:00", 2, 1, 0, 0, "TESTING EVENT", 0, 1);
 ```
 
 This triggers once every `occurence` minutes or `2` minutes in this case. The event will last for `length` minutes or `1` minute for us, which means after one (`1`) minute the NPCs will be added back into the game world.
@@ -50,13 +29,11 @@ This triggers once every `occurence` minutes or `2` minutes in this case. The ev
 Now update the `game_event_creature` table by applying the following SQL:
 
 ```sql
-DELETE FROM game_event_creature WHERE guid=79888;
-DELETE FROM game_event_creature WHERE guid=79889;
-DELETE FROM game_event_creature WHERE guid=79890;
-
-INSERT INTO game_event_creature (eventEntry,guid) VALUES (-91,79888);
-INSERT INTO game_event_creature (eventEntry,guid) VALUES (-91,79889);
-INSERT INTO game_event_creature (eventEntry,guid) VALUES (-91,79890);
+DELETE FROM `game_event_creature` WHERE `eventEntry`=-91 AND `guid` IN (79888, 79889, 79890);
+INSERT INTO `game_event_creature` (`eventEntry`, `guid`) VALUES
+(-91, 79888),
+(-91, 79889),
+(-91, 79890);
 ```
 
 This defines the specific NPCs GUIDs we want the game event to **despawn** _from_ the world for us. It doesn't spawn the creatures as they already exist. There are other `game_event_*` tables for managing other things too, much more complex things, but we're just selecting this table as it's an easy one to work with and use to demonstrate how events work. Note that we've set the `eventEntry` field to a **negative** value -- that is `-91` -- and not (positive) `91` because we want this event to **delete** the NPCs. Don't worry, when the event ends after `length` minutes, the NPCs will be respawned again. If you want the event to spawn creatures you've defined, then you'd a positive GUID.
@@ -65,17 +42,15 @@ Finally restart your AzerothCore world server. Because the game world has been r
 
 When you hang around the area at the coordinates from above, you'll eventually see the NPCs despawn:
 
-![No NPCs Visible](assets/images/tutorials/game_event_example/no-npcs.png)
+![No NPCs Visible](../assets/images/tutorials/game_event_example/no-npcs.png)
 
 ## Undoing Everything
 
 If you want to now remove this event from your database, the following SQL can be used:
 
 ```sql
-DELETE FROM game_event WHERE eventEntry = 91;
-DELETE FROM game_event_creature WHERE guid=79888;
-DELETE FROM game_event_creature WHERE guid=79889;
-DELETE FROM game_event_creature WHERE guid=79890;
+DELETE FROM `game_event` WHERE `eventEntry`=91;
+DELETE FROM `game_event_creature` WHERE `guid` IN (79888, 79889, 79890);
 ```
 
 You may need to reload AzerothCore's "World Server" for the changes above to take effect.
