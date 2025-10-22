@@ -1,6 +1,10 @@
-# account\_banned
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# account\_banned
 
 **The \`account\_banned\` table**
 

@@ -1,11 +1,14 @@
-# logs
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# logs
 
 **The \`logs\` table**
 
-This table stores logs from `Appender` type database in config file.
-Example db appender:
+This table stores logs from `Appender` type database in config file. Example db appender:
 
 ```ini
 Appender.DB=3,5,0
@@ -39,8 +42,8 @@ The [RealmID](realmlist#id) of the realm this log string came from. 0 if realmd.
 
 ### type
 
-The `Logger` name from config
-Example logger:
+The `Logger` name from config. Example logger:
+
 ```ini
 Logger.server=4,Console Server
 ```

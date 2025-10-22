@@ -1,6 +1,10 @@
-# autobroadcast
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# autobroadcast
 
 **The \`autobroadcast\` table**
 

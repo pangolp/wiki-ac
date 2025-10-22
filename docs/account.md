@@ -1,12 +1,16 @@
-# account
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# account
 
 **The \`account\` table**
 
 `table-no-description`
 
-**Table Structure**
+## Table Structure
 
 | Field                             | Type           | Attributes | Key | Null | Default           | Extra          | Comment       |
 | --------------------------------- | -------------- | ---------- | --- | ---- | ----------------- | -------------- | ------------- |

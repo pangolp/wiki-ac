@@ -1,6 +1,10 @@
-# motd_localized
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# motd_localized
 
 **The \`motd_localized\` table**
 
@@ -42,7 +46,6 @@ You can choose from the following:
 | 6  | esES     |
 | 7  | esMX     |
 | 8  | ruRU     |
-
 
 ### text
 

@@ -1,6 +1,10 @@
-# logs\_ip\_actions
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# logs\_ip\_actions
 
 **The \`logs\_ip\_actions\` table**
 

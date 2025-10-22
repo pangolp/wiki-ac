@@ -1,6 +1,10 @@
-# account\_muted
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# account\_muted
 
 **The \`account\_muted\` table**
 

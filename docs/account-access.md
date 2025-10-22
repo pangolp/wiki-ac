@@ -1,6 +1,10 @@
-# account\_access
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# account\_access
 
 **The \`account\_access\` table**
 

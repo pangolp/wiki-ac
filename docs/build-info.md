@@ -1,6 +1,10 @@
-# build\_info
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# build\_info
 
 **The \`build\_info\` table**
 

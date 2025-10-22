@@ -1,6 +1,10 @@
-# autobroadcast_locale
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# autobroadcast_locale
 
 **The \`autobroadcast_locale\` table**
 
@@ -48,7 +52,6 @@ You can choose from the following:
 | 6   | esES     |
 | 7   | esMX     |
 | 8   | ruRU     |
-
 
 ### text
 

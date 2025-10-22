@@ -1,6 +1,10 @@
-# secret\_digest
+---
+prev:
+  text: 'Database Auth'
+  link: 'database-auth'
+---
 
-[<-Back-to:Auth](database-auth)
+# secret\_digest
 
 **The \`secret\_digest\` table**
 
