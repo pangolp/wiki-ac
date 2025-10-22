@@ -2,7 +2,9 @@
 
 [<-Back-to:World](database-world)
 
-{% include warning.html content="THIS IS UN-USED AND INFORMATION CAN BE WRONG" %}
+::: warning
+THIS IS UN-USED AND INFORMATION CAN BE WRONG
+:::
 
 **The \`itempurchasegroup_dbc\` table**
 
@@ -142,4 +144,3 @@ Pressumed reference name.
 ### Name_Lang_Mask
 
 Pressumed reference ID for the Language Mask.
-
