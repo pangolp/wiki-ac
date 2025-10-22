@@ -12,7 +12,6 @@ If you need any help just [ask a question](How-to-ask-for-help).
 You need to have [git](https://git-scm.com/), [curl](https://curl.se/), [unzip](https://github.com/madler/unzip), [sudo](https://www.sudo.ws/) installed in your machine. 
 No other software is required to be installed manually.
 
-
 - debian/ubuntu-based: `apt update && apt install git curl unzip sudo`
 - macOS: `brew install git`
 - Windows: download and install [Git for Windows](https://gitforwindows.org/)
@@ -21,13 +20,12 @@ No other software is required to be installed manually.
 - For macOS users: install and use the latest version of bash to run the commands of the dashboard (`brew install bash`)
 - For Windows users: the commands need to be executed within the "git bash" shell or a bash-compatible shell such as WSL, cygwin etc..
   However, git bash is suggested because is preinstalled with git for windows (one of our requirements)
-  
 
 ## Setup
 
 ### Get the AC sources
 
-```
+```sh
 git clone https://github.com/azerothcore/azerothcore-wotlk.git; cd azerothcore-wotlk
 ```
 
@@ -41,7 +39,7 @@ but you can copy it under `conf/config.sh` and change values as you please.
 
 ### Install all AC dependencies
 
-```
+```sh
 ./acore.sh install-deps
 ```
 
@@ -49,7 +47,7 @@ NOTE: on Windows it must be executed as an administrator
 
 ### Build everything from scratch
 
-```
+```sh
 ./acore.sh compiler all
 ```
 
@@ -57,7 +55,7 @@ NOTE: on Windows it must be executed as an administrator
 
 - Connect to your MySQL database (with `sudo mysql -u root`) and manually create the `acore` MySQL user by running:
 
-```
+```sh
 DROP USER IF EXISTS 'acore'@'localhost';
 DROP USER IF EXISTS 'acore'@'127.0.0.1';
 CREATE USER 'acore'@'localhost' IDENTIFIED BY 'acore';
@@ -75,7 +73,7 @@ it is a good practice to change its password to something more secure.*
 
 Get the latest client data:
 
-```
+```sh
 ./acore.sh client-data
 ```
 
@@ -85,14 +83,14 @@ create these 2 files. They contain the default configuration for the worldserver
 
 #### Linux and Mac
 
-```
+```sh
 cp env/dist/etc/authserver.conf.dist env/dist/etc/authserver.conf
 cp env/dist/etc/worldserver.conf.dist env/dist/etc/worldserver.conf
 ```
 
 #### Windows and Mac
 
-```
+```sh
 cp env/dist/configs/authserver.conf.dist env/dist/configs/authserver.conf
 cp env/dist/configs/worldserver.conf.dist env/dist/configs/worldserver.conf
 ```
@@ -112,13 +110,13 @@ Please also see [Networking](networking) and [Final Server Steps](final-server-s
 
 The AzerothCore dashboard comes with a bundled restarter suite:
 
-```
+```sh
 ./acore.sh run-worldserver
 ```
 
 Wait until the process is completed then run: 
 
-```
+```sh
 ./acore.sh run-authserver
 ```
 
@@ -130,12 +128,13 @@ you may want to run them inside terminal multiplexer sessions using tools like `
 
 Update the sources:
 
-```
+```sh
 git pull
 ```
 
 Rebuild:
-```
+
+```sh
 ./acore.sh compiler build
 ```
 
@@ -144,7 +143,6 @@ Update the database:
 [database-keeping-the-server-up-to-date](database-keeping-the-server-up-to-date)
 
 That's it.
-
 
 ## Tips for dedicated (production) servers
 
@@ -248,12 +246,12 @@ fi
 On unix systems, you can then use [crontab](https://en.wikipedia.org/wiki/Cron) 
 to run the script automatically at system startup:
 
-```
+```sh
 crontab -e
 ```
 
 then add this line (replace `/path/to/startup.sh` with the path of where you placed the above script):
 
-```
+```sh
 @reboot /bin/bash /path/to/startup.sh
 ```
