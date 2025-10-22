@@ -1,14 +1,10 @@
----
-redirect_from: "/Waypoints-Information"
----
-
 # Waypoints and paths
 
 ### Different kinds of waypoint paths
 
 - Waypoint paths directly attached to a creature via [creature_addon.path_id](creature-addon#path-id) use the tables [waypoint_data](waypoint-data) and [waypoint_scripts](waypoint-scripts). They can be added and manipulated using the GM '.wp' commands.
 - [SmartAI](smart-scripts) uses waypoint paths defined in table [waypoints](waypoints).
-- The table [script_waypoint](script-waypoint) contains waypoint paths for [CreatureAI](https://github.com/azerothcore/azerothcore-wotlk/blob/master/src/server/game/AI/ScriptedAI/ScriptedCreature.h#L159).
+- The table script_waypoint contains waypoint paths for [CreatureAI](https://github.com/azerothcore/azerothcore-wotlk/blob/master/src/server/game/AI/ScriptedAI/ScriptedCreature.h#L159).
 
 ### Overview of GM '.wp' commands
 
@@ -80,18 +76,21 @@ Example creature GUID: 1234567, example path id: 123456700
 #### Delete path
 
 - Select the creature, then unload the path:
-  ```
-  .wp unload
-  ```
+
+```sh
+.wp unload
+```
 
 - Delete the path from the DB, for example 123456700:
-  ```sql
-  DELETE FROM `waypoint_data` WHERE `id` = 123456700;
-  ```
+
+```sql
+DELETE FROM `waypoint_data` WHERE `id` = 123456700;
+```
 
 #### Take over the waypoints from 'waypoint_data' to 'waypoints' (SmartAI)
 
 If you need the waypoints for SmartAI you have to copy the waypoints from table [waypoint_data](waypoint-data) into table [waypoints](waypoints) and then delete the original waypoints (unload the path for the creature via ```.wp unload``` if it was loaded before). Here an example for path 123456700:
+
 ```sql
 INSERT INTO `waypoints` (`entry`,`pointid`,`position_x`,`position_y`,`position_z`)
 SELECT `id`,`point`,`position_x`,`position_y`,`position_z` FROM `waypoint_data` WHERE `id` = 123456700;
@@ -100,15 +99,16 @@ DELETE FROM `waypoint_data` WHERE `id` = 123456700;
 
 #### Take over the waypoints from 'waypoint_data' to 'script_waypoint' (CreatureAI)
 
-The same as above, but now for [script_waypoint](script-waypoint) instead of [waypoints](waypoints). The entry of [script_waypoint](script-waypoint) has to be the [creature_template.entry](creature-template#entry), here for example 1234567:
+The same as above, but now for script_waypoint instead of [waypoints](waypoints). The entry of script_waypoint has to be the [creature_template.entry](creature-template#entry), here for example 1234567:
+
 ```sql
 INSERT INTO `script_waypoint` (`entry`,`pointid`,`location_x`,`location_y`,`location_z`)
 SELECT 1234567 AS `entry`,`point`,`position_x`,`position_y`,`position_z` FROM `waypoint_data` WHERE `id` = 123456700;
 DELETE FROM `waypoint_data` WHERE `id` = 123456700;
 
 ```
-Don't forget to unload the path from the creature if it was loaded before.
 
+Don't forget to unload the path from the creature if it was loaded before.
 
 ### Waypoint pathing best practices
 When creating paths along an incline, ground clipping can be minimized by maintaining line-of-sight.

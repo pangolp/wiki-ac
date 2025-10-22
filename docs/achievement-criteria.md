@@ -241,7 +241,7 @@ This information is retrieved from DBCStructure.h.
 
 #### OWN\_RANK = 44
 
-- This rank is **NOT** the index from [CharTitles.dbc](chartitles)
+- This rank is **NOT** the index from `CharTitles.dbc`
 
 | Column | Field | Type    |
 | ------ | ----- | ------- |
@@ -328,10 +328,10 @@ This information is retrieved from DBCStructure.h.
 
 #### EQUIP\_ITEM = 57
 
-| Column | Field        | Type    |
-| ------ | ------------ | ------- |
-| 4      | [Item](item) | iRefID  |
-| 5      | itemCount    | Integer |
+| Column | Field                       | Type    |
+| ------ | --------------------------- | ------- |
+| 4      | [Item](item-template#entry) | iRefID  |
+| 5      | itemCount                   | Integer |
 
 #### MONEY\_FROM\_QUEST\_REWARD= 62
 

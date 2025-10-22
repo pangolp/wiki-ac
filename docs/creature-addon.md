@@ -87,7 +87,7 @@ List of few known values and what their visual effects on the creature
 
 Emote ID that the creature should continually perform.
 
-List of often used emote IDs and what they do can be found [here](Emotes).
+List of often used emote IDs and what they do can be found [here](emotes).
 
 ### aiAnimKit / movementAnimKit / meleeAnimKit
 
@@ -102,7 +102,7 @@ This field controls the visibility distance for creatures:
 - Small = 2,  50.0f
 - Large = 3, 200.0f
 - Gigantic = 4, 400.0f
-- Infinite = 5, SIZE_OF_GRIDS // max distance for visible objects)
+- Infinite = 5, SIZE_OF_GRIDS // max distance for visible objects
 
 ### auras
 

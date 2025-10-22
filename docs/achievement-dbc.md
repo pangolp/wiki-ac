@@ -4,7 +4,7 @@
 
 **The \`achievement\_dbc\` table**
 
-Stores achievement data that is missing in [Achievement.dbc](Achievement)
+Stores achievement data that is missing in [Achievement.dbc](achievement)
 
 **Table Structure**
 
@@ -30,7 +30,7 @@ Stores achievement data that is missing in [Achievement.dbc](Achievement)
 
 ### ID
 
-This is the ID of the achievement from [Achievement\_Criteria.dbc](Achievement+Criteria) (2nd column)
+This is the ID of the achievement from [Achievement\_Criteria.dbc](achievement-criteria) (2nd column)
 
 ### requiredFaction
 

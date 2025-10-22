@@ -32,7 +32,7 @@ Contains all the individual glyph data for each character.
 
 ### guid
 
-The GUID of the character. See [characters.guid](characters.guid).
+The GUID of the character. See [characters.guid](characters#guid).
 
 ### talentGroup
 
@@ -41,6 +41,6 @@ The GUID of the character. See [characters.guid](characters.guid).
 | 0  | is the first spec  |
 | 1  | is the second spec |
 
-### glyph 
+### glyph
 
 The 1-6 GlyphProperties entry of the glyphs in that particular spec.

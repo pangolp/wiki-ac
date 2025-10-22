@@ -10,16 +10,16 @@ redirect_from: "/FactionTemplate"
 
 This DBC contains information on all of the individual factions. A faction entry from this DBC contains all of the needed data to calculate hostility, friendliness, or neutrality to any other faction in this DBC.
 
-**IMPORTANT: These values are only used for the [creature\_template](creature-template) and [gameobject\_template](gameobject\_template) tables.**
+**IMPORTANT: These values are only used for the [creature\_template](creature-template) and [gameobject\_template](gameobject-template) tables.**
 
-[How to Import DBC Data onto my Database](how-to-import-dbc-data-in-db)  
+[How to Import DBC Data onto my Database](how-to-import-dbc-data-in-db)
 
 ## **Table Structure**
 
 | Field Nb | Name                                     | Type             |
 | -------- | ---------------------------------------- | ---------------- |
 | 1        | ID                                       | Int              |
-| 2        | Name (Ref to [Faction.dbc](Faction.dbc)) | Int              |
+| 2        | Name (Ref to [Faction.dbc](faction))     | Int              |
 | 4        | ourMask                                  | Bitmask (4 bits) |
 | 5        | friendlyMask                             | Bitmask (4 bits) |
 | 6        | hostileMask                              | Bitmask (4 bits) |
@@ -51,8 +51,8 @@ The third mask (hostileMask) defines what faction groups this faction is hostile
 
 For the mathematically inclined, the basic formula to test for friendliness is
 
-``` cpp
-(friendlyMask & other.ourMask) != 0 
+```cpp
+(friendlyMask & other.ourMask) != 0
 ```
 
 ...where other is another faction. The same thing applies for hostility:
@@ -66,9 +66,9 @@ First, you will need to convert all of the masks to binary form with four digits
 
 Second, line up the friendlyMask or hostileMask value with the ourMask value. For example:
 
-``` cpp
-     1100 //hostileMask of faction 11
-     1000 //ourMask of faction 14
+```cpp
+1100 //hostileMask of faction 11
+1000 //ourMask of faction 14
 ```
 
 Next, perform a logical 'AND' on the two numbers, the bottom one with the one on top and follow these rules:

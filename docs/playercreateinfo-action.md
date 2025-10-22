@@ -26,11 +26,11 @@ This table holds information on what default actions a brand new character shoul
 
 ### race
 
-The character's [race](ChrRaces#content).
+The character's [race](chrraces).
 
 ### class
 
-The character's [class](ChrClasses#content).
+The character's [class](chrclasses).
 
 ### button
 
@@ -53,7 +53,7 @@ Special bars are used for stances, auras, pets, stealth, and other similar speci
 
 ### action
 
-Depending on the type value, this could be either the [spell ID](Spell#id), the [item ID](item-template#entry) or macro ID.
+Depending on the type value, this could be either the [spell ID](spell#id), the [item ID](item-template#entry) or macro ID.
 
 ### type
 

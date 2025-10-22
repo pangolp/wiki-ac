@@ -38,11 +38,11 @@ This table holds information for each character in a battleground. Also hold inf
 
 ### guid
 
-The character guid. See [characters.guid](2129969.html#characters(table)-id).
+The character guid. See [characters.guid](characters#guid).
 
 ### instanceId
 
-This is the battleground instanceId. It's shared with [instance.id](instance-2130197.html#instance-id), but instead of putting data in that table, it's here.
+This is the battleground instanceId. It's shared with [instance.id](instance#id), but instead of putting data in that table, it's here.
 
 ### team
 

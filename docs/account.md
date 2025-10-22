@@ -207,7 +207,7 @@ The character name with the rights to the .mute command that give the mute.
 
 ### locale
 
-The locale used by the client logged into this account. If multiple locale data has been configured and added to the world servers, the world servers will return the proper locale strings to the client. See [localization IDs](Localization-lang)
+The locale used by the client logged into this account. If multiple locale data has been configured and added to the world servers, the world servers will return the proper locale strings to the client.
 
 ### os
 
@@ -218,4 +218,4 @@ Stores information about client's OS. Used by Warden system.
 
 ### recruiter
 
-The account ID of another account. Used for recuit-a-friend system. See [account.id][1]
+The account ID of another account. Used for recuit-a-friend system. See [account#id][1]

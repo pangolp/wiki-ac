@@ -1135,7 +1135,7 @@ Notes:
 \***CONDITION\_SOURCE\_TYPE\_CREATURE\_TEMPLATE\_VEHICLE = 16**
 
 -   -   SourceGroup: always 0
-    -   SourceEntry: creature entry ([creature\_template.entry](creature-template-entry))
+    -   SourceEntry: creature entry ([creature\_template.entry](creature-template#entry))
     -   ConditionTarget:
         -   0 - Player riding a vehicle
         -   1 - Vehicle creature
@@ -1168,18 +1168,18 @@ Notes:
 \***CONDITION\_SOURCE\_TYPE\_QUEST\_ACCEPT = 19**
 
 -   -   SourceGroup: ?
-    -   SourceEntry: Quest [id](quest_template#id))
+    -   SourceEntry: Quest [id](quest-template#id)
     -   ConditionTarget: always 0
 
 \***CONDITION\_SOURCE\_TYPE\_QUEST\_SHOW\_MARK = 20**
 
 -   -   SourceGroup: ?
-    -   SourceEntry: Quest [id](quest_template#id))
+    -   SourceEntry: Quest [id](quest-template#id)
     -   ConditionTarget: always 0
 
 \***CONDITION\_SOURCE\_TYPE\_VEHICLE\_SPELL = 21**
 
--   -   SourceGroup: creature entry ([creature\_template.entry](creature-template-entry))
+-   -   SourceGroup: creature entry ([creature\_template.entry](creature-template#entry))
     -   SourceEntry: spell (Spell Id from [Spell.dbc](spell))
     -   ConditionTarget:
         -   0 - Player for which spell bar is shown
@@ -1325,7 +1325,7 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_TITLE = 18**
 
--   -   ConditionValue1: title ID from [CharTitles.dbc](chartitles)
+-   -   ConditionValue1: title ID from `CharTitles.dbc`
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 
@@ -1361,7 +1361,7 @@ Note: it will show or hide spells in vehicle spell bar.
 
 \***CONDITION\_CREATURE\_TYPE = 24**
 
--   -   ConditionValue1: Creature type ([creature\_template.type](creature-template-entry)). Condition is true if creature\_template.type == ConditionValue1
+-   -   ConditionValue1: Creature type ([creature\_template.type](creature-template#entry)). Condition is true if creature\_template.type == ConditionValue1
     -   ConditionValue2: always 0
     -   ConditionValue3: always 0
 

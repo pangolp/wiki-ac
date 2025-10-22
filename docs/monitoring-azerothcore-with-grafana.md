@@ -26,8 +26,8 @@ GRANT READ ON worldserver TO grafana
 
 ### Installing Grafana
 
-1. Download and install Grafana from https://grafana.com/docs/grafana/latest/installation/
-2. Open the dashboard at http://localhost:3000
+1. Download and install [Grafana](https://grafana.com/docs/grafana/latest/installation/)
+2. Open the dashboard at `http://localhost:3000`
 3. Login with username *admin* and password *admin* (defaults can be changed in Grafana's .ini file. In newer versions of Grafana you will be prompted to change this at first login.)
 4. Hover the cogwheel and select Data Sources
 5. Search for InfluxDB and select.

@@ -135,7 +135,7 @@ The content of the data fields depends on the [gameobject type](gameobject-templ
 **GAMEOBJECT\_TYPE\_DOOR = 0**
 
 - data0: startOpen (Boolean flag)
-- data1: open (LockId from Lock.dbc)
+- data1: open (LockId from `Lock.dbc`)
 - data2: autoClose (Time in milliseconds)
 - data3: noDamageImmune (Boolean flag)
 - data4: openTextID (Unknown Text ID)
@@ -149,7 +149,7 @@ The content of the data fields depends on the [gameobject type](gameobject-templ
 **GAMEOBJECT\_TYPE\_BUTTON = 1**
 
 - data0: startOpen (State)
-- data1: open (LockId from Lock.dbc)
+- data1: open (LockId from `Lock.dbc`)
 - data2: autoClose (long unknown flag)
 - data3: linkedTrap ([gameobject\_template.entry](gameobject-template#entry) (Spawned GO type 6))
 - data4: noDamageImmune (Boolean flag)
@@ -161,7 +161,7 @@ The content of the data fields depends on the [gameobject type](gameobject-templ
 
 **GAMEOBJECT\_TYPE\_QUESTGIVER = 2**
 
-- data0: open (LockId from Lock.dbc)
+- data0: open (LockId from `Lock.dbc`)
 - data1: questList (unknown ID)
 - data2: pageMaterial (PageTextMaterial.dbc)
 - data3: gossipID (gossip\_menu\_option.menu\_id)
@@ -176,7 +176,7 @@ The content of the data fields depends on the [gameobject type](gameobject-templ
 
 **GAMEOBJECT\_TYPE\_CHEST = 3**
 
-- data0: open (LockId from Lock.dbc)
+- data0: open (LockId from `Lock.dbc`)
 - data1: chestLoot ([gameobject\_loot\_template.entry](loot-template#entry)) `WDB-fields`
 - data2: chestRestockTime (time in seconds)
 - data3: consumable (State: Boolean flag)
@@ -219,7 +219,7 @@ Object type not used
 
 **GAMEOBJECT\_TYPE\_TRAP = 6**
 
-- data0: open (LockId from [Lock.dbc](lock) )
+- data0: open (LockId from `Lock.dbc`)
 - data1: level (npc equivalent level for casted spell)
 - data2: diameter (so radius \* 2)
 - data3: spell (Spell Id from [Spell.dbc](spell))
@@ -270,7 +270,7 @@ Object type not used
 
 **GAMEOBJECT\_TYPE\_GOOBER = 10**
 
--   data0: open (LockId from [Lock.dbc](lock))
+-   data0: open (LockId from `Lock.dbc`)
 -   data1: questID (Required active [quest\_template.id](quest-template#id) to work)
 -   data2: eventID (event\_script id)
 -   data3:  Time in ms before the initial state is restored
@@ -333,7 +333,7 @@ Object type not used
 
 **GAMEOBJECT\_TYPE\_CAMERA = 13**
 
--   data0: open (LockId from [Lock.dbc](lock))
+-   data0: open (LockId from `Lock.dbc`)
 -   data1: camera (Cinematic entry from [CinematicCamera.dbc](cinematiccamera))
 -   data2: eventID
 -   data3: openTextID
@@ -409,7 +409,7 @@ No data used, all are always 0
 
 **GAMEOBJECT\_TYPE\_FLAGSTAND = 24**
 
--   data0: open (LockId from [Lock.dbc](lock))
+-   data0: open (LockId from `Lock.dbc`)
 -   data1: pickupSpell (Spell Id from [Spell.dbc](spell))
 -   data2: radius (distance)
 -   data3: returnAura (Spell Id from [Spell.dbc](spell))
@@ -433,7 +433,7 @@ No data used, all are always 0
 
 **GAMEOBJECT\_TYPE\_FLAGDROP = 26**
 
--   data0: open (LockId from [Lock.dbc](lock))
+-   data0: open (LockId from `Lock.dbc`)
 -   data1: eventID (Unknown Event ID)
 -   data2: pickupSpell (Spell Id from [Spell.dbc](spell))
 -   data3: noDamageImmune (Boolean flag)
