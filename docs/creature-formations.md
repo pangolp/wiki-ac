@@ -1,6 +1,10 @@
-# creature\_formations
+---
+prev:
+  text: 'World Database'
+  link: 'database-world'
+---
 
-[<-Back-to:World](database-world)
+# creature\_formations
 
 **The \`creature\_formations\` table**
 
@@ -55,8 +59,6 @@ Value must be >=0. If the value does not meet the condition the SQL will fail on
 Angle between leader and member
 Note: Only degrees are used! Values should be between 0 and 360
 
-![angle](assets/images/angle.png)
-
 Value must be >=0. If the value does not meet the condition the SQL will fail on `creature_formations_chk_1`.
 
 ## groupAI
@@ -76,7 +78,7 @@ Sets group member behaviors, values are:
 | 512   | 0x200 | GROUP_AI_FLAG_FOLLOW_LEADER                | Noone assists noone and member follow the leader               |
 | 515   |       |                                            | Everyone assists everyone and member follow the leader         |
 
-## point\_1  
+## point\_1
 
 ## point\_2
 
@@ -85,9 +87,9 @@ These values are used to set leaderGUID pre ending path points for memberGUID's 
 If your leader has a path like the one below where he moves to point 5 then back to 1 you would set point\_1 = 4 and point\_2 = 8 on the memberGUID. If the memberGUID is at angle 90 up to point 5 it will switch to angle 270 for the return trip. This is only needed to keep creatures on the correct side. these values can be left at 0 for creatures following directly behind leaderGUID or any creatures in a circular path. 
 
 ```
-	1     2     3     4    5
+    1     2     3     4    5
 
-	-----<--------->------
+    -----<--------->------
 
        8    7      6
 ```
