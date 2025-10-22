@@ -17,11 +17,11 @@ If you look at the beginning of the code you can find *enum* named Texts which i
 **boss\_sindragosa.cpp**  Expand source
 
 ```cpp
- enum Texts
- {
-     SAY_AGGRO = 0, // You are fools to have come to this place! The icy winds of Northrend will consume your souls!
-     ...
- };
+enum Texts
+{
+    SAY_AGGRO = 0, // You are fools to have come to this place! The icy winds of Northrend will consume your souls!
+    // ...
+};
 ```
 
 You can verify in game for yourself that ***Sindragosa*** will yell this when you start a fight versus her.
@@ -38,11 +38,11 @@ There is nothing? That's a shame, but maybe, maybe you had a chance to discover 
 **boss\_sindragosa.cpp**  Expand source
 
 ```cpp
- void EnterCombat(Unit* victim) override
- {
-     ...
-     Talk(SAY_AGGRO); // interesting!
- }
+void EnterCombat(Unit* victim) override
+{
+    ...
+    Talk(SAY_AGGRO); // interesting!
+}
 ```
 
 Do you see the last line of this function? They are using something which shouldn't work!
@@ -127,12 +127,12 @@ The text the creature will say.
 
 | Value | Old value | Localization | Picture Example                               |
 |-------|-----------|--------------|-----------------------------------------------|
-| 12    | 0         | Say          | ![Say](assets/images/Say.png)                 |
-| 14    | 1         | Yell         | ![Yell](assets/images/Yell.png)               |
-| 16    | 2         | Emote        | ![Emote](assets/images/Emote.png)             |
-| 41    | 3         | Boss Emote   | ![BossEmote](assets/images/BossEmote.png)     |
-| 15    | 4         | Whisper      | ![Whisper](assets/images/Whisper.png)         |
-| 42    | 5         | Boss Whisper | ![BossWhisper](assets/images/BossWhisper.png) |
+| 12    | 0         | Say          | ![Say](../assets/images/Say.png)                 |
+| 14    | 1         | Yell         | ![Yell](../assets/images/Yell.png)               |
+| 16    | 2         | Emote        | ![Emote](../assets/images/Emote.png)             |
+| 41    | 3         | Boss Emote   | ![BossEmote](../assets/images/BossEmote.png)     |
+| 15    | 4         | Whisper      | ![Whisper](../assets/images/Whisper.png)         |
+| 42    | 5         | Boss Whisper | ![BossWhisper](../assets/images/BossWhisper.png) |
 
 ### Language
 
