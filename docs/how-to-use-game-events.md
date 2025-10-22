@@ -12,7 +12,7 @@ We're going to assume you're using the `mysql` commandline tool to manipulate th
 
 Login to the game world using the WoW client and start by teleporting to the area we intend on working in. Use the following GM command, which might require `.gm on` first: `.go xyz -9168.486 86.90783 77.05649 0 0.006`. You'll see three NPCs walking around a tent, like this:
 
-![NPCs Visible](../assets/images/tutorials/game-event-example/npcs.png)
+![NPCs Visible](../assets/images/tutorials/game_event_example/npcs.png)
 
 Next, connect to the AzerothCore MySQL database and ensure you're using the correct table: \`use acore_world\`.
 
@@ -42,7 +42,7 @@ Finally restart your AzerothCore world server. Because the game world has been r
 
 When you hang around the area at the coordinates from above, you'll eventually see the NPCs despawn:
 
-![No NPCs Visible](../assets/images/tutorials/game-event-example/no-npcs.png)
+![No NPCs Visible](../assets/images/tutorials/game_event_example/no-npcs.png)
 
 ## Undoing Everything
 
