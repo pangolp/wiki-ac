@@ -4,7 +4,7 @@
 
 **The \`vehicle\_template\_accessory\` table**
 
-Records in this table can be overwritten by [vehicle\_accessory](vehicle_accessory) table
+Records in this table can be overwritten by [vehicle\_accessory](vehicle-accessory) table
 
 **Table Structure**
 
@@ -30,11 +30,11 @@ Records in this table can be overwritten by [vehicle\_accessory](vehicle_accesso
 
 ### entry
 
-Entry of creature to be used as Vehicle. Entry from [creature_template](creature_template#entry).
+Entry of creature to be used as Vehicle. Entry from [creature_template](creature-template#entry).
 
 ### accessory\_entry
 
-Entry from [creature_template](creature_template#entry) to be used as the rider/turret/addon to the main vehicle. ID from creature\_template.
+Entry from [creature_template](creature-template#entry) to be used as the rider/turret/addon to the main vehicle. ID from creature\_template.
 
 ### seat\_id
 

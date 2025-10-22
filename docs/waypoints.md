@@ -4,9 +4,9 @@
 
 **The \`waypoints\` table**
 
-Used by [SAI](smart_scripts)
+Used by [SAI](smart-scripts)
 
-Contains waypoint data, allowing creatures to move to certain X, Y, and Z coordinates. See also [Waypoints-Information](Waypoints-Information) for general information about waypoints.
+Contains waypoint data, allowing creatures to move to certain X, Y, and Z coordinates. See also [Waypoints-Information](waypoints-information) for general information about waypoints.
 
 **Table Structure**
 
@@ -24,7 +24,7 @@ Contains waypoint data, allowing creatures to move to certain X, Y, and Z coordi
 
 #### entry
 
-Path ID. Standard way of assigning an ID is [creature\_template.entry](creature_template#entry) * 100, but any random number can be used here.
+Path ID. Standard way of assigning an ID is [creature\_template.entry](creature-template#entry) * 100, but any random number can be used here.
 
 #### pointid
 
@@ -56,4 +56,3 @@ Text comment.
 | 16208 | 2       | 6657.92     | -6345.96    | 15.3468     | Apothecary Enith point 2 |
 
 Creature with ID 16208 will now have 2 waypoints, first it will move to pointid 1, when it reaches the XYZ position, it will move to pointid 2. The comment helps clarify which creature the ID belongs to.
-
