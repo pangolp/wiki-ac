@@ -1,7 +1,3 @@
----
-redirect_from: "/Achievement_Criteria"
----
-
 # Achievement Criteria
 
 [`Back-to:DBC`](dbc-index)
@@ -12,7 +8,7 @@ This DBC has been added with WoW 3.0.1.8303 and contains the needed criteria to
 
 **Version is : 3.3.5a**
 
-[How to Import DBC Data onto my Database](how-to-import-dbc-data-in-db)  
+[How to Import DBC Data onto my Database](how-to-import-dbc-data-in-db)
 
 ## Structure
 
@@ -56,7 +52,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field      | Type    |
 | ------ | ---------- | ------- |
-| 4      | [Map](Map) | iRefID  |
+| 4      | [Map](map) | iRefID  |
 | 5      | winCount   | Integer |
 
 #### REACH\_LEVEL = 5
@@ -70,14 +66,14 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field      | Type    | Notes                               |
 | ------ | ---------- | ------- | ----------------------------------- |
-| 4      | skillID    | iRefID  | [SkillLine.dbc](SkillLine) or what? |
+| 4      | skillID    | iRefID  | [SkillLine.dbc](skillline) or what? |
 | 5      | skillLevel | Integer |                                     |
 
 #### COMPLETE\_ACHIEVEMENT = 8
 
 | Column | Field                      | Type   |
 | ------ | -------------------------- | ------ |
-| 4      | [Achievement](Achievement) | iRefID |
+| 4      | [Achievement](achievement) | iRefID |
 
 #### COMPLETE\_QUEST\_COUNT = 9
 
@@ -115,7 +111,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field      | Type   |
 | ------ | ---------- | ------ |
-| 4      | [Map](Map) | iRefID |
+| 4      | [Map](map) | iRefID |
 
 #### DEATH\_IN\_DUNGEON = 18
 
@@ -161,7 +157,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field          | Type    |
 | ------ | -------------- | ------- |
-| 4      | [Spell](Spell) | iRefID  |
+| 4      | [Spell](spell) | iRefID  |
 | 5      | spellCount     | Integer |
 
 #### CAST\_SPELL = 29
@@ -170,7 +166,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field          | Type    |
 | ------ | -------------- | ------- |
-| 4      | [Spell](Spell) | iRefID  |
+| 4      | [Spell](spell) | iRefID  |
 | 5      | castCount      | Integer |
 
 #### BG\_OBJECTIVE\_CAPTURE = 30
@@ -184,7 +180,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field             | Type    |
 | ------ | ----------------- | ------- |
-| 4      | [Area](AreaTable) | iRefID  |
+| 4      | [Area](areatable) | iRefID  |
 | 5      | killCount         | Integer |
 
 #### WIN\_ARENA = 32
@@ -193,13 +189,13 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field      | Type   |
 | ------ | ---------- | ------ |
-| 4      | [Map](Map) | iRefID |
+| 4      | [Map](map) | iRefID |
 
 #### LEARN\_SPELL = 34
 
 | Column | Field          | Type   |
 | ------ | -------------- | ------ |
-| 4      | [Spell](Spell) | iRefID |
+| 4      | [Spell](spell) | iRefID |
 
 #### OWN\_ITEM = 36
 
@@ -228,7 +224,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field      | Type    | Notes                                                                     |
 | ------ | ---------- | ------- | ------------------------------------------------------------------------- |
-| 4      | skillID    | iRefID  | [SkillLine.dbc](SkillLine) or what?                                       |
+| 4      | skillID    | iRefID  | [SkillLine.dbc](skillline) or what?                                       |
 | 5      | skillLevel | Integer | apprentice=1, journeyman=2, expert=3, artisan=4, master=5, grand master=6 |
 
 #### USE\_ITEM = 41
@@ -237,7 +233,7 @@ This information is retrieved from DBCStructure.h.
 
 #### EXPLORE\_AREA = 43
 
-- This areaReference is **NOT** the index from [AreaTable.dbc.](AreaTable) It's from WorldMapOverlay.dbc.
+- This areaReference is **NOT** the index from [AreaTable.dbc.](areatable) It's from WorldMapOverlay.dbc.
 
 | Column | Field         | Type    |
 | ------ | ------------- | ------- |
@@ -245,7 +241,7 @@ This information is retrieved from DBCStructure.h.
 
 #### OWN\_RANK = 44
 
-- This rank is **NOT** the index from [CharTitles.dbc](CharTitles)
+- This rank is **NOT** the index from [CharTitles.dbc](chartitles)
 
 | Column | Field | Type    |
 | ------ | ----- | ------- |
@@ -262,7 +258,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field              | Type    | Notes                                       |
 | ------ | ------------------ | ------- | ------------------------------------------- |
-| 4      | [Faction](Faction) | iRefID  |                                             |
+| 4      | [Faction](faction) | iRefID  |                                             |
 | 5      | reputationAmount   | Integer | Total reputation amount, so 42000 = exalted |
 
 #### GAIN\_EXALTED\_REPUTATION= 47
@@ -300,14 +296,14 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field               | Type    |
 | ------ | ------------------- | ------- |
-| 4      | [Class](ChrClasses) | iRefID  |
+| 4      | [Class](chrclasses) | iRefID  |
 | 5      | count               | Integer |
 
 #### HK\_RACE = 53
 
 | Column | Field            | Type    |
 | ------ | ---------------- | ------- |
-| 4      | [Race](ChrRaces) | iRefID  |
+| 4      | [Race](chrraces) | iRefID  |
 | 5      | count            | Integer |
 
 #### DO\_EMOTE = 54
@@ -316,7 +312,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field           | Type    | Notes                                                           |
 | ------ | --------------- | ------- | --------------------------------------------------------------- |
-| 4      | [Emote](Emotes) | iRefID  |                                                                 |
+| 4      | [Emote](emotes) | iRefID  |                                                                 |
 | 5      | count           | Integer | count of emotes, always required special target or requirements |
 
 #### HEALING\_DONE = 55
@@ -328,13 +324,13 @@ This information is retrieved from DBCStructure.h.
 | 4      | unused         | Integer |                            |
 | 5      | count          | Integer |                            |
 | 6      | flag           | Integer | 3 for battleground healing |
-| 7      | [Map](Map.dbc) | iRefID  |                            |
+| 7      | [Map](map)     | iRefID  |                            |
 
 #### EQUIP\_ITEM = 57
 
 | Column | Field        | Type    |
 | ------ | ------------ | ------- |
-| 4      | [Item](Item) | iRefID  |
+| 4      | [Item](item) | iRefID  |
 | 5      | itemCount    | Integer |
 
 #### MONEY\_FROM\_QUEST\_REWARD= 62
@@ -373,7 +369,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field                  | Type    |
 | ------ | ---------------------- | ------- |
-| 4      | [SkillLine](SkillLine) | iRefID  |
+| 4      | [SkillLine](skillline) | iRefID  |
 | 5      | spellCount             | Integer |
 
 #### WIN\_DUEL = 76
@@ -399,7 +395,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field       | Type   | Notes                                 |
 | ------ | ----------- | ------ | ------------------------------------- |
-| 4      | spellSchool | iRefID | [SkillLine](SkillLine) or Resistances |
+| 4      | spellSchool | iRefID | [SkillLine](skillline) or Resistances |
 
 #### HIGHEST\_RATING = 100
 
@@ -418,7 +414,7 @@ This information is retrieved from DBCStructure.h.
 
 | Column | Field                  | Type    |
 | ------ | ---------------------- | ------- |
-| 4      | [SkillLine](SkillLine) | iRefID  |
+| 4      | [SkillLine](skillline) | iRefID  |
 | 5      | spellCount             | Integer |
 
 #### EARN\_HONORABLE\_KILL = 113
