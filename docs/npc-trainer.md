@@ -21,7 +21,7 @@ This table contains all the spells that each trainer can teach.
 
 ### ID
 
-Usually, this would be an entry of a creature referring to [creature\_template.entry](creature_template#entry).
+Usually, this would be an entry of a creature referring to [creature\_template.entry](creature-template#entry).
 
 ### SpellID
 

@@ -200,7 +200,7 @@ The gender of the character.
 | 1   | Female      |
 | 2   | Unknown (?) |
 
-`2` is seen in table [creature\_model\_info](creature_model_info) notably.
+`2` is seen in table [creature\_model\_info](creature-model-info) notably.
 
 ### level
 
@@ -512,7 +512,7 @@ Character's equipment and bag cache.
 
 ### ammoId
 
-[Template ID](item_template#entry) of the ammo item.
+[Template ID](item-template#entry) of the ammo item.
 
 ### knownTitles
 

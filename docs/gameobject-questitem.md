@@ -17,7 +17,7 @@
 
 ### GameObjectEntry
 
-[gameobject_template.entry](gameobject_template#entry).
+[gameobject_template.entry](gameobject-template#entry).
 
 ### Idx
 
@@ -25,7 +25,7 @@ Index 0-3
 
 ### ItemId
 
-[item_template.entry](item_template#entry).
+[item_template.entry](item-template#entry).
 
 ### VerifiedBuild
 

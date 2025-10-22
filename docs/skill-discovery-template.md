@@ -40,4 +40,4 @@ If nonzero, this field controls what spell must be specifically used to trigger 
 
 ### chance
 
-The chance, in percent, that a recipe has of being automatically "discovered", whether by any recipe use or by the specific recipe use defined in [reqSpell](#skill_discovery_template-reqSpell)
+The chance, in percent, that a recipe has of being automatically "discovered", whether by any recipe use or by the specific recipe use defined in [reqSpell](#skill-discovery-template-reqSpell)

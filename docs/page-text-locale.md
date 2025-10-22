@@ -18,7 +18,7 @@ This table is used to provide localized clients with localized string for page\_
 
 ### ID
 
-This entry must be the same as  [page\_text.entry](#page_text#entry) and then the row will be used to provide localization support for this page\_text record.
+This entry must be the same as  [page\_text.entry](#page-text#entry) and then the row will be used to provide localization support for this page\_text record.
 
 ### locale
 
@@ -26,4 +26,4 @@ This entry must be the same as  [page\_text.entry](#page_text#entry) and then t
 
 ### Name
 
-Translated content for [page\_text.text](#page_text#text) field for language X.
+Translated content for [page\_text.text](#page-text#text) field for language X.

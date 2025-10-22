@@ -620,7 +620,7 @@ See the [Faction DBC file](Faction) for the IDs of all of the factions.
 
 ### RequiredReputationRank
 
-The rank the player has to have with the faction from [RequiredReputationFaction](#item_template-RequiredReputationFaction).
+The rank the player has to have with the faction from [RequiredReputationFaction](#item-template-RequiredReputationFaction).
 
 | ID  | Rank       |
 | --- | ---------- |
@@ -798,7 +798,7 @@ The number of times that the item can cast the spell. If 0, then infinite charge
 
 ### spellppmRate
 
-The proc per minute rate controlling how often the spell is triggered (if [\#spelltrigger](#item_template-spelltrigger) == 2).
+The proc per minute rate controlling how often the spell is triggered (if [\#spelltrigger](#item-template-spelltrigger) == 2).
 
 ### spellcooldown
 
@@ -891,11 +891,11 @@ Controls how the item is put away on the character. Press the 'Z' hotkey to shea
 
 ### RandomProperty
 
-The number in this field points to [item\_enchantment\_template.entry](http://www.azerothcore.org/wiki/item_enchantment_template#entry) and ties in an item's chance at having a random property attached to it when it shows up for the first time. This field and the [RandomSuffix](#item_template-RandomSuffix) field CANNOT both have non-zero values. Either one is filled, or the other. Also, the primary source for the number in this field are WDBs.
+The number in this field points to [item\_enchantment\_template.entry](http://www.azerothcore.org/wiki/item_enchantment_template#entry) and ties in an item's chance at having a random property attached to it when it shows up for the first time. This field and the [RandomSuffix](#item-template-RandomSuffix) field CANNOT both have non-zero values. Either one is filled, or the other. Also, the primary source for the number in this field are WDBs.
 
 ### RandomSuffix
 
-The number in this field points to [item\_enchantment\_template.entry](http://www.azerothcore.org/wiki/item_enchantment_template#entry) and ties in an item's chance at having a random suffix attached to it when it shows up for the first time. This field and the [RandomProperty](#item_template-RandomProperty) field CANNOT both have non-zero values. Either one is filled, or the other. Also, the primary source for the number in this field are WDBs.
+The number in this field points to [item\_enchantment\_template.entry](http://www.azerothcore.org/wiki/item_enchantment_template#entry) and ties in an item's chance at having a random suffix attached to it when it shows up for the first time. This field and the [RandomProperty](#item-template-RandomProperty) field CANNOT both have non-zero values. Either one is filled, or the other. Also, the primary source for the number in this field are WDBs.
 
 ### block
 

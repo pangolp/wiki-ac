@@ -20,11 +20,11 @@ Holds information on the game event seasonal quest relations to allow for resett
 
 ### quest
 
-[quest_template.ID](quest_template#id)
+[quest_template.ID](quest-template#id)
 
 ### event
 
-[game_event.eventEntry](game_event#eventEntry)
+[game_event.eventEntry](game-event#eventEntry)
 
 <details>
 

@@ -29,13 +29,13 @@ This table can only contain gameobjects that have a type of GAMEOBJECT\_TYPE\_CH
 
 ### pool\_entry
 
-The pool that this gameobject is in. Refers to [pool\_template.entry](pool_template#entry).
+The pool that this gameobject is in. Refers to [pool\_template.entry](pool-template#entry).
 
 ### chance
 
 The explicit percentage chance that this gameobject will be spawned.
 
-If the pool spawns just one gameobject (max\_limit = 1 in the respective [pool\_template](pool_template)), the core selects the gameobject to be spawned in a two-step process: First, only the explicitly-chanced (chance &gt; 0) gameobjects of the pool are rolled. If this roll does not produce any gameobject, all the gameobjects without an explicit chance (chance = 0) are rolled with equal chance.
+If the pool spawns just one gameobject (max\_limit = 1 in the respective [pool\_template](pool-template)), the core selects the gameobject to be spawned in a two-step process: First, only the explicitly-chanced (chance &gt; 0) gameobjects of the pool are rolled. If this roll does not produce any gameobject, all the gameobjects without an explicit chance (chance = 0) are rolled with equal chance.
 
 If the pool spawns more than one gameobject, the chance is ignored and all the gameobjects in the pool are rolled in one step with equal chance.
 

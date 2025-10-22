@@ -4,7 +4,7 @@
 
  
 
-This table will have **localized texts** for \`broadcast\_text\` table. Used in [gossips](gossip_menu_option), [creature texts](creature_text) and [npc\_text](npc_text)s.
+This table will have **localized texts** for \`broadcast\_text\` table. Used in [gossips](gossip-menu-option), [creature texts](creature-text) and [npc\_text](npc-text)s.
 
 Its purpose is (will be) used as a globalized table containing the localized texts as mentionned above.
 

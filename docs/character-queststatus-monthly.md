@@ -22,4 +22,4 @@ The character guid. See [characters.guid](characters#guid).
 
 ### quest
 
-The quest ID of the rewarded quest. See [quest\_template.id](quest_template#id).
+The quest ID of the rewarded quest. See [quest\_template.id](quest-template#id).

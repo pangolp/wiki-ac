@@ -20,7 +20,7 @@ Table used for storing custom spell attributes.
 
 ### spell_id
 
-Spell ID. See [Spell.dbc](spell_dbc) .
+Spell ID. See [Spell.dbc](spell-dbc) .
 
 ### attributes
 

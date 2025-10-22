@@ -28,7 +28,7 @@ The entry of the spell that the player learns, either from a trainer or from any
 
 ### SpellID
 
-The entry of the spell that will be automatically learned by the player when the player learns the spell specified in [entry](#spell_learn_spell-entry).
+The entry of the spell that will be automatically learned by the player when the player learns the spell specified in [entry](#spell-learn-spell-entry).
 
 ### Active
 

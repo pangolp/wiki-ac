@@ -10,7 +10,7 @@ This table handles Quest NPC emotes with emote delays.
 
 | Field                           | Type      | Attributes | Key | NULL | Default | Comment                                             |
 | ------------------------------- | --------- | ---------- | --- | ---- | ------- | --------------------------------------------------- |
-| [ID](#id)                       | MEDIUMINT | UNSIGNED   | PRI | NO   | 0       | Unique ID ([quest\_template.ID](quest_template#id)) |
+| [ID](#id)                       | MEDIUMINT | UNSIGNED   | PRI | NO   | 0       | Unique ID ([quest\_template.ID](quest-template#id)) |
 | [Emote1](#emote1)               | SMALLINT  | UNSIGNED   |     | NO   | 0       | Quest NPC [Emote](Emotes)                           |
 | [Emote2](#emote2)               | SMALLINT  | UNSIGNED   |     | NO   | 0       | Quest NPC [Emote](Emotes)                           |
 | [Emote3](#emote3)               | SMALLINT  | UNSIGNED   |     | NO   | 0       | Quest NPC [Emote](Emotes)                           |
@@ -25,7 +25,7 @@ This table handles Quest NPC emotes with emote delays.
 
 ### ID
 
-Unique ID ([quest\_template.ID](quest_template#id))
+Unique ID ([quest\_template.ID](quest-template#id))
 
 ### Emote1
 

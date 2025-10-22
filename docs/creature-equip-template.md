@@ -26,7 +26,7 @@ This table contains all the equipment combinations that can be sent for each cre
 
 ### CreatureID
 
-The direct corresponding [id](http://www.azerothcore.org/wiki/creature#id) in [creature](creature) table or [entry](http://www.azerothcore.org/wiki/creature_template#creature_template-entry) in [creature\_template](creature_template) table.
+The direct corresponding [id](http://www.azerothcore.org/wiki/creature#id) in [creature](creature) table or [entry](http://www.azerothcore.org/wiki/creature_template#creature_template-entry) in [creature\_template](creature-template) table.
 
 ### ID
 

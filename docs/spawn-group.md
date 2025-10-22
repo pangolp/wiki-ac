@@ -18,7 +18,7 @@ This table contains Spawn Group members.
 
 ### groupId
 
-This is the Group ID for the group. It must match a group already existing in the [spawn\_group\_template](spawn_group_template) table.
+This is the Group ID for the group. It must match a group already existing in the [spawn\_group\_template](spawn-group-template) table.
 
 ### spawnType
 

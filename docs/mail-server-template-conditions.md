@@ -4,9 +4,9 @@
 
 **The \`mail_server_template_conditions\` table**
 
-Works together with [mail_server_template](mail_server_template).
+Works together with [mail_server_template](mail-server-template).
 
-Note: Entries in this table will be deleted automatically when the referenced entry in [mail_server_template.id](mail_server_template#id) is deleted. CONSTRAINT `fk_mail_template_conditions`
+Note: Entries in this table will be deleted automatically when the referenced entry in [mail_server_template.id](mail-server-template#id) is deleted. CONSTRAINT `fk_mail_template_conditions`
 
 **Table Structure**
 
@@ -26,7 +26,7 @@ Unique ID.
 
 ### templateID
 
-[mail_server_template.id](mail_server_template#id).
+[mail_server_template.id](mail-server-template#id).
 
 ### conditionType
 

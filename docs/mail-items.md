@@ -26,7 +26,7 @@ Mail ID the item is attached to.
 
 ### item\_guid
 
-This is the guid of the item from [item\_instance.guid](item_instance#guid).
+This is the guid of the item from [item\_instance.guid](item-instance#guid).
 
 ### receiver
 

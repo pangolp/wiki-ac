@@ -32,14 +32,14 @@ This table is used to provide to localized clients with localized string for ite
 
 ### entry
 
-This entry must be the same as  [item\_template.entry](item_template#entry) and then the row will be used to provide localization support for this creature record.
+This entry must be the same as  [item\_template.entry](item-template#entry) and then the row will be used to provide localization support for this creature record.
 
 ### name_loc
 
-Translated content for [item\_template.name](item_template#name) field for language X.
+Translated content for [item\_template.name](item-template#name) field for language X.
 See localization languages list to know which value to use for X.
 
 ### description_loc
 
-Translated content for  [item\_template.description](item_template#description) field for language X.
+Translated content for  [item\_template.description](item-template#description) field for language X.
 See localization languages list to know which value to use for X.

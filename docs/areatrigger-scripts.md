@@ -25,7 +25,7 @@ This is the trigger identifier from [AreaTrigger.dbc](DBC-AreaTrigger)
 ### ScriptName
 
 The ScriptName for when scripting it in the core.
-This might also be 'SmartTrigger'. It will than use [SmartAI](smart_scripts).
+This might also be 'SmartTrigger'. It will than use [SmartAI](smart-scripts).
 
 ### Examples
 

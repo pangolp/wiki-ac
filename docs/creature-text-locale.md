@@ -26,7 +26,7 @@ This table is used to provide to localized clients with localized string for cre
 
 ### CreatureID
 
-This is the [creature\_template.entry](creature_template#entry) to which the script is linked to.
+This is the [creature\_template.entry](creature-template#entry) to which the script is linked to.
 
 ### GroupID
 

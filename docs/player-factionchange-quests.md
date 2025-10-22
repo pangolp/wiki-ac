@@ -17,8 +17,8 @@ Determains what quest should be changed during a faction change
 
 ### alliance_id
 
-[quest_template.id](quest_template#id).
+[quest_template.id](quest-template#id).
 
 ### horde_id
 
-[quest_template.id](quest_template#id).
+[quest_template.id](quest-template#id).

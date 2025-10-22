@@ -7,8 +7,8 @@
 This table contains information for server mail to be sent to players that meet the requirement. Mails are sent OnLogin.
 
 Works alongside
-- [mail_server_template_items](mail_server_template_items) to attach items to the mail.
-- [mail_server_template_conditions](mail_server_template_conditions) to create conditions to recieve the mail.
+- [mail_server_template_items](mail-server-template-items) to attach items to the mail.
+- [mail_server_template_conditions](mail-server-template-conditions) to create conditions to recieve the mail.
 
 **Table Structure**
 

@@ -13,7 +13,7 @@
 
 ## Documentation
 
-* [Bash system](bash_system)
+* [Bash system](bash-system)
 * [Bitwise operations](bit-and-bytes-tutorial)
 * [Changelog](changelog)
 * [CMake options](cmake-options)

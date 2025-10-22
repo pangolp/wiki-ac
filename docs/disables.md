@@ -52,7 +52,7 @@ Entry of Spell
 
 ***If sourceType = DISABLE_TYPE_QUEST:***
 
-[quest_template.id](quest_template#id)
+[quest_template.id](quest-template#id)
 
 ***If sourceType = DISABLE_TYPE_MAP:***
 
@@ -72,11 +72,11 @@ Entry of Achievement
 
 ***If sourceType = DISABLE_TYPE_GAME_EVENT:***
 
-[game_event.eventEntry](game_event#evententry)
+[game_event.eventEntry](game-event#evententry)
 
 ***If sourceType = DISABLE_TYPE_LOOT:***
 
-[item_template.entry](item_template#entry)
+[item_template.entry](item-template#entry)
 
 ### flags
 

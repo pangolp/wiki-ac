@@ -28,7 +28,7 @@ The guild ID who owns the bank. See [guild.guildid](guild#guildid).
 
 ### TabId
 
-The tab ID where the item is currently placed in. See [guild\_bank\_tab.TabId](guild_bank_tab#tabid).
+The tab ID where the item is currently placed in. See [guild\_bank\_tab.TabId](guild-bank-tab#tabid).
 
 ### SlotId
 
@@ -36,4 +36,4 @@ The slot that the item is placed in in the tab.
 
 ### item\_guid
 
-The item guid. See [item\_instance.guid](item_instance#guid).
+The item guid. See [item\_instance.guid](item-instance#guid).

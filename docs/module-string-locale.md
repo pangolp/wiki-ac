@@ -19,11 +19,11 @@ This table holds information of string entries for modules.
 
 ### module
 
-Module identifier in [module_string.module](module_string#module).
+Module identifier in [module_string.module](module-string#module).
 
 ### id
 
-String id in [module_string.id](module_string#id).
+String id in [module_string.id](module-string#id).
 
 ### locale
 
@@ -42,4 +42,4 @@ Which locale to translate to.
 
 ### string
 
-The translated text of [module_string.string](module_string#string).
+The translated text of [module_string.string](module-string#string).

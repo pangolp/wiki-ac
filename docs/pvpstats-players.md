@@ -44,7 +44,7 @@ This table holds datas about BattleGrounds scores. To enable storing this kind o
 
 ### battleground\_id
 
-Link to [pvpstats\_battlegrounds.id](pvpstats_battlegrounds#id).
+Link to [pvpstats\_battlegrounds.id](pvpstats-battlegrounds#id).
 
 ### character\_guid
 
@@ -60,4 +60,4 @@ All scores which are in common between all BattleGrounds.
 
 ### attr\_\*
 
-All scores which are not in common between all BattleGrounds. This fields changes their mean according to [pvpstats\_battlegrounds.type](pvpstats_battlegrounds#type).
+All scores which are not in common between all BattleGrounds. This fields changes their mean according to [pvpstats\_battlegrounds.type](pvpstats-battlegrounds#type).

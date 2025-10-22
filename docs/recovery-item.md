@@ -35,7 +35,7 @@ See [characters.guid](characters#guid).
 
 ### ItemEntry
 
-See [item_template.entry](item_template#entry).
+See [item_template.entry](item-template#entry).
 
 ### Count
 

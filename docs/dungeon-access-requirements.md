@@ -30,7 +30,7 @@
 
 ### dungeon_access_id
 
-ID from [dungeon_access_template.id](dungeon_access_template#id).
+ID from [dungeon_access_template.id](dungeon-access-template#id).
 
 ### requirement_type
 

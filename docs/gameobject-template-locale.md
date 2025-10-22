@@ -32,12 +32,12 @@ This table is used to provide to localized clients with localized string for gam
 
 ### entry
 
-This entry must be the same as  [gameobject_template.entry](gameobject_template#entry) and then the row will be used to provide localization support for this gameobject record.
+This entry must be the same as  [gameobject_template.entry](gameobject-template#entry) and then the row will be used to provide localization support for this gameobject record.
 
 ### name_loc
 
-Translated content for [gameobject_template.name](gameobject_template#name) field for language X.
+Translated content for [gameobject_template.name](gameobject-template#name) field for language X.
 
 ### castbarcaption_loc
 
-Translated content for  [gameobject_template.castBarCaption](gameobject_template#castbarcaption) field for language X.
+Translated content for  [gameobject_template.castBarCaption](gameobject-template#castbarcaption) field for language X.

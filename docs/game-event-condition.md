@@ -21,7 +21,7 @@ This table contains conditions to meet for the specified game event to be comple
 
 ### eventEntry
 
-This is a link to the event entry in the [game_event](#game_event#evententry) table.
+This is a link to the event entry in the [game_event](#game-event#evententry) table.
 
 ### condition_id
 
@@ -33,11 +33,11 @@ This is an arbitrary value that determines when this condition is met. For examp
 
 ### max_world_state_field
 
-This is the world state update field number sent to the client that is used to report the maximum number of needed points in order to satisfy this condition. It can be found in gossip texts referenced with $XXXXw where XXXX is the world state number that will be sent when that gossip is displayed. If you are doing a custom event, you can pick any number you want that isn't in use, it just needs to match the custom text that you put into the [npc_text](npc_text) table.
+This is the world state update field number sent to the client that is used to report the maximum number of needed points in order to satisfy this condition. It can be found in gossip texts referenced with $XXXXw where XXXX is the world state number that will be sent when that gossip is displayed. If you are doing a custom event, you can pick any number you want that isn't in use, it just needs to match the custom text that you put into the [npc_text](npc-text) table.
 
 ### done_world_state_field
 
-This is the world state update field number sent to the client that is used to report the number of accumulated points so far for this condition. It can be found in gossip texts referenced with $XXXXw where XXXX is the world state number that will be sent when that gossip is displayed. If you are doing a custom event, you can pick any number you want that isn't in use, it just needs to match the custom text that you put into the [npc_text](npc_text) table.
+This is the world state update field number sent to the client that is used to report the number of accumulated points so far for this condition. It can be found in gossip texts referenced with $XXXXw where XXXX is the world state number that will be sent when that gossip is displayed. If you are doing a custom event, you can pick any number you want that isn't in use, it just needs to match the custom text that you put into the [npc_text](npc-text) table.
 
 ### description
 

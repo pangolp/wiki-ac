@@ -32,7 +32,7 @@ Comes from sniffs.
 
 ### QuestID
 
-The Quest Id from [quest\_template.id](quest_template#id)
+The Quest Id from [quest\_template.id](quest-template#id)
 
 ### id
 

@@ -44,7 +44,7 @@
 
 ### guid
 
-The GUID of the target affected by the aura. See [character\_pet.id](character_pet#id).
+The GUID of the target affected by the aura. See [character\_pet.id](character-pet#id).
 
 ### casterGuid
 

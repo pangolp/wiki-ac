@@ -43,7 +43,7 @@ This table holds information about menu options a gossip NPC can have. Example
 ### MenuID
 
 Gossip entry from Gossip\_menu.entry this option is associated with.
-If this is the default gossip option for the selected NPC, verify that the NPC has this value in it's [creature\_template.gossip\_menu\_id](creature_template#gossipmenuid) .
+If this is the default gossip option for the selected NPC, verify that the NPC has this value in it's [creature\_template.gossip\_menu\_id](creature-template#gossipmenuid) .
 
 ### OptionID
 
@@ -104,15 +104,15 @@ The ID of the same text in broadcast\_text.ID.
 
 ### OptionNpcFlag
 
-This is the npcflag ([Creature\_template.npcflag](creature_template#npcflag) that the NPC must have to have this option display. See comments (after //) in previous table)
+This is the npcflag ([Creature\_template.npcflag](creature-template#npcflag) that the NPC must have to have this option display. See comments (after //) in previous table)
 
 ### ActionMenuID
 
-If you want to create a sub-menu, this is the ID ([gossip\_menu.entry](gossip_menu#entry) / [gossip\_menu\_option.menu\_id](gossip_menu_option#menuid)) to link to to create that sub-menu.
+If you want to create a sub-menu, this is the ID ([gossip\_menu.entry](gossip-menu#entry) / [gossip\_menu\_option.menu\_id](gossip-menu-option#menuid)) to link to to create that sub-menu.
 
 ### ActionPoiID
 
-If you want a POI (point of interest) to display on the minimap (like how a city guard places a marker when you ask directions), this is the \`entry\` from [Points\_of\_interest.entry](points_of_interest#entry)
+If you want a POI (point of interest) to display on the minimap (like how a city guard places a marker when you ask directions), this is the \`entry\` from [Points\_of\_interest.entry](points-of-interest#entry)
 
 ### BoxCoded
 
@@ -130,7 +130,7 @@ If BoxBroadCastTextID contains a valid broadcast\_text.ID, it links to broadcast
 
 ### BoxBroadcastTextID
 
-The ID of the same text in [broadcast\_text.ID](broadcast_text#id).
+The ID of the same text in [broadcast\_text.ID](broadcast-text#id).
 
 ### VerifiedBuild
 

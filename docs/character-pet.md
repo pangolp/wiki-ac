@@ -54,7 +54,7 @@ The special pet ID. This is a unique identifier among all pets.
 
 ### entry
 
-The creature entry of this pet. See [creature\_template.entry](creature_template#entry).
+The creature entry of this pet. See [creature\_template.entry](creature-template#entry).
 
 ### owner
 

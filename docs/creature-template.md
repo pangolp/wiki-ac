@@ -144,7 +144,7 @@ Used to tell the player what kind of NPC this creature is.
 
 #### gossip_menu_id
 
-The gossip ID of this creature. This field is obtained from sniff (update fields). If you can not sniff this value, and need to make one up, it must be &gt; 50000. This field is the link to [gossip_menu.MenuID](gossip_menu#menu_id).
+The gossip ID of this creature. This field is obtained from sniff (update fields). If you can not sniff this value, and need to make one up, it must be &gt; 50000. This field is the link to [gossip_menu.MenuID](gossip-menu#menu-id).
 
 #### minlevel
 
@@ -243,7 +243,7 @@ The rank of the creature:
 
 **Note 2:** Respawn times can be modified in two other places: [Creature.spawntimesecs](creature#spawntimesecs) (only for that single GUID of the creature) and in the worldserver.conf file under the "Corpse.Decay" settings (for ALL creatures of the same rank). The default \`spawntimesecs\` for all spawned creatures is 300 seconds (5 minutes). For example, using the ".npc add" command to spawn a "Normal" NPC will give it a default respawn time of 6 minutes (spawntimesecs + Corpse.Decay time). Also, the creature must decay first before it can respawn. For this reason, the Corpse Decay Time of the creature is also it's minimum respawn time, since setting the creature's Creature.spawntimesecs = 0 will remove the Default Respawn Time. In the example above, setting our Normal NPC's spawntimesecs = 0 will mean the creature's respawn time decreases from 6 minutes to 60 seconds.
 
-**Note 3:** If you want the creature to show a skull or "??" in the portrait (often with Bosses), set the [type_flags](#type_flags) to 4.
+**Note 3:** If you want the creature to show a skull or "??" in the portrait (often with Bosses), set the [type_flags](#type-flags) to 4.
 
 #### dmgschool
 
@@ -407,22 +407,22 @@ If the NPC is a trainer (has the trainer flag), then this field controls what ki
 
 | ID  | Type                     | Related Field                   | Comments            |
 | --- | ------------------------ | ------------------------------- | ------------------- |
-| 0   | TRAINER_TYPE_CLASS       | [trainer_class](#trainer_class) | Trains class spells |
-| 1   | TRAINER_TYPE_MOUNTS      | [trainer_race](#trainer_race)   | Trains riding skill |
-| 2   | TRAINER_TYPE_TRADESKILLS | [trainer_spell](#trainer_spell) | Trains professions  |
-| 3   | TRAINER_TYPE_PETS        | [trainer_class](#trainer_class) | Trains pet skills   |
+| 0   | TRAINER_TYPE_CLASS       | [trainer_class](#trainer-class) | Trains class spells |
+| 1   | TRAINER_TYPE_MOUNTS      | [trainer_race](#trainer-race)   | Trains riding skill |
+| 2   | TRAINER_TYPE_TRADESKILLS | [trainer_spell](#trainer-spell) | Trains professions  |
+| 3   | TRAINER_TYPE_PETS        | [trainer_class](#trainer-class) | Trains pet skills   |
 
 #### trainer_spell
 
-If the NPC is a trainer that teaches professions ([trainer_type](#trainer_type) = 2), then the player must already know the spell ID specified here to be able to talk to this NPC.
+If the NPC is a trainer that teaches professions ([trainer_type](#trainer-type) = 2), then the player must already know the spell ID specified here to be able to talk to this NPC.
 
 #### trainer_class
 
-If the NPC is a class trainer or a pet trainer ([trainer_type](#trainer_type) = 0 or 3), then the player's class must be the same as the value specified here to talk to this trainer. For pet trainers, this value must be 3 (hunter). See [characters.class](characters#class)
+If the NPC is a class trainer or a pet trainer ([trainer_type](#trainer-type) = 0 or 3), then the player's class must be the same as the value specified here to talk to this trainer. For pet trainers, this value must be 3 (hunter). See [characters.class](characters#class)
 
 #### trainer_race
 
-If the NPC is a mount trainer ([trainer_type](#trainer_type) = 1), then the player's race must be the same as the value specified here to talk to this trainer. See [characters.race](characters#race)
+If the NPC is a mount trainer ([trainer_type](#trainer-type) = 1), then the player's race must be the same as the value specified here to talk to this trainer. See [characters.race](characters#race)
 
 #### type
 
@@ -447,7 +447,7 @@ The type of the creature.
 
 #### type_flags
 
-This field can control whether a mob is minable or herbable or lootable by engineer. If it is either of those three, then the loot given when it is skinned/mined will be stored in the [skinning_loot_template](loot_template) table. It also controls, whether this mob can be tamed by a hunter. Other fields have no special meaning on the serverside. The entire field will be send to the client in SMSG_CREATURE_QUERY_RESPONSE
+This field can control whether a mob is minable or herbable or lootable by engineer. If it is either of those three, then the loot given when it is skinned/mined will be stored in the [skinning_loot_template](loot-template) table. It also controls, whether this mob can be tamed by a hunter. Other fields have no special meaning on the serverside. The entire field will be send to the client in SMSG_CREATURE_QUERY_RESPONSE
 
 | Flag       |            | Name                                                 | Comments                                                                                   |
 | ---------- | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -486,15 +486,15 @@ This field can control whether a mob is minable or herbable or lootable by engin
 
 #### lootid
 
-The ID of the loot template ID that this creature should use to generate loots. See [creature_loot_template.entry](loot_template#loot_template-entry)
+The ID of the loot template ID that this creature should use to generate loots. See [creature_loot_template.entry](loot-template#loot-template-entry)
 
 #### pickpocketloot
 
-The ID of the pickpocketing loot template that this creature should use to generate pickpocketing loots. See [pickpocketing_loot_template.entry](loot_template#loot_template-entry)
+The ID of the pickpocketing loot template that this creature should use to generate pickpocketing loots. See [pickpocketing_loot_template.entry](loot-template#loot-template-entry)
 
 #### skinloot
 
-The ID of the skinning loot template that this creature should use to generate skinning loots. See [skinning_loot_template.entry](loot_template#loot_template-entry)
+The ID of the skinning loot template that this creature should use to generate skinning loots. See [skinning_loot_template.entry](loot-template#loot-template-entry)
 
 #### PetSpellDataId
 
@@ -531,7 +531,7 @@ This field is overridden by ScriptName field if both are set.
 | ArcherAI       | Creature casts spell from field spell1; chases the victim.                                          |
 | TurretAI       | Creature attacks using spell from field spell1; does not move.                                      |
 | VehicleAI      | Creature acts as player vehicle.                                                                    |
-| SmartAI        | Creature uses the "[smart_scripts](smart_scripts)" table to specify it's behaviour.                 |
+| SmartAI        | Creature uses the "[smart_scripts](smart-scripts)" table to specify it's behaviour.                 |
 
 #### MovementType
 
@@ -565,14 +565,14 @@ Used to modify the Minimum/Maximum damage of a creature.
 
 The formulas to calculate the damage output are:
 
-MINDAMAGE = ((([damage_base](creature_classlevelstats#damage_base) + ([attackpower](creature_classlevelstats#attackpower) / 14) * [BaseVariance](#basevariance)) * DamageModifier) * ([BaseAttackTime](#baseattacktime) / 1000))  
-MAXDAMAGE = (((([damage_base](creature_classlevelstats#damage_base) * 1.5) + ([attackpower](creature_classlevelstats#attackpower) / 14) * [BaseVariance](creature_template#basevariance)) * DamageModifier) * ([BaseAttackTime](#baseattacktime) / 1000))
+MINDAMAGE = ((([damage_base](creature-classlevelstats#damage-base) + ([attackpower](creature-classlevelstats#attackpower) / 14) * [BaseVariance](#basevariance)) * DamageModifier) * ([BaseAttackTime](#baseattacktime) / 1000))  
+MAXDAMAGE = (((([damage_base](creature-classlevelstats#damage-base) * 1.5) + ([attackpower](creature-classlevelstats#attackpower) / 14) * [BaseVariance](creature-template#basevariance)) * DamageModifier) * ([BaseAttackTime](#baseattacktime) / 1000))
 
-damage_base comes from the creature_classlevelstats table and takes its value either from [damage_base](creature_classlevelstats#damage_base), [damage_exp1](creature_classlevelstats#damage_exp1) or [damage_exp2](creature_classlevelstats#damage_exp2) according to the creature's value in [exp](#exp) (0 = base_damage, 1 = damage_exp1, 2 = damage_exp2).
+damage_base comes from the creature_classlevelstats table and takes its value either from [damage_base](creature-classlevelstats#damage-base), [damage_exp1](creature-classlevelstats#damage-exp1) or [damage_exp2](creature-classlevelstats#damage-exp2) according to the creature's value in [exp](#exp) (0 = base_damage, 1 = damage_exp1, 2 = damage_exp2).
 
 BaseAttackTime is either [BaseAttackTime](#baseattacktime) or [RangeAttackTime](#rangeattacktime) depending on the type of attack.
 
-attackpower is either [attackpower](creature_classlevelstats#attackpower) or [rangedattackpower](creature_classlevelstats#rangedattackpower) depending on the type of attack.
+attackpower is either [attackpower](creature-classlevelstats#attackpower) or [rangedattackpower](creature-classlevelstats#rangedattackpower) depending on the type of attack.
 
 BaseVariance is either [BaseVariance](#basevariance) or [RangeVariance](#rangevariance) depending on the type of attack.
 

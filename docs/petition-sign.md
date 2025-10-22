@@ -30,7 +30,7 @@ The GUID of the owner that is trying to make the guild/arena team. See [characte
 
 ### petitionguid
 
-The GUID of the charter item. See [item\_template.guid](item_template#guid).
+The GUID of the charter item. See [item\_template.guid](item-template#guid).
 
 ### playerguid
 

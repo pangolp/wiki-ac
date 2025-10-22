@@ -34,7 +34,7 @@ The spell ID. See [Spell.dbc](spell) column 1.
 
 ### item
 
-If the spell was casted from an item, the item ID. See [item\_template.entry](item_template#entry).
+If the spell was casted from an item, the item ID. See [item\_template.entry](item-template#entry).
 
 ### time
 

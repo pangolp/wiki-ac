@@ -28,11 +28,11 @@ The GUID of the character. See [characters.guid](characters#guid).
 
 ### item\_guid
 
-The GUID of the item. See [item\_instance.guid](item_instance#guid).
+The GUID of the item. See [item\_instance.guid](item-instance#guid).
 
 ### entry
 
-The entry of the item. See [item\_template.entry](item_template#entry).
+The entry of the item. See [item\_template.entry](item-template#entry).
 
 ### flags
 

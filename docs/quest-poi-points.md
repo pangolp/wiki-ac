@@ -26,7 +26,7 @@ Comes from sniffs. Visually speaking, this table is used to identify the X and Y
 
 ### questid
 
-The Quest Id from [quest\_poi.questid](quest_poi#questid)
+The Quest Id from [quest\_poi.questid](quest-poi#questid)
 
 ### idx1
 

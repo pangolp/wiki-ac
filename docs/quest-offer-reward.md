@@ -10,7 +10,7 @@ This table is used for quests offering rewards without any required quest items 
 
 | Field                           | Type      | Attributes | Key | NULL | Default | Comment                                             |
 | ------------------------------- | --------- | ---------- | --- | ---- | ------- | --------------------------------------------------- |
-| [ID](#id)                       | MEDIUMINT | UNSIGNED   | PRI | NO   | 0       | Unique ID ([quest\_template.ID](quest_template#id)) |
+| [ID](#id)                       | MEDIUMINT | UNSIGNED   | PRI | NO   | 0       | Unique ID ([quest\_template.ID](quest-template#id)) |
 | [Emote1](#emote1)               | SMALLINT  | UNSIGNED   |     | NO   | 0       | Quest NPC [Emote](Emotes)                           |
 | [Emote2](#emote2)               | SMALLINT  | UNSIGNED   |     | NO   | 0       | Quest NPC [Emote](Emotes)                           |
 | [Emote3](#emote3)               | SMALLINT  | UNSIGNED   |     | NO   | 0       | Quest NPC [Emote](Emotes)                           |
@@ -26,7 +26,7 @@ This table is used for quests offering rewards without any required quest items 
 
 ### ID
 
-Unique ID ([quest\_template.ID](quest_template#id))
+Unique ID ([quest\_template.ID](quest-template#id))
 
 ### Emote1
 

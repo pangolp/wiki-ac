@@ -26,7 +26,7 @@ This table holds pieces of names (first and last half) that are use for pet name
 
 ### ID
 
-The ID of the entry. This field must match [pet_name_generation.id](pet_name_generation#id)
+The ID of the entry. This field must match [pet_name_generation.id](pet-name-generation#id)
 
 ### Locale
 

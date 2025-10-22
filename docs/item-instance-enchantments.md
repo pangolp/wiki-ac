@@ -1,6 +1,6 @@
 # item\_instance
 
-[<-Back-to:Item Instance](item_instance)
+[<-Back-to:Item Instance](item-instance)
 
 **The \`item\_instance\enchantments` field**
 
@@ -51,9 +51,9 @@ Each ordinal set of 3 Id is used for a different purpose.
 ### PROP_ENCHANTMENT_SLOT       
   Random Enchatments Some Items receive on creation. 
   
-  These Slots are dependent on either a Random Suffix or the RandomProperty in [item_template](item_template).   
+  These Slots are dependent on either a Random Suffix or the RandomProperty in [item_template](item-template).   
   
-  If a Random Suffix was applied when the instance we created then that is based off of the [item_enchantment_template](item_enchantment_template) table. The Item Enchantment template table gives the different Random Suffixs that might be applied to a given item along with the percent chance that they will be applied.
+  If a Random Suffix was applied when the instance we created then that is based off of the [item_enchantment_template](item-enchantment-template) table. The Item Enchantment template table gives the different Random Suffixs that might be applied to a given item along with the percent chance that they will be applied.
   
   Once an Enchant is selected then the Values in ItemRandomSuffix.dbc are used to determine how strong the enchantment is in the specified slot. 
   

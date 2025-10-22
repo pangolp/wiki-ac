@@ -4,7 +4,7 @@
 
 **Table: quest_template_addon**
 
-Contains extra definitions like linking quests, dependencies and requirements for the quests defined in the [quest_template](quest_template) table to become available to the player.
+Contains extra definitions like linking quests, dependencies and requirements for the quests defined in the [quest_template](quest-template) table to become available to the player.
 
 **Structure:**
 
@@ -32,7 +32,7 @@ Contains extra definitions like linking quests, dependencies and requirements fo
 
 ### ID
 
-Unique quest ID, matching the same quest ID in [quest_template.ID](quest_template#id)
+Unique quest ID, matching the same quest ID in [quest_template.ID](quest-template#id)
 
 ### MaxLevel
 
@@ -66,11 +66,11 @@ Allows to define a group of quests of which only one may be chosen and completed
 
 Allows to define a group of quests of which all must be completed and rewarded to start next quest. E.g. if quest 1000 dependent from one of quests 1200, 1201 and 1202 and all this quests have same negative exclusive group then all this quest must be completed and rewarded before quest 1000 can be started.
 
-Note: All quests that use an ExclusiveGroup must also have entries in [pool_template](pool_template) and [pool_quest](quest_template#examples-dealing-with-quests) for examples.
+Note: All quests that use an ExclusiveGroup must also have entries in [pool_template](pool-template) and [pool_quest](quest-template#examples-dealing-with-quests) for examples.
 
 ### RewardMailTemplateID
 
-If the quest gives as a reward an item from a possible list of items, the ID here corresponds to the proper loot template in [quest_mail_loot_template](loot_template). According to the rules in that loot template, items "looted" will be sent by mail at the completion of the quest.
+If the quest gives as a reward an item from a possible list of items, the ID here corresponds to the proper loot template in [quest_mail_loot_template](loot-template). According to the rules in that loot template, items "looted" will be sent by mail at the completion of the quest.
 
 ### RewardMailDelay
 
@@ -113,7 +113,7 @@ This field is a bitmask and is for controlling server side quest functions. Bliz
 | ----------------------------------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | QUEST_SPECIAL_FLAGS_NONE                  | 0     | No extra requirements.                                                                                                                                                                                                                   |
 | QUEST_SPECIAL_FLAGS_REPEATABLE            | 1     | Makes the quest repeatable.                                                                                                                                                                                                              |
-| QUEST_SPECIAL_FLAGS_EXPLORATION_OR_EVENT  | 2     | Makes the quest only completable by some external event (an entry in [areatrigger_involvedrelation](areatrigger_involvedrelation), spell effect quest complete or an entry in [spell_scripts](scripts) with command 7 as some examples). |
+| QUEST_SPECIAL_FLAGS_EXPLORATION_OR_EVENT  | 2     | Makes the quest only completable by some external event (an entry in [areatrigger_involvedrelation](areatrigger-involvedrelation), spell effect quest complete or an entry in [spell_scripts](scripts) with command 7 as some examples). |
 | QUEST_SPECIAL_FLAGS_AUTO_ACCEPT           | 4     | Make quest auto-accept. As of patch 3.3.5a only quests in the starter area need this flag.                                                                                                                                               |
 | QUEST_SPECIAL_FLAGS_DF_QUEST              | 8     | Only used for Dungeon Finder quests.                                                                                                                                                                                                     |
 | QUEST_SPECIAL_FLAGS_MONTHLY               | 16    | Makes the quest monthly.                                                                                                                                                                                                                 |

@@ -28,7 +28,7 @@ This table add greeting behavior to an NPC or an Gameobject.
 
 ### ID
 
-Unique ID ([creature_template.entry](creature_template#entry) or [gameobject\_template.entry](gameobject_template#entry))
+Unique ID ([creature_template.entry](creature-template#entry) or [gameobject\_template.entry](gameobject-template#entry))
 
 ### Type
 

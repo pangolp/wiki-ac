@@ -136,135 +136,135 @@ Pressumed reference ID for the Language Mask.
 
 ### ItemID_1
 
-[Entry](item_template#entry) of the item for the item set [ItemID_1](#itemid_1).
+[Entry](item-template#entry) of the item for the item set [ItemID_1](#itemid-1).
 
 ### ItemID_2
 
-[Entry](item_template#entry) of the item for the item set [ItemID_2](#itemid_2).
+[Entry](item-template#entry) of the item for the item set [ItemID_2](#itemid-2).
 
 ### ItemID_3
 
-[Entry](item_template#entry) of the item for the item set [ItemID_3](#itemid_3).
+[Entry](item-template#entry) of the item for the item set [ItemID_3](#itemid-3).
 
 ### ItemID_4
 
-[Entry](item_template#entry) of the item for the item set [ItemID_4](#itemid_3).
+[Entry](item-template#entry) of the item for the item set [ItemID_4](#itemid-3).
 
 ### ItemID_5
 
-[Entry](item_template#entry) of the item for the item set [ItemID_5](#itemid_5).
+[Entry](item-template#entry) of the item for the item set [ItemID_5](#itemid-5).
 
 ### ItemID_6
 
-[Entry](item_template#entry) of the item for the item set [ItemID_6](#itemid_6).
+[Entry](item-template#entry) of the item for the item set [ItemID_6](#itemid-6).
 
 ### ItemID_7
 
-[Entry](item_template#entry) of the item for the item set [ItemID_7](#itemid_7).
+[Entry](item-template#entry) of the item for the item set [ItemID_7](#itemid-7).
 
 ### ItemID_8
 
-[Entry](item_template#entry) of the item for the item set [ItemID_8](#itemid_8).
+[Entry](item-template#entry) of the item for the item set [ItemID_8](#itemid-8).
 
 ### ItemID_9
 
-[Entry](item_template#entry) of the item for the item set [ItemID_9](#itemid_9).
+[Entry](item-template#entry) of the item for the item set [ItemID_9](#itemid-9).
 
 ### ItemID_10
 
-[Entry](item_template#entry) of the item for the item set [ItemID_10](#itemid_10).
+[Entry](item-template#entry) of the item for the item set [ItemID_10](#itemid-10).
 
 ### ItemID_11
 
-[Entry](item_template#entry) of the item for the item set [ItemID_11](#itemid_11).
+[Entry](item-template#entry) of the item for the item set [ItemID_11](#itemid-11).
 
 ### ItemID_12
 
-[Entry](item_template#entry) of the item for the item set [ItemID_12](#itemid_12).
+[Entry](item-template#entry) of the item for the item set [ItemID_12](#itemid-12).
 
 ### ItemID_13
 
-[Entry](item_template#entry) of the item for the item set [ItemID_13](#itemid_13).
+[Entry](item-template#entry) of the item for the item set [ItemID_13](#itemid-13).
 
 ### ItemID_14
 
-[Entry](item_template#entry) of the item for the item set [ItemID_14](#itemid_14).
+[Entry](item-template#entry) of the item for the item set [ItemID_14](#itemid-14).
 
 ### ItemID_15
 
-[Entry](item_template#entry) of the item for the item set [ItemID_15](#itemid_15).
+[Entry](item-template#entry) of the item for the item set [ItemID_15](#itemid-15).
 
 ### ItemID_16
 
-[Entry](item_template#entry) of the item for the item set [ItemID_16](#itemid_16).
+[Entry](item-template#entry) of the item for the item set [ItemID_16](#itemid-16).
 
 ### ItemID_17
 
-[Entry](item_template#entry) of the item for the item set [ItemID_17](#itemid_17).
+[Entry](item-template#entry) of the item for the item set [ItemID_17](#itemid-17).
 
 ### SetSpellID_1
 
-[Entry](spell#entry) of the Spell that's used on [ItemID_1](#itemid_1).
+[Entry](spell#entry) of the Spell that's used on [ItemID_1](#itemid-1).
 
 ### SetSpellID_2
 
-[Entry](spell#entry) of the Spell that's used on [ItemID_2](#itemid_2).
+[Entry](spell#entry) of the Spell that's used on [ItemID_2](#itemid-2).
 
 ### SetSpellID_3
 
-[Entry](spell#entry) of the Spell that's used on [ItemID_3](#itemid_3).
+[Entry](spell#entry) of the Spell that's used on [ItemID_3](#itemid-3).
 
 ### SetSpellID_4
 
-[Entry](spell#entry) of the Spell that's used on [ItemID_4](#itemid_4).
+[Entry](spell#entry) of the Spell that's used on [ItemID_4](#itemid-4).
 
 ### SetSpellID_5
 
-[Entry](spell#entry) of the Spell that's used on [ItemID_5](#itemid_5).
+[Entry](spell#entry) of the Spell that's used on [ItemID_5](#itemid-5).
 
 ### SetSpellID_6
 
-[Entry](spell#entry) of the Spell that's used on [ItemID_6](#itemid_6).
+[Entry](spell#entry) of the Spell that's used on [ItemID_6](#itemid-6).
 
 ### SetSpellID_7
 
-[Entry](spell#entry) of the Spell that's used on [ItemID_7](#itemid_7).
+[Entry](spell#entry) of the Spell that's used on [ItemID_7](#itemid-7).
 
 ### SetSpellID_8
 
-[Entry](spell#entry) of the Spell that's used on [ItemID_8](#itemid_8).
+[Entry](spell#entry) of the Spell that's used on [ItemID_8](#itemid-8).
 
 ### SetThreshold_1
 
-How many pieces of the Item Set you need refering to [SetSpellID_1](#setspellid_1)
+How many pieces of the Item Set you need refering to [SetSpellID_1](#setspellid-1)
 
 ### SetThreshold_2
 
-How many pieces of the Item Set you need refering to [SetSpellID_2](#setspellid_2)
+How many pieces of the Item Set you need refering to [SetSpellID_2](#setspellid-2)
 
 ### SetThreshold_3
 
-How many pieces of the Item Set you need refering to [SetSpellID_3](#setspellid_3)
+How many pieces of the Item Set you need refering to [SetSpellID_3](#setspellid-3)
 
 ### SetThreshold_4
 
-How many pieces of the Item Set you need refering to [SetSpellID_4](#setspellid_4)
+How many pieces of the Item Set you need refering to [SetSpellID_4](#setspellid-4)
 
 ### SetThreshold_5
 
-How many pieces of the Item Set you need refering to [SetSpellID_5](#setspellid_5)
+How many pieces of the Item Set you need refering to [SetSpellID_5](#setspellid-5)
 
 ### SetThreshold_6
 
-How many pieces of the Item Set you need refering to [SetSpellID_6](#setspellid_6)
+How many pieces of the Item Set you need refering to [SetSpellID_6](#setspellid-6)
 
 ### SetThreshold_7
 
-How many pieces of the Item Set you need refering to [SetSpellID_7](#setspellid_7)
+How many pieces of the Item Set you need refering to [SetSpellID_7](#setspellid-7)
 
 ### SetThreshold_8
 
-How many pieces of the Item Set you need refering to [SetSpellID_8](#setspellid_8)
+How many pieces of the Item Set you need refering to [SetSpellID_8](#setspellid-8)
 
 ### RequiredSkill
 

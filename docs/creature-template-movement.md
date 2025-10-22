@@ -32,7 +32,7 @@ This table can be overriden by \`creature_movement_override\`
 
 #### CreatureId
 
-This is the [creature\_template.entry](creature_template#entry) to which the script is linked to.
+This is the [creature\_template.entry](creature-template#entry) to which the script is linked to.
 
 #### Ground
 

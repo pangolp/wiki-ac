@@ -6,7 +6,7 @@
 
 This table keeps entries of which player has recieved a server mail. This prevents the same mail to be sent twice to the same player.
 
-Note: Entries in this table will be deleted automatically when the referenced entry in [mail_server_template.id](mail_server_template#id) is deleted. CONSTRAINT `fk_mail_server_character`
+Note: Entries in this table will be deleted automatically when the referenced entry in [mail_server_template.id](mail-server-template#id) is deleted. CONSTRAINT `fk_mail_server_character`
 
 **Table Structure**
 
@@ -26,4 +26,4 @@ Note: Entries in this table will be deleted automatically when the referenced en
 
 ### mailId
 
-[mail_server_template.id](mail_server_template#id).
+[mail_server_template.id](mail-server-template#id).

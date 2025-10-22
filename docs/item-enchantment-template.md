@@ -22,7 +22,7 @@ This table holds enchantment chance information for items that should have eithe
 
 ### entry
 
-This field ties in with EITHER RandomProperty OR RandomSuffix fields in the [item\_template](item_template) table. An item cannot have both of those fields set at non-zero values.
+This field ties in with EITHER RandomProperty OR RandomSuffix fields in the [item\_template](item-template) table. An item cannot have both of those fields set at non-zero values.
 
 ### ench
 

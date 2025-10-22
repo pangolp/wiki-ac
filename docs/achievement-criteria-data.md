@@ -201,4 +201,4 @@ Depending on this value, it will determine how value1 and value2 are used.
 ### ScriptName
 
 The ScriptName for when scripting it in the core.
-This might also be 'SmartTrigger'. It will than use [SmartAI](smart_scripts).
+This might also be 'SmartTrigger'. It will than use [SmartAI](smart-scripts).

@@ -21,7 +21,7 @@ Basically all faction/reputation changes made when player changes faction.
 
 This is the alliance reputation ID. If you convert to horde and your reputations have a record in his table, they will be converted to [\#horde_id](#hordeid)
 
-See [character_reputation.faction](character_reputation#faction)
+See [character_reputation.faction](character-reputation#faction)
 
 ### alliance_comment
 
@@ -31,7 +31,7 @@ comment
 
 This is the horde reputation ID. If you convert to alliance and your reputations have a record in his table, they will be converted to [\#alliance_id](#allianceid)
 
-See [character_reputation.faction](character_reputation#faction)
+See [character_reputation.faction](character-reputation#faction)
 
 ### horde_comment
 

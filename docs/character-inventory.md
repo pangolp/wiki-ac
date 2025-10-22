@@ -28,7 +28,7 @@ The GUID of the character. See [characters.guid](characters#guid).
 
 ### bag
 
-If it isn't 0, then it is the bag's item GUID. See [item\_instance.guid](item_instance#guid).
+If it isn't 0, then it is the bag's item GUID. See [item\_instance.guid](item-instance#guid).
 
 ### slot
 
@@ -66,4 +66,4 @@ If the bag field is zero, then the slot has a range of 0 to 130 and the value st
 
 ### item
 
-The item's GUID. See [item\_instance.guid](item_instance#guid).
+The item's GUID. See [item\_instance.guid](item-instance#guid).

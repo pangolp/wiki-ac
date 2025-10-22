@@ -22,11 +22,11 @@ This table contains a list of quests that are tied to a specific pool.
 
 ### entry
 
-Quest [id](quest_template#id).
+Quest [id](quest-template#id).
 
 ### pool\_entry
 
-The [pool](pool_template#entry) that this quest is in. Refers to [pool\_template entry](pool_template#entry).
+The [pool](pool-template#entry) that this quest is in. Refers to [pool\_template entry](pool-template#entry).
 
 ### description
 

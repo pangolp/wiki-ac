@@ -16,7 +16,7 @@ Holds NPC quest ender relations on which NPCs finishes which quests.
 
 ### CreatureEntry
 
-[creature_template.entry](creature_template#entry).
+[creature_template.entry](creature-template#entry).
 
 ### Idx
 
@@ -24,7 +24,7 @@ Index 0-3
 
 ### ItemId
 
-[item_template.entry](item_template#entry).
+[item_template.entry](item-template#entry).
 
 ### VerifiedBuild
 

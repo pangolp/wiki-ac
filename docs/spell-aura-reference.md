@@ -2,7 +2,7 @@
 
 [`Back-to:Spell Effects Reference`](spell-effects-reference)
 
-[`Back-to:spell_dbc`](spell_dbc)
+[`Back-to:spell_dbc`](spell-dbc)
 
 
 ### This page contains description regarding the usage of EffectMiscValue and other Spell Aura values.
@@ -86,7 +86,7 @@ SPELL_AURA_TRACK_RESOURCES = 45
 - EffectMiscValueA: [Lock Type](#lock-type)
 
 SPELL_AURA_TRANSFORM = 56
-- EffectMiscValueA: [Creature ID](creature_template)
+- EffectMiscValueA: [Creature ID](creature-template)
 
 SPELL_AURA_MOD_DAMAGE_DONE_CREATURE = 59
 - EffectMiscValueA: [Creature Type](#creature-type)
@@ -113,7 +113,7 @@ SPELL_AURA_MECHANIC_IMMUNITY = 77
 - EffectMiscValueA: [Spell Mechanic](#spell-mechanic)
 
 SPELL_AURA_MOUNTED = 78
-- EffectMiscValueA: [Creature ID](creature_template)
+- EffectMiscValueA: [Creature ID](creature-template)
 
 SPELL_AURA_MOD_DAMAGE_PERCENT_DONE = 79
 - EffectMiscValueA: [School Mask](#school-mask)
@@ -194,7 +194,7 @@ SPELL_AURA_MOD_RESISTANCE_EXCLUSIVE = 143
 - EffectMiscValueA: [School Mask](#school-mask)
 
 SPELL_AURA_MECHANIC_IMMUNITY_MASK = 147
-- EffectMiscValueA: [Creature Immunity](creature_template)
+- EffectMiscValueA: [Creature Immunity](creature-template)
 
 SPELL_AURA_SPLIT_DAMAGE_FLAT = 153
 - EffectMiscValueA: [School Mask](#school-mask)
@@ -264,7 +264,7 @@ SPELL_AURA_MECHANIC_DURATION_MOD = 232
 - EffectMiscValueA: [Spell Mechanic](#spell-mechanic)
 
 SPELL_AURA_CHANGE_MODEL_FOR_ALL_HUMANOIDS = 233
-- EffectMiscValueA: [Creature ID](creature_template)
+- EffectMiscValueA: [Creature ID](creature-template)
 
 SPELL_AURA_MECHANIC_DURATION_MOD_NOT_STACK = 234
 - EffectMiscValueA: [Spell Mechanic](#spell-mechanic)
@@ -316,7 +316,7 @@ SPELL_AURA_MOD_DAMAGE_FROM_CASTER = 271
 - EffectMiscValueA: [School Mask](#school-mask)
 
 SPELL_AURA_X_RAY = 273
-- EffectMiscValueA: [Creature ID](creature_template)
+- EffectMiscValueA: [Creature ID](creature-template)
 
 SPELL_AURA_MOD_DAMAGE_DONE_FOR_MECHANIC = 276
 - EffectMiscValueA: [Spell Mechanic](#spell-mechanic)
@@ -340,7 +340,7 @@ SPELL_AURA_MOD_DAMAGE_DONE_VERSUS_AURASTATE = 303
 - EffectMiscValueA: ID from AuraStateType (master/src/server/shared/SharedDefines.h)
 
 SPELL_AURA_MOD_FAKE_INEBRIATE = 304
-- EffectMiscValueA: [Creature ID](creature_template)
+- EffectMiscValueA: [Creature ID](creature-template)
 
 SPELL_AURA_MOD_CREATURE_AOE_DAMAGE_AVOIDANCE = 310
 - EffectMiscValueA: [School Mask](#school-mask)

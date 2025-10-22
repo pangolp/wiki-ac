@@ -22,7 +22,7 @@ This table holds information on pet spell cooldowns.
 
 ### guid
 
-The GUID of the pet. See [character\_pet.id](character_pet#id).
+The GUID of the pet. See [character\_pet.id](character-pet#id).
 
 ### spell
 

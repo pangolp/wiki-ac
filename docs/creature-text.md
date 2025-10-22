@@ -159,7 +159,7 @@ The sound entry this creature will play at the same time the text is executed. S
 
 ### BroadcastTextId
 
-Id of the equivalent text found in [broadcast\_text](broadcast_text)
+Id of the equivalent text found in [broadcast\_text](broadcast-text)
 
 ### TextRange
 

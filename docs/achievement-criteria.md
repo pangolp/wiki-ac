@@ -281,7 +281,7 @@ This information is retrieved from DBCStructure.h.
 
 #### EQUIP\_EPIC\_ITEM = 49
 
-- [ItemLevel](item_template#itemlevel)
+- [ItemLevel](item-template#itemlevel)
 
 | Column | Field    | Type    |
 | ------ | -------- | ------- |

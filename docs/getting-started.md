@@ -138,7 +138,7 @@ In a nutshell, with SmartAI you can make an entity (for example a Creature) perf
 
 For example, you can make a creature cast a spell (action), when its health goes below 50% of its total health (event), against a random member of the party group (target).
 
-Technically the `smart_script` is just a table inside the world database (and its documentation can be found [here](smart_scripts)). Tools like Keira3 help you working with SmartAI using a practical graphic interface.
+Technically the `smart_script` is just a table inside the world database (and its documentation can be found [here](smart-scripts)). Tools like Keira3 help you working with SmartAI using a practical graphic interface.
 
 Try to open Keira3, look for any creature that has "SmartAI" as "AIName", open it and click on "SmartAI" on the right menu.
 You'll be prompted with a visual editor that will assist you when working with SmartAI.

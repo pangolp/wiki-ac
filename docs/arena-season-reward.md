@@ -19,7 +19,7 @@
 
 ### group_id
 
-[arena_season_reward_group.id](arena_season_reward_group#id)
+[arena_season_reward_group.id](arena-season-reward-group#id)
 
 ### type
 
@@ -29,4 +29,4 @@
 ### entry
 
 - achievement ID
-- [item_tempalte.entry](item_template#entry)
+- [item_tempalte.entry](item-template#entry)

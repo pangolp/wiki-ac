@@ -253,7 +253,7 @@ This field defines under what category the quest falls in the quest log.
 
 If **value &gt; 0** then value is Zone IDs taken from AreaTable.dbc.
 
-if **value &lt; 0** then (**-value**) is quest sort id: (in general profession or class quests. Also see [RequiredSkillPoints](#quest_template-RequiredSkillPoints) ) Value is ID from QuestSort.dbc
+if **value &lt; 0** then (**-value**) is quest sort id: (in general profession or class quests. Also see [RequiredSkillPoints](#quest-template-RequiredSkillPoints) ) Value is ID from QuestSort.dbc
 
 ### QuestInfoID
 
@@ -301,11 +301,11 @@ This field is used for reputation lookup in QuestFactionReward.dbc if quest_temp
 
 The quest entry from a **creature** or **gameobject** that ends a quest and starts a new one. The result is, that if you end the quest, the new quest instantly appears from the quest giver.
 
-See the [examples section](#quest_template-Examples) for examples.
+See the [examples section](#quest-template-Examples) for examples.
 
 ### RewardXPDifficulty
 
-According to the [Level](#quest_template-Level), the basic experience with index *RewardXPDifficulty* is taken from QuestXP.dbc.
+According to the [Level](#quest-template-Level), the basic experience with index *RewardXPDifficulty* is taken from QuestXP.dbc.
 
 This field also controls the XP given as the XP is calculated from the value in this field by the following formula. If the quest is repeatable, XP will be given only once. The total XP that a character will receive is also affected by the level difference between the character's level and the quest's level.
 
@@ -323,15 +323,15 @@ Money earned by completing the quest (if value &gt; 0) or money requirement to c
 
 ### RewardMoneyDifficulty
 
-ID refers to one of the money factor included in [MoneyFactor](quest_money_reward) ordered by level.
+ID refers to one of the money factor included in [MoneyFactor](quest-money-reward) ordered by level.
 
 ### RewardDisplaySpell
 
-Spell that is shown to be casted on quest completion in the quest log. Note that this spell will NOT be casted if [RewardSpell](#quest_template-RewardSpell) is non-zero. The spell in the other field will be casted instead, in which case the spell here only serves as the visual in the quest log.
+Spell that is shown to be casted on quest completion in the quest log. Note that this spell will NOT be casted if [RewardSpell](#quest-template-RewardSpell) is non-zero. The spell in the other field will be casted instead, in which case the spell here only serves as the visual in the quest log.
 
 ### RewardSpell
 
-Spell that is shown to be casted on quest completion in the quest log. Note that this spell will NOT be casted if [RewardSpell](quest_template#rewardspell) is non-zero. The spell in the other field will be casted instead, in which case the spell here only serves as the visual in the quest log.
+Spell that is shown to be casted on quest completion in the quest log. Note that this spell will NOT be casted if [RewardSpell](quest-template#rewardspell) is non-zero. The spell in the other field will be casted instead, in which case the spell here only serves as the visual in the quest log.
 
 NOTE: This field comes straight from the WDB and should not be changed.
 
@@ -398,7 +398,7 @@ Displays how much players you need to kill betd class=td class=a class=/td data-
 
 ### RewardItem1
 
-[item Id 1](item_template#entry) given for reward (no choice).
+[item Id 1](item-template#entry) given for reward (no choice).
 
 ### RewardAmount1
 
@@ -406,7 +406,7 @@ Amount to be obtained from the above-mentioned item
 
 ### RewardItem2
 
-[item Id 2](item_template#entry) given for reward (no choice).
+[item Id 2](item-template#entry) given for reward (no choice).
 
 ### RewardAmount2
 
@@ -414,7 +414,7 @@ Amount to be obtained from the above-mentioned item
 
 ### RewardItem3
 
-[item Id 3](item_template#entry) given for reward (no choice).
+[item Id 3](item-template#entry) given for reward (no choice).
 
 ### RewardAmount3
 
@@ -422,7 +422,7 @@ Amount to be obtained from the above-mentioned item
 
 ### RewardItem4
 
-[item Id 4](item_template#entry) given for reward (no choice).
+[item Id 4](item-template#entry) given for reward (no choice).
 
 ### RewardAmount4
 
@@ -624,7 +624,7 @@ The number of times the creature or gameobject must be killed or casted upon.
 ### RequiredItemId5
 ### RequiredItemId6
 
-[Id](item_template#entry) of required item to complete the quest.
+[Id](item-template#entry) of required item to complete the quest.
 
 ### RequiredItemCount1
 ### RequiredItemCount2

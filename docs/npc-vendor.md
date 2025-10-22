@@ -8,7 +8,7 @@ This table holds the vendor data for all NPCs that sell items or currencies. A v
 
 ### Prices
 
-The price (in gold) for each item or currency is defined in its item template related entry as [item_template.BuyPrice](item_template#buyprice).
+The price (in gold) for each item or currency is defined in its item template related entry as [item_template.BuyPrice](item-template#buyprice).
 Special costs (honor, tokens etc...) are defined in this table in the column [ExtendedCost](#extendedcost).
 
 ### GM mode
@@ -39,7 +39,7 @@ If you open the vendor's window in GM mode, you will see all the items sold by t
 
 ### entry
 
-The ID of the creature. See [creature\_template.entry](creature_template#entry).
+The ID of the creature. See [creature\_template.entry](creature-template#entry).
 
 ### slot
 
@@ -48,7 +48,7 @@ Position of the item when the vendor window opens. It starts from 0 to x, from t
 
 ### item
 
-The item ID. See  [item\_template.entry](item_template#entry).
+The item ID. See  [item\_template.entry](item-template#entry).
 
 ### maxcount
 
@@ -56,8 +56,8 @@ The maximum number of items carried by the vendor at any time. If you want the v
 
 ### incrtime
 
-Combined with [maxcount](#maxcount), this field tells how often (in seconds) the vendor list is refreshed and the limited item copies are restocked. For limited item copies, every refresh, the quantity is increased by [item\_template.BuyCount](item_template#buycount) .
+Combined with [maxcount](#maxcount), this field tells how often (in seconds) the vendor list is refreshed and the limited item copies are restocked. For limited item copies, every refresh, the quantity is increased by [item\_template.BuyCount](item-template#buycount) .
 
 ### ExtendedCost
 
-The value here corresponds to the ID in [ItemExtendedCost.dbc](itemextendedcost_dbc#id) and that ID controls the item's non monetary price, be it honor points, arena points, different types of badges or any combination of the above.
+The value here corresponds to the ID in [ItemExtendedCost.dbc](itemextendedcost-dbc#id) and that ID controls the item's non monetary price, be it honor points, arena points, different types of badges or any combination of the above.

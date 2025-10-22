@@ -35,7 +35,7 @@ This entry must be the same as creature_template.entry and then the row will be 
 
 ### name_loc
 
-Translated content for [creature_template.name](creature_template#name) field for language X.
+Translated content for [creature_template.name](creature-template#name) field for language X.
 
 ### subname_loc
 

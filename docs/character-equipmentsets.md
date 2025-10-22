@@ -90,7 +90,7 @@ Name taken from ItemDisplayInfo.dbc, column 6.
 
 ### item
 
-Values taken from [item\_instance.guid](item_instance#guid).
+Values taken from [item\_instance.guid](item-instance#guid).
 
 | ID  | Name      |
 | --- | --------- |

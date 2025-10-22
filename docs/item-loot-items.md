@@ -43,7 +43,7 @@ the player either removes an item or destroys the container item.
 
 The GUID of the container item that holds the loot item(s). See item\_instance.guid
 
-Note: A [container\_id](#item_loot_items-container_id) can have more than one [item\_id](#item_loot_items-item_id) associated with it.
+Note: A [container\_id](#item-loot-items-container-id) can have more than one [item\_id](#item-loot-items-item-id) associated with it.
 
 ### item\_id
 

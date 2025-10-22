@@ -48,7 +48,7 @@ The GUID of the item. This number is unique for each item instance.
 
 ### itemEntry
 
-[Item_template.entry](item_template#entry).
+[Item_template.entry](item-template#entry).
 
 ### owner\_guid
 
@@ -60,7 +60,7 @@ The GUID of the character who has ownership of this item. See [characters.guid](
 
 ### giftCreatorGuid
 
-[Characters.guid](characters#guid) of character who created the [item](character_gifts#item_guid).
+[Characters.guid](characters#guid) of character who created the [item](character-gifts#item-guid).
 
 ### count
 
@@ -80,7 +80,7 @@ The number of charges for each of the five possible spellcharges on an item, s
 
 ### enchantments
 
-Enchantments from SpellItemEnchantment.dbc see: [item_instance_enchantments](item_instance_enchantments)
+Enchantments from SpellItemEnchantment.dbc see: [item_instance_enchantments](item-instance-enchantments)
 
 ### randomPropertyId
 

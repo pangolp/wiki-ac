@@ -4,7 +4,7 @@
 
  
 
-This table (ref <https://github.com/TrinityCore/TrinityCore/commit/60e87db>) will have **everything** you need for your scripts' texts, such as: [gossips](gossip_menu_option), [creature texts](creature_text) and [npc\_text](npc_text)s.
+This table (ref <https://github.com/TrinityCore/TrinityCore/commit/60e87db>) will have **everything** you need for your scripts' texts, such as: [gossips](gossip-menu-option), [creature texts](creature-text) and [npc\_text](npc-text)s.
 
 Its purpose is (will be) used as a globalized table containing the texts as mentionned above, and things like their sounds, their emotes and the languages in which the texts should be said.
 
@@ -16,10 +16,10 @@ Its purpose is (will be) used as a globalized table containing the texts as ment
 
 | Field                                    | Type     | Attributes | Key | Null | Default | Extra | Comment |
 | ---------------------------------------- | -------- | ---------- | --- | ---- | ------- | ----- | ------- |
-| [ID](#broadcast_text-ID)                 | INT      | UNSIGNED   | PRI | NO   | 0       |       |         |
-| [LanguageID](#broadcast_text-Language)   | INT      | UNSIGNED   |     | NO   | 0       |       |         |
-| [MaleText](#broadcast_text-MaleText)     | text     | SIGNED     |     | YES  | NULL    |       |         |
-| [FemaleText](#broadcast_text-FemaleText) | text     | SIGNED     |     | YES  | NULL    |       |         |
+| [ID](#broadcast-text-ID)                 | INT      | UNSIGNED   | PRI | NO   | 0       |       |         |
+| [LanguageID](#broadcast-text-Language)   | INT      | UNSIGNED   |     | NO   | 0       |       |         |
+| [MaleText](#broadcast-text-MaleText)     | text     | SIGNED     |     | YES  | NULL    |       |         |
+| [FemaleText](#broadcast-text-FemaleText) | text     | SIGNED     |     | YES  | NULL    |       |         |
 | EmoteID1                                 | INT      | UNSIGNED   |     | NO   | 0       |       |         |
 | EmoteID2                                 | INT      | UNSIGNED   |     | NO   | 0       |       |         |
 | EmoteID3                                 | INT      | UNSIGNED   |     | NO   | 0       |       |         |

@@ -22,7 +22,7 @@ This table holds information on individual pet spells.
 
 ### guid
 
-The pet GUID. See [character\_pet.id](character_pet#id).
+The pet GUID. See [character\_pet.id](character-pet#id).
 
 ### spell
 

@@ -20,8 +20,8 @@ Holds game object quest giver relations. The game objects in this table should a
 
 ### id
 
-The template ID of the game object. See [gameobject\_template.entry](gameobject_template#entry)
+The template ID of the game object. See [gameobject\_template.entry](gameobject-template#entry)
 
 ### quest
 
-The quest ID that this game object starts. See [quest\_template.id](quest_template#id)
+The quest ID that this game object starts. See [quest\_template.id](quest-template#id)

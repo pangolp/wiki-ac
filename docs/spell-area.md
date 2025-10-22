@@ -44,11 +44,11 @@ The area ID. Type ".gps" in-game and find the "Area:" number to use for this cel
 
 ### quest\_start
 
-The entry of the quest which the player must have in the state defined by **quest\_start\_status**. See [quest\_template.id](quest_template#id).
+The entry of the quest which the player must have in the state defined by **quest\_start\_status**. See [quest\_template.id](quest-template#id).
 
 ### quest\_end
 
-The entry of the quest which the player must not have in the state defined by **quest\_end\_status**. See [quest\_template.id](quest_template#id). Setting both **quest\_start** and **quest\_end** to the same value is useless.
+The entry of the quest which the player must not have in the state defined by **quest\_end\_status**. See [quest\_template.id](quest-template#id). Setting both **quest\_start** and **quest\_end** to the same value is useless.
 
 ### aura\_spell
 
@@ -56,9 +56,9 @@ If set, this value (plus or minus aura spell ID from Spell.dbc) imposes addition
 
 The value has the following effect:
 
-- **< 0**  (negative values) If the player has aura **-aura\_spell** then the [spell](#spell_area-spell) will not be activated.
+- **< 0**  (negative values) If the player has aura **-aura\_spell** then the [spell](#spell-area-spell) will not be activated.
 -   **0**   this column is ignored.
-- **> 0**  (positive values) If the player has no aura **aura\_spell** then the [spell](#spell_area-spell) will not be activated.
+- **> 0**  (positive values) If the player has no aura **aura\_spell** then the [spell](#spell-area-spell) will not be activated.
 
 ### racemask
 

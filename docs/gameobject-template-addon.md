@@ -20,7 +20,7 @@ This table holds additional information on gameobjects.
 
 ### entry
 
-ID of the game object, from [gameobject\_template.entry](gameobject_template#entry).
+ID of the game object, from [gameobject\_template.entry](gameobject-template#entry).
 
 ### faction
 

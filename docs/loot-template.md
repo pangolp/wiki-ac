@@ -25,27 +25,27 @@
 
 | Table                     | Entry                                                                | Comment                                                                                   |
 | ------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| creature_loot_template    | [creature_template.lootid](creature_template#lootid)                 | Usually the same as [creature_template.entry](creature_template#entry)                    |
-| disenchant_loot_template  | [item_template.DisenchantID](item_template#disenchantid)             |                                                                                           |
+| creature_loot_template    | [creature_template.lootid](creature-template#lootid)                 | Usually the same as [creature_template.entry](creature-template#entry)                    |
+| disenchant_loot_template  | [item_template.DisenchantID](item-template#disenchantid)             |                                                                                           |
 | fishing_loot_template     | area id                                                              |                                                                                           |
-| gameobject_loot_template  | [gameobject_template.data1](gameobject_template#data023)             | Need to have gamobject type GAMEOBJECT_TYPE_CHEST (3) or GAMEOBJECT_TYPE_FISHINGHOLE (25) |
-| item_loot_template        | [item_template.entry](item_template#entry)                           |                                                                                           |
+| gameobject_loot_template  | [gameobject_template.data1](gameobject-template#data023)             | Need to have gamobject type GAMEOBJECT_TYPE_CHEST (3) or GAMEOBJECT_TYPE_FISHINGHOLE (25) |
+| item_loot_template        | [item_template.entry](item-template#entry)                           |                                                                                           |
 | mail_loot_template        | mail template id                                                     |                                                                                           |
-| milling_loot_template     | [item_template.entry](item_template#entry)                           |                                                                                           |
-| pickpocket_loot_template  | [creature_template.pickpocketloot](creature_template#pickpocketloot) |                                                                                           |
+| milling_loot_template     | [item_template.entry](item-template#entry)                           |                                                                                           |
+| pickpocket_loot_template  | [creature_template.pickpocketloot](creature-template#pickpocketloot) |                                                                                           |
 | player_loot_template      | TeamID (0 Horde/1 Alliance)                                          | Only drops in BGs as insignia removal.                                                    |
-| prospecting_loot_template | [item_template.entry](item_template#entry)                           |                                                                                           |
-| reference_loot_template   | [\*_loot_template.reference](loot_template#reference)                |                                                                                           |
-| skinning_loot_template    | [creature_template.skinloot](creature_template#skinloot)             | Also includes minable/herbable loot from creatures                                        |
+| prospecting_loot_template | [item_template.entry](item-template#entry)                           |                                                                                           |
+| reference_loot_template   | [\*_loot_template.reference](loot-template#reference)                |                                                                                           |
+| skinning_loot_template    | [creature_template.skinloot](creature-template#skinloot)             | Also includes minable/herbable loot from creatures                                        |
 | spell_loot_template       | SpellID                                                              |                                                                                           |
 
 ### Item
 
-[item_template.entry](item_template#entry)
+[item_template.entry](item-template#entry)
 
 ### Reference
 
-[reference_loot_template.entry](loot_template#entry).
+[reference_loot_template.entry](loot-template#entry).
 
 Uses the entries in the referenced template in the current template.
 
@@ -61,7 +61,7 @@ If the field is left at 0 the chance will be even across all entries with the sa
 
 0 - Loot is always available.
 
-1 - Loot can only drop if the player has a quest with the item id specified in [quest_template.RequiredItemId1-6](quest_template#requireditemid1).
+1 - Loot can only drop if the player has a quest with the item id specified in [quest_template.RequiredItemId1-6](quest-template#requireditemid1).
 
 ### LootMode
 

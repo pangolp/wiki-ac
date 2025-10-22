@@ -144,8 +144,8 @@ This table is used to provide localized clients with localized string for npc\_t
 
 ### ID
 
-This id must be the same as [npc\_text.ID](npc_text#id) and then the row will be used to provide localization support for this npc\_text record.
+This id must be the same as [npc\_text.ID](npc-text#id) and then the row will be used to provide localization support for this npc\_text record.
 
 ### Text_loc
 
-Translated content for corresponding field [npc\_text.text0 \_0](npc_text#text0_0-to-text7_0) - [npc\_text-text7\_1](npc_text#text0_0-to-text7_1) field for language X.
+Translated content for corresponding field [npc\_text.text0 \_0](npc-text#text0-0-to-text7-0) - [npc\_text-text7\_1](npc-text#text0-0-to-text7-1) field for language X.

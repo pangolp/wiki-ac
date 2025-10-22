@@ -24,4 +24,4 @@ This is the event that will start when all prerequisite events have been complet
 
 ### prerequisite\_event
 
-The is the event that must be completed before the next [event](#game_event_prerequisite-eventEntry) will start.
+The is the event that must be completed before the next [event](#game-event-prerequisite-eventEntry) will start.

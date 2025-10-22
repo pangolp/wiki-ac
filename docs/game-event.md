@@ -58,7 +58,7 @@ String containing the name of the event displayed in console each time it starts
 
 ### world_event
 
-This is a boolean field that determines if this game event is a world event or not. 0 = normal event, 1 = world event. For the world event to work, you need to at a minimum, populate [game_event_condition](game_event_condition) and [game_event_quest_condition](game_event_quest_condition).
+This is a boolean field that determines if this game event is a world event or not. 0 = normal event, 1 = world event. For the world event to work, you need to at a minimum, populate [game_event_condition](game-event-condition) and [game_event_quest_condition](game-event-quest-condition).
 
 ### announce
 

@@ -22,7 +22,7 @@
 
 ### CreatureID
 
-Creature entry from [creature_template.entry](creature_template#entry).
+Creature entry from [creature_template.entry](creature-template#entry).
 
 ### School
 

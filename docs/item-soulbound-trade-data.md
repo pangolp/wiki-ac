@@ -20,7 +20,7 @@ This table stores information about which players can trade soulbound items betw
 
 ### itemGuid
 
-The GUID of the item that can be traded. See [item\_instance.guid](item_instance#guid).
+The GUID of the item that can be traded. See [item\_instance.guid](item-instance#guid).
 
 ### alowedPlayers
 

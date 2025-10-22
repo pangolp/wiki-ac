@@ -24,7 +24,7 @@ This table serves as a receipt of refundable purchases during a 2 hour ingame ti
 
 ### item\_guid
 
-The GUID of the item bought by the vendor. See [item\_instance.guid](item_instance#guid).
+The GUID of the item bought by the vendor. See [item\_instance.guid](item-instance#guid).
 
 ### player\_guid
 

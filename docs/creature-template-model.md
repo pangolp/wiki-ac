@@ -28,7 +28,7 @@ This table describes which model is assigned to a specific creature.
 
 ### CreatureID
 
-[creature_template.entry](creature_template#entry)
+[creature_template.entry](creature-template#entry)
 
 ### Idx
 

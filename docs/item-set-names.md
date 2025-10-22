@@ -19,11 +19,11 @@
 
 ### Entry
 
-Item [Entry](item_template#entry) ID used in [item_template](item_template)
+Item [Entry](item-template#entry) ID used in [item_template](item-template)
 
 ### Name
 
-Item [Name](item_template#name) used in [item_template](item_template)
+Item [Name](item-template#name) used in [item_template](item-template)
 
 ### InventoryType
 

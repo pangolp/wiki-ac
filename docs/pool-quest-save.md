@@ -18,8 +18,8 @@
 
 ### pool\_id
 
-[pool\_quest.entry](pool_quest#entry).
+[pool\_quest.entry](pool-quest#entry).
 
 ### quest\_id
 
-[quest\_template.id](quest_template#id).
+[quest\_template.id](quest-template#id).

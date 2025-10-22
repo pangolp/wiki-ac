@@ -26,7 +26,7 @@ The GUID of the character. See [characters.guid](characters#guid).
 
 ### criteria
 
-Criteria from [Achievement\_Criteria.dbc](achievement_criteria).
+Criteria from [Achievement\_Criteria.dbc](achievement-criteria).
 
 ### counter
 

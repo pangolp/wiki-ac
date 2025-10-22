@@ -21,7 +21,7 @@ THIS IS UN-USED AND INFORMATION CAN BE WRONG
 | [ItemID_6](#itemid6)             | INT     | UNSIGNED   |     | NO   | 0       |
 | [ItemID_7](#itemid7)             | INT     | UNSIGNED   |     | NO   | 0       |
 | [ItemID_8](#itemid8)             | INT     | UNSIGNED   |     | NO   | 0       |
-| [Name_Lang_enUS](#name_lang_enus) | VARCHAR | UNSIGNED   |     | YES  | NULL    |
+| [Name_Lang_enUS](#name-lang-enus) | VARCHAR | UNSIGNED   |     | YES  | NULL    |
 | [Name_Lang_enGB](#namelangengb) | VARCHAR | UNSIGNED   |     | YES  | NULL    |
 | [Name_Lang_koKR](#namelangkokr) | VARCHAR | UNSIGNED   |     | YES  | NULL    |
 | [Name_Lang_frFR](#namelangfrfr) | VARCHAR | UNSIGNED   |     | YES  | NULL    |
@@ -41,39 +41,39 @@ THIS IS UN-USED AND INFORMATION CAN BE WRONG
 
 ### ID
 
-ID that's used in [ItemExtendedCost.dbc](itemextendedcost_dbc#id).
+ID that's used in [ItemExtendedCost.dbc](itemextendedcost-dbc#id).
 
 ### ItemID_1
 
-[Entry](item_template#entry) of item required to for this entry [ItemID_1](#itemid_1).
+[Entry](item-template#entry) of item required to for this entry [ItemID_1](#itemid-1).
 
 ### ItemID_2
 
-[Entry](item_template#entry) of item required to for this entry [ItemID_2](#itemid_2).
+[Entry](item-template#entry) of item required to for this entry [ItemID_2](#itemid-2).
 
 ### ItemID_3
 
-[Entry](item_template#entry) of item required to for this entry [ItemID_3](#itemid_3).
+[Entry](item-template#entry) of item required to for this entry [ItemID_3](#itemid-3).
 
 ### ItemID_4
 
-[Entry](item_template#entry) of item required to for this entry [ItemID_4](#itemid_3).
+[Entry](item-template#entry) of item required to for this entry [ItemID_4](#itemid-3).
 
 ### ItemID_5
 
-[Entry](item_template#entry) of item required to for this entry [ItemID_5](#itemid_5).
+[Entry](item-template#entry) of item required to for this entry [ItemID_5](#itemid-5).
 
 ### ItemID_6
 
-[Entry](item_template#entry) of item required to for this entry [ItemID_6](#itemid_6).
+[Entry](item-template#entry) of item required to for this entry [ItemID_6](#itemid-6).
 
 ### ItemID_7
 
-[Entry](item_template#entry) of item required to for this entry [ItemID_7](#itemid_7).
+[Entry](item-template#entry) of item required to for this entry [ItemID_7](#itemid-7).
 
 ### ItemID_8
 
-[Entry](item_template#entry) of item required to for this entry [ItemID_8](#itemid_8).
+[Entry](item-template#entry) of item required to for this entry [ItemID_8](#itemid-8).
 
 ### Name_Lang_enUS
 

@@ -50,7 +50,7 @@ The intellect modifier to apply to a character's base stat.
 
 The spirit modifier to apply to a character's base stat.
 
-**Relation to [\`player\_class\_stats\`](player_class_stats)**
+**Relation to [\`player\_class\_stats\`](player-class-stats)**
 
 This table alone does not define the stats of a character. The values from this table are combined with the values found in the `player\_class\_stats` table to apply the final stats to a character at any level.
 

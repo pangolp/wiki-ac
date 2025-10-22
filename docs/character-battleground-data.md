@@ -42,7 +42,7 @@ The character guid. See [characters.guid](2129969.html#characters(table)-id).
 
 ### instanceId
 
-This is the battleground instanceId. It's shared with [instance.id](instance_2130197.html#instance-id), but instead of putting data in that table, it's here.
+This is the battleground instanceId. It's shared with [instance.id](instance-2130197.html#instance-id), but instead of putting data in that table, it's here.
 
 ### team
 

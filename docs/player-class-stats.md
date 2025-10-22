@@ -83,7 +83,7 @@ The base spirit to be applied to a character.
 | 9     | 1     | 23     | 90       | 20       | 20      | 21      | 22        | 22     |
 | 11    | 1     | 44     | 60       | 21       | 20      | 20      | 22        | 22     |
 
-**Relation to [\`player_race_stats\`](player_race_stats)**
+**Relation to [\`player_race_stats\`](player-race-stats)**
 
 This table alone does not define the stats of a character at any level. The values from this table are combined with the values found in the `player_race_stats` table to apply the final stats to a character at any level.
 
