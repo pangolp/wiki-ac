@@ -4,12 +4,11 @@
 
 Would you like to learn about AzerothCore (AC), setup your WoW server for the first time, understand how to modify it and become able to contribute? You came to the right place!
 
-Getting started with WoW emulation might be tricky at first, but don't worry, we will be there to help you in case you encounter any issue or have any questions to ask. Just read [this page](How-to-ask-for-help) before asking for help.
+Getting started with WoW emulation might be tricky at first, but don't worry, we will be there to help you in case you encounter any issue or have any questions to ask. Just read [this page](how-to-ask-for-help) before asking for help.
 
 If while reading any of the tutorials linked on this page you find something that is not clear: let us know. We'll do our best to rephrase it and make it easier to be understood for beginners. Improving the docs is also a way to contribute!
 
 ![AzerothCore learning code](https://user-images.githubusercontent.com/75517/109369720-b6fa7d00-789d-11eb-86b4-5fe15d6ab834.png)
-
 
 ## Knowledge requirements
 
@@ -47,9 +46,9 @@ Basically, there are 3 main ways to install AC:
 
 You can choose one setup, or even try more than one. You can find all the instructions here:
 
-- [azerothcore.org/wiki/Installation](Installation)
+- [azerothcore.org/wiki/Installation](installation)
 
-Should you encounter any issue or doubt while trying to install your AC server, [ask us for help](https://github.com/azerothcore/wiki/blob/master/docs/how-to-ask-for-help).
+Should you encounter any issue or doubt while trying to install your AC server, [ask us for help](how-to-ask-for-help).
 
 Got your WoW server installed? Congratulations! Now let's see what you can do next.
 
@@ -60,7 +59,7 @@ Got your WoW server installed? Congratulations! Now let's see what you can do ne
 First of all, make sure your Client has their realmlist.wtf set to the following: `set realmlist localhost`. After this (assuming you've already setup AzerothCore) make sure you've a `GM` (Security of 2 or Higher) account created. If you haven't created an account or you're not sure follow this [Creating Accounts](creating-accounts).
 After this your `GM` account will be able to use the following commands from link with a list of all commands below:
 
-- [azerothcore.org/wiki/GM-Commands](GM-Commands)
+- [gm-commands](gm-commands)
 
 Get confident with the commands, you will need them for any administration, testing or development activities.
 
@@ -82,7 +81,7 @@ We release improvements to AzerothCore on a daily basis. You should learn how to
 
 So it is **very important** that you update your AzerothCore server regularly. We recommend you to do it at least once a week. Read this guide:
 
-- [azerothcore.org/wiki/Update](Update)
+- [update](update)
 
 After you follow the update procedure, it is important to **verify** that:
 
@@ -97,7 +96,7 @@ A great way to start contributing is by testing PRs made by other contributors. 
 
 This topic is so important that there is a dedicated tutorial for it:
 
-- [azerothcore.org/wiki/How-to-test-a-PR](How-to-test-a-PR)
+- [How to test a pull request?](how-to-test-a-pr)
 
 ![image](https://user-images.githubusercontent.com/75517/109370244-d397b480-789f-11eb-9ac7-64d98ca0d33c.png)
 

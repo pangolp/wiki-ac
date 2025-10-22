@@ -1,19 +1,5 @@
 # Contribute
 
-You can contribute in several ways to AzerothCore:
-
-- [Commenting an open issue](how-to-comment-an-issue)
-
-- [Opening an issue](how-to-open-an-issue)
-
-- [Testing a pull request](how-to-test-a-pull-request)
-
-- [Testing DB-only changes](how-to-test-DB-only-changes)
-
-- [Creating a pull request](how-to-create-a-pull-request)
-
-- [Improving our wiki](improve-the-wiki)
-
 ## General information
 
 To contribute, you obviously need a github account.

@@ -334,7 +334,7 @@ Object type not used
 **GAMEOBJECT\_TYPE\_CAMERA = 13**
 
 -   data0: open (LockId from `Lock.dbc`)
--   data1: camera (Cinematic entry from [CinematicCamera.dbc](cinematiccamera))
+-   data1: camera (Cinematic entry from `CinematicCamera.dbc`)
 -   data2: eventID
 -   data3: openTextID
 -   data4: conditionID1
@@ -345,7 +345,7 @@ No data used, all are always 0
 
 **GAMEOBJECT\_TYPE\_MOTRANSPORT = 15**
 
--   data0: taxiPathID (Id from [TaxiPath.dbc](taxipath))
+-   data0: taxiPathID (Id from `TaxiPath.dbc`)
 -   data1: moveSpeed
 -   data2: accelRate
 -   data3: startEventID
