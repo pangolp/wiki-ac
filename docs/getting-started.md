@@ -79,9 +79,7 @@ You can find plenty of resources online about learning `git`, for example [try.g
 
 We release improvements to AzerothCore on a daily basis. You should learn how to update your server and keep updating it often. We recommend avoiding working on older versions of AzerothCore because they can have bugs that we already resolved and you don't want to stay behind.
 
-So it is **very important** that you update your AzerothCore server regularly. We recommend you to do it at least once a week. Read this guide:
-
-- [update](update)
+So it is **very important** that you update your AzerothCore server regularly. We recommend you to do it at least once a week.
 
 After you follow the update procedure, it is important to **verify** that:
 

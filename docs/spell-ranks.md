@@ -22,16 +22,16 @@ Table used by the core to group different ranks of spells (the gray text seen on
 
 ### first\_spell\_id
 
-SpellId from [Spell.dbc](Spell) which is first rank of spell rank chain. It identifies the whole chain.
+SpellId from [Spell.dbc](spell) which is first rank of spell rank chain. It identifies the whole chain.
 
 ### spell\_id
 
-SpellId from [Spell.dbc](Spell).
+SpellId from [Spell.dbc](spell).
 
 ### rank
 
 An integer which ranks the spell within the chain of spell ranks for the given \`spell\_id\`. It can differ from the rank text in game (for example, some ranks in client start with level 0, while the server always starts from level 1 onward). Several conditions have to be fulfilled:
 
--   At least two levels are required
--   There can be no jumps between ranks (e.g. one spell being level 3 and one being level 5 while level 4 is missing altogether)
--   There can be no duplicates in ranks.
+- At least two levels are required
+- There can be no jumps between ranks (e.g. one spell being level 3 and one being level 5 while level 4 is missing altogether)
+- There can be no duplicates in ranks.

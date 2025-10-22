@@ -17,16 +17,17 @@
 **Description of the fields**
 
 ### id
-Graveyard's ID. See [WorldSafeLocs.dbc](WorldSafelocs)
+
+Graveyard's ID. See [WorldSafeLocs.dbc](worldsafelocs)
 
 ### ghost_zone
-Zone's ID of ghost position before teleportation to graveyard. See [AreaTable.dbc](AreaTable)
+
+Zone's ID of ghost position before teleportation to graveyard. See [AreaTable.dbc](areatable)
 
 ### faction
+
 Graveyard's team.
 
-0 - Any team accepted
-
-469 - Alliance team only
-
-67 - Horde team only
+- 0 - Any team accepted
+- 469 - Alliance team only
+- 67 - Horde team only

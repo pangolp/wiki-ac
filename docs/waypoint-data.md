@@ -68,7 +68,7 @@ Time to wait (in ms) between each point.
 
 ### action
 
-ID of the action to be performed. See [waypoint\_scripts.id](waypoint-scripts).
+ID of the action to be performed. See `waypoint_scripts.id`
 
 ### action\_chance
 

@@ -28,12 +28,11 @@ Level required for receiving specific mail
 
 ### raceMask
 
-Mask required to receive mail.
-`:ChrRaces.dbc`
+Mask required to receive mail. `ChrRaces.dbc`
 
 ### mailTemplateId
 
-Mail ID to be send. See [MailTemplate.dbc](MailTemplate)
+Mail ID to be send. See `MailTemplate.dbc`.
 
 ### senderEntry
 

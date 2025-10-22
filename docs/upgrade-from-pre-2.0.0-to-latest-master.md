@@ -8,16 +8,20 @@ This is the tutorial to upgrade any existing server from a version prior to the 
 
 You need first to update your server to [this commit](https://github.com/azerothcore/azerothcore-wotlk/commit/1fc22a74088e235e78fa02decbaf0864899477d7), running:
 
-`git checkout 1fc22a74088e235e78fa02decbaf0864899477d7`
+```sh
+git checkout 1fc22a74088e235e78fa02decbaf0864899477d7
+```
 
-Now update your **database** as [you normally do](update#3-update-the-database).
+Now update your **database** as you normally do.
 
 ### Step 2. Upgrade to latest master
 
 Update to latest master:
 
-`git checkout master; git pull;`
+```sh
+git checkout master; git pull
+```
 
 **Note**: if you are using your own fork of AC, as usual, you have to [sync it](syncing-your-fork)
 
-Now update your **core and database** (again) as [you normally do](update).
+Now update your **core and database** (again) as you normally do.

@@ -76,11 +76,11 @@ Id from MailTemplate.dbc
 
 ### sender
 
-In this field is entered sender [character.guid](character#guid).
+In this field is entered sender [character.guid](characters#guid).
 
 ### receiver
 
-Here is receiver's [character.guid](character#guid).
+Here is receiver's [character.guid](characters#guid).
 
 ### subject
 

@@ -2,7 +2,7 @@
 
 ### Different kinds of waypoint paths
 
-- Waypoint paths directly attached to a creature via [creature_addon.path_id](creature-addon#path-id) use the tables [waypoint_data](waypoint-data) and [waypoint_scripts](waypoint-scripts). They can be added and manipulated using the GM '.wp' commands.
+- Waypoint paths directly attached to a creature via [creature_addon.path_id](creature-addon#path-id) use the tables [waypoint_data](waypoint-data) and waypoint_scripts. They can be added and manipulated using the GM '.wp' commands.
 - [SmartAI](smart-scripts) uses waypoint paths defined in table [waypoints](waypoints).
 - The table script_waypoint contains waypoint paths for [CreatureAI](https://github.com/azerothcore/azerothcore-wotlk/blob/master/src/server/game/AI/ScriptedAI/ScriptedCreature.h#L159).
 

@@ -36,7 +36,7 @@ This table is used to apply a specific spell aura to the player within an area i
 
 ### spell
 
-The spell ID of the spell to be casted on the player. See [Spell.dbc](Spell).
+The spell ID of the spell to be casted on the player. See [Spell.dbc](spell).
 
 ### area
 
@@ -124,7 +124,7 @@ Example for a SQL
 
  For a \`quest\_end\_status\` that should contain QUEST\_STATUS\_NONE (1), QUEST\_STATUS\_COMPLETE (2) and QUEST\_STATUS\_INCOMPLETE (8):
 
-``` sql
+```sql
 -- equivalent to `quest_end_status`= 11
 UPDATE `spell_area` SET `quest_end_status`= (1|2|8) WHERE `spell`=XXXXX AND `area`=YYYY;
 ```
