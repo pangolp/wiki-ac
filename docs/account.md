@@ -2,13 +2,15 @@
 prev:
   text: 'Database Auth'
   link: 'database-auth'
+next: false
+aside: false
 ---
 
 # account
 
 **The \`account\` table**
 
-`table-no-description`
+The account table is located in the auth database and is crucial for the AzerothCore emulator. Its primary function is to store all essential user account information required for authentication and access management to the game server. It holds critical data such as the user's username, security credentials (salt, verifier), login history (last_ip, last_login), and current account status (online, locked, expansion).
 
 ## Table Structure
 
@@ -93,7 +95,7 @@ Make sure the PHP GMP extension is loaded! Uncomment `extension=gmp` in your php
 
 ### session\_key
 
-`field-no-description|5`
+The Session Key is a 40-byte cryptographic value generated during the SRP-6 (Secure Remote Password) authentication process. Its purpose is to establish and secure (encrypt) the communication channel between the game client and the server after a successful login. This key is temporary and is only valid for the current active session, which is why it is typically set to NULL or empty when the user is offline.
 
 ### totp\_secret
 
@@ -101,9 +103,7 @@ The authenticator key.
 
 Key can be generated through the Google Authenticator API, a 3rd-party TOTP generator, or manually specified (must be a Base32-compliant expression that is 16 characters).
 
-Implementation link on Wikipedia for the Google Authenticator API.
-
-<http://en.wikipedia.org/wiki/Google_Authenticator#Implementations>
+[Implementation link on Wikipedia for the Google Authenticator API](https://en.wikipedia.org/wiki/Google_Authenticator)
 
 ### email
 
@@ -218,4 +218,4 @@ Stores information about client's OS. Used by Warden system.
 
 ### recruiter
 
-The account ID of another account. Used for recuit-a-friend system. See [account#id][1]
+The account ID of another account. Used for recuit-a-friend system.
