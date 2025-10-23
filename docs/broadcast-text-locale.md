@@ -48,4 +48,4 @@ If value is above 0 then it has been parsed with WDB files from that specific cl
 
 If value is -1 then it is just a place holder until proper data are found on WDBs.
 
-If value is -Client Build then it was parsed with WDB files from that specific [client build](realmlist#gamebuild "DB:Auth:realmlist") and manually edited later for some special necessity.
+If value is -Client Build then it was parsed with WDB files from that specific [client build](auth/realmlist#gamebuild "DB:Auth:realmlist") and manually edited later for some special necessity.

@@ -7,7 +7,7 @@
 
 ## Database
 
-* [DB auth](database-auth)
+* [DB auth](auth/)
 * [DB characters](database-characters)
 * [DB world](database-world)
 
@@ -75,5 +75,5 @@
 
 ## External resources
 
-* <a href="https://github.com/azerothcore/azerothcore-wotlk/discussions/categories/guides-tips" target="_blank">Guides and Tips from our Forum</a>
-* <a href="https://wowdev.wiki/Category:DBC_WotLK" target="_blank">DBC Documentation</a>
+* [https://github.com/azerothcore/azerothcore-wotlk/discussions/categories/guides-tips](Guides and Tips from our Forum)
+* [https://wowdev.wiki/Category:DBC_WotLK](DBC Documentation)

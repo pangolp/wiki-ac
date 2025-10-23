@@ -89,7 +89,7 @@ Variablename = "MySQLIP;Port;Username;Password;database"
 The following steps must be verified:
 
 - The hostname (127.0.0.1) can stay the same if AzerothCore is being installed on the same computer that you run WoW on.
-  If not, follow the instruction in [Realmlist Table](realmlist).
+  If not, follow the instruction in [Realmlist Table](auth/realmlist).
 
 - The port (3306) is the standard configured value. If you changed the default port in your MySQL settings, you must change it accordingly.
   The username and password can be variable. You can choose to either: 

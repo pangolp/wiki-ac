@@ -23,7 +23,7 @@ The AzerothCore Team and Owners DO NOT in any case sponsor nor support illegal p
 
 ### Database Structure
 
-- [Auth](database-auth)
+- [Auth](auth/)
 - [Characters](database-characters)
 - [World](database-world)
 

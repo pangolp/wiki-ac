@@ -1,7 +1,9 @@
 ---
 prev:
   text: 'Database Auth'
-  link: 'database-auth'
+  link: 'auth/'
+next: false
+aside: false
 ---
 
 # account\_access
@@ -32,7 +34,7 @@ The [account ID](account#id).
 
 ### gmlevel
 
-The account security level. Different levels have access to different commands. The individual level required for a command is defined in the [command](command) table in each realm.
+The account security level. Different levels have access to different commands. The individual level required for a command is defined in the [command](/command) table in each realm.
 
 ### RealmID
 

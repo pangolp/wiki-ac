@@ -1,8 +1,12 @@
-# updates_include
+---
+prev:
+  text: 'Database Auth'
+  link: 'auth/'
+next: false
+aside: false
+---
 
-[<-Back-to:Auth](auth/)
-[<-Back-to:Characters](database-characters)
-[<-Back-to:World](database-world)
+# updates_include
 
 **The \`updates_include\` table**
 

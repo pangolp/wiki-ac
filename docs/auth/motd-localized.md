@@ -1,7 +1,9 @@
 ---
 prev:
   text: 'Database Auth'
-  link: 'database-auth'
+  link: 'auth/'
+next: false
+aside: false
 ---
 
 # motd_localized
