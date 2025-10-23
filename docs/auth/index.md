@@ -1,3 +1,9 @@
+---
+prev: false
+next: false
+aside: false
+---
+
 # Database Auth
 
 ## A

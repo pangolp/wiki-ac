@@ -1,7 +1,7 @@
 ---
 prev:
   text: 'Database Auth'
-  link: 'auth/'
+  link: '/auth/'
 next: false
 aside: false
 ---
