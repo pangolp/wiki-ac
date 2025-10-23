@@ -23,12 +23,14 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Install',
+        collapsed: true,
         items: [
           { text: 'Installation Guide', link: 'installation' }
         ]
       },
       {
         text: 'Classic Installation Guide',
+        collapsed: false,
         items: [
           { text: 'Requirements', link: 'requirements' },
           { text: 'Core Installation', link: 'core-installation' },
@@ -43,6 +45,7 @@ export default defineConfig({
       },
       {
         text: 'Documentation',
+        collapsed: true,
         items: [
           { text: 'Documentation Index', link: 'documentation-index' },
           { text: 'Doxygen Documentation', link: 'https://www.azerothcore.org/doxygen' },
@@ -53,6 +56,7 @@ export default defineConfig({
       },
       {
         text: 'Database',
+        collapsed: true,
         items: [
           { text: 'Auth', link: 'database-auth' },
           { text: 'Characters', link: 'database-characters' },
@@ -61,6 +65,7 @@ export default defineConfig({
       },
       {
         text: 'Contribute',
+        collapsed: true,
         items: [
           { text: 'Guide to bug triaging', link: 'guide-to-triaging' },
           { text: 'How to contribute', link: 'contribute' },
