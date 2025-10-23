@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # Home
 
 Welcome to the [AzerothCore](http://www.azerothcore.org/) project wiki.
