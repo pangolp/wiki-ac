@@ -11,8 +11,8 @@ export default defineConfig({
     lastUpdated: {
       text: 'Update',
       formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
+        dateStyle: 'short',
+        timeStyle: 'short'
       }
     },
 
