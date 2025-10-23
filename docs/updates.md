@@ -1,12 +1,8 @@
----
-prev:
-  text: 'Database Auth'
-  link: 'auth/'
-next: false
-aside: false
----
-
 # updates
+
+[<-Back-to:Auth](auth/)
+[<-Back-to:Characters](database-characters)
+[<-Back-to:World](database-world)
 
 **The \`updates\` table**
 

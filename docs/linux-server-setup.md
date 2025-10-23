@@ -10,14 +10,13 @@ next:
 
 # Linux Server Setup
 
-**Table of contents**
+## Table of contents
+
 - [Client Data Files (Download Pre-Extracted)](#option-1-download-pre-extracted-files)
 - [Client Data Extractors (Extract Files Yourself)](#option-2-extract-files-yourself)
 - [Config Files: Worldserver and Authserver](#config-files-worldserver-and-authserver)
 
-Now that you have the source compiled, you need to add the necessary client data. You can either download pre-extracted files or use the compiled extractors to extract the files yourself. Once the data is ready, you must verify the **DataDir** option in your **worldserver.conf** file to point to the directory containing the data.
-
-Some files are optional but highly recommended:
+Now that you have the source compiled, you need to add the necessary client data. You can either download pre-extracted files or use the compiled extractors to extract the files yourself. Once the data is ready, you must verify the **DataDir** option in your **worldserver.conf** file to point to the directory containing the data. Some files are optional but highly recommended:
 
 | Directory |                    |
 | :-------- | :----------------- |
@@ -56,6 +55,7 @@ Default folder structure of **$AC_CODE_DIR/env/dist/bin** (as displayed by `tree
 **(Not needed if you downloaded the files above)**
 
 1. Browse into your install directory (e.g. **$AC_CODE_DIR/env/dist/bin/**) and copy the following files into your World of Warcraft folder (where the Wow.exe is located).
+
 ```
 map_extractor
 mmaps_generator
@@ -103,15 +103,11 @@ Variablename = "MySQLIP;Port;Username;Password;database"
 
 The following steps must be verified:
 
-- The hostname (127.0.0.1) can stay the same if AzerothCore is being installed on the same computer that you run WoW on.
-  If not, follow the instruction in [Realmlist Table](realmlist).
+- The hostname (127.0.0.1) can stay the same if AzerothCore is being installed on the same computer that you run WoW on. If not, follow the instruction in [Realmlist Table](auth/realmlist).
 
-- The port (3306) is the standard configured value. If you changed the default port in your MySQL settings, you must change it accordingly.
-  The username and password can be variable. You can choose to either:
-
-    - use default acore / acore username and password pair.
-
-    - create a unique login within a User Manager within your preferred database management tool (commonly identified by an icon that looks like a person or people) and give it the necessary permissions (SELECT, INSERT, UPDATE, DELETE permissions are sufficient, and is much safer).
+- The port (3306) is the standard configured value. If you changed the default port in your MySQL settings, you must change it accordingly. The username and password can be variable. You can choose to either:
+  - use default acore / acore username and password pair.
+  - create a unique login within a User Manager within your preferred database management tool (commonly identified by an icon that looks like a person or people) and give it the necessary permissions (SELECT, INSERT, UPDATE, DELETE permissions are sufficient, and is much safer).
 
 ### Updating DataDir
 

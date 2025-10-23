@@ -176,7 +176,7 @@ The character global unique identifier. This number must be unique and is the be
 
 ### account
 
-The account ID in which this character resides. See [account.id](account#id) in the auth database.
+The account ID in which this character resides. See [account.id](auth/account#id) in the auth database.
 
 ### name
 
