@@ -15,6 +15,9 @@ export default defineConfig({
         timeStyle: 'short'
       }
     },
+    search: {
+      provider: 'local'
+    },
 
     nav: [
       { text: 'Home', link: '/' },
