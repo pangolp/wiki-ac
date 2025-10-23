@@ -61,7 +61,7 @@ export default defineConfig({
         text: 'Database',
         collapsed: true,
         items: [
-          { text: 'Auth', link: 'database-auth' },
+          { text: 'Auth', link: 'auth/' },
           { text: 'Characters', link: 'database-characters' },
           { text: 'World', link: 'database-world' }
         ]
