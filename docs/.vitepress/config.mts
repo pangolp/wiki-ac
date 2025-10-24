@@ -5,6 +5,11 @@ export default defineConfig({
   title: "AzerothCore",
   description: "Wiki and Documentation of the AzerothCore project",
   base: '/wiki-ac/',
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 3000
+    }
+  },
 
   themeConfig: {
     siteTitle: 'Wiki',
