@@ -48,19 +48,7 @@ This table is used to provide to localized clients with localized string for que
 
 This is the ID of the quest to be translated.
 
-### locale
-
-| ID  | Language |
-| --- | -------- |
-| 0   | enUS     |
-| 1   | koKR     |
-| 2   | frFR     |
-| 3   | deDE     |
-| 4   | zhCN     |
-| 5   | zhTW     |
-| 6   | esES     |
-| 7   | esMX     |
-| 8   | ruRU     |
+<!--@include: /utils/locale.md-->
 
 ### Title
 

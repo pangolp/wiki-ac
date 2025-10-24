@@ -28,20 +28,7 @@ This table holds pieces of names (first and last half) that are use for pet name
 
 The ID of the entry. This field must match [pet_name_generation.id](pet-name-generation#id)
 
-### Locale
-
-This is the language of the client.
-
-| Language |
-| -------- |
-| koKR     |
-| frFR     |
-| deDE     |
-| zhCN     |
-| zhTW     |
-| esES     |
-| esMX     |
-| ruRU     |
+<!--@include: /utils/locale.md-->
 
 ### word
 

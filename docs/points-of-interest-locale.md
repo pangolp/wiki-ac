@@ -27,9 +27,7 @@ aside: false
 
 `field-no-description|1`
 
-### locale
-
-`field-no-description|2`
+<!--@include: /utils/locale.md-->
 
 ### Name
 

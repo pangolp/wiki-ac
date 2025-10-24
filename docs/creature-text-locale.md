@@ -36,21 +36,7 @@ If there is more than one of the same entry (more than one text the creature say
 
 Entry for each group of texts. This is the unique identifier when entry (creature) is the same and groupid is unchanged, it must be incremented (ex. 0, 1, 2, 3...). A creature say will be randomly selected from this list based on the groupid it belongs to.
 
-### Locale
-
-It is the language in which you want to make the translation.
-You can choose from the following:
-
-| ID | Language |
-|----|----------|
-| 1  | koKR     |
-| 2  | frFR     |
-| 3  | deDE     |
-| 4  | zhCN     |
-| 5  | zhTW     |
-| 6  | esES     |
-| 7  | esMX     |
-| 8  | ruRU     |
+<!--@include: /utils/locale.md-->
 
 ### Text
 

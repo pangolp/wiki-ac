@@ -20,9 +20,7 @@ This table is used to provide localized clients with localized string for page\_
 
 This entry must be the same as  [page\_text.entry](#page-text#entry) and then the row will be used to provide localization support for this page\_text record.
 
-### locale
-
-`field-no-description|2`
+<!--@include: /utils/locale.md-->
 
 ### Name
 

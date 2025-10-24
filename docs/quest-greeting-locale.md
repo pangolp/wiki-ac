@@ -40,9 +40,7 @@ Unique ID ([creature_template.entry](creature-template#entry) or [gameobject\_t
 - 0 = Creature (The ID is point to creature\_template.entry)
 - 1 = GameObject (The ID is point to gameobject\_template.entry)
 
-### locale
-
-Client Locale
+<!--@include: /utils/locale.md-->
 
 ### Greeting
 

@@ -25,20 +25,7 @@ Module identifier in [module_string.module](module-string#module).
 
 String id in [module_string.id](module-string#id).
 
-### locale
-
-Which locale to translate to.
-
-| Locale |
-| ------ |
-| koKR   |
-| frFR   |
-| deDE   |
-| zhCN   |
-| zhTW   |
-| esES   |
-| esMX   |
-| ruRU   |
+<!--@include: /utils/locale.md-->
 
 ### string
 

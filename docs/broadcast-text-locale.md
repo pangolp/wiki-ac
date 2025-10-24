@@ -25,10 +25,7 @@ Its purpose is (will be) used as a globalized table containing the localized tex
 
 The unique ID value for the text, pointing to ID of the text at broadcast_text table.
 
-### locale
-
-The language in what the text will be broadcasted.
-Can have 8 values : deDE, esES, esMX, frFR, koKR, ruRU, zhCN, zhTW
+<!--@include: /utils/locale.md-->
 
 ### MaleText
 
