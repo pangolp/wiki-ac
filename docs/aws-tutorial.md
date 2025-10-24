@@ -219,7 +219,7 @@ This can take a while depending on upload speed. The $CMAKE_INSTALL_PREFIX will 
 
 Now untar it with:
 
-```bas
+```bash
 tar xfv $CMAKE_INSTALL_PREFIX/data.tar.gz --strip-components=2
 ```
 
