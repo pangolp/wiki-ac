@@ -1,12 +1,18 @@
-# quest\_template
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# quest\_template
 
 **Table: quest\_template**
 
 Contains all basic definitions of available quests.
 
-## **Table Structure**
+## Table Structure
 
 | Field                           | Type      | Attribute | Key | Null | Default | Extra | Comment |
 | ------------------------------- | --------- | --------- | --- | ---- | ------- | ----- | ------- |
@@ -222,8 +228,7 @@ Contains all basic definitions of available quests.
 [104]: #objectivetext4
 [105]: #verifiedbuild
 
-
-**Description of the fields**
+## Description of the fields
 
 ### ID
 
@@ -637,7 +642,6 @@ Amount of required items
 
 ### Unknown0
 
-
 ### ObjectiveText1
 ### ObjectiveText2
 ### ObjectiveText3
@@ -645,4 +649,4 @@ Amount of required items
 
 Used to define non-standard objective texts, that show up in the questlog. Example, "Heal fallen warrior" and the number gets added by Count values.
 
-### VerifiedBuild
+<!--@include: ./verified-build.md-->

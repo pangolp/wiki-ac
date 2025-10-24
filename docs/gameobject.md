@@ -1,12 +1,18 @@
-# gameobject
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# gameobject
 
 **The \`gameobject\` table**
 
 This table holds the individual object data on each spawned game object in the world. This data along with the object's template data is read and used to instantiate the objects in the world.
 
-**Table Structure**
+## Table Structure
 
 | Field               | Type     | Attributes | Key | Null | Default | Extra          | Comment                  |
 | ------------------- | -------- | ---------- | --- | ---- | ------- | -------------- | ------------------------ |
@@ -54,7 +60,7 @@ This table holds the individual object data on each spawned game object in the w
 [20]: #verifiedbuild
 [21]: #comment
 
-**Description of the fields**
+## Description of the fields
 
 ### guid
 
@@ -62,7 +68,7 @@ The global unique identifier for the game object. This field must be unique amon
 
 ### id
 
-The template ID of the gameobject. See [gameobject_template.entry](http://www.azerothcore.org/wiki/gameobject_template#entry)
+The template ID of the gameobject. See [gameobject_template.entry](gameobject-template#entry)
 
 ### map
 
@@ -139,8 +145,8 @@ Not really known what this is used for at this time. However, always set it to 1
 
 For chests or doors.
 
--   1 = closed
--   0 = open
+- 1 = closed
+- 0 = open
 
 ### ScriptName
 
@@ -148,15 +154,7 @@ Same as gameobject_template.scriptname.
 
 A gameobject.scriptname record will override a [gameobject_template.scriptname](gameobject-template#gameobject-template-scriptname) record.
 
-### VerifiedBuild
-
-This field is used to determine if this gameobject originates from verified sniffs.
-
-If value is 0 then it has not been parsed yet or it has been inherited from an older DB or another Core.
-
-If value is above 0 then it has been parsed with sniffs from that specific client build.
-
-If value is -Client Build then it was parsed with WDB files from that specific client build and manually edited later for some special necessity.
+<!--@include: ./verified-build.md-->
 
 ### comment
 

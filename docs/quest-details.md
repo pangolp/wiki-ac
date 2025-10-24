@@ -1,12 +1,18 @@
-# quest\_details
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# quest\_details
 
 **The \`quest_details\` table**
 
 This table handles Quest NPC emotes with emote delays.
 
-**Table Structure**
+## Table Structure
 
 | Field                           | Type      | Attributes | Key | NULL | Default | Comment                                             |
 | ------------------------------- | --------- | ---------- | --- | ---- | ------- | --------------------------------------------------- |
@@ -21,7 +27,7 @@ This table handles Quest NPC emotes with emote delays.
 | [EmoteDelay4](#emotedelay4)     | INT       | UNSIGNED   |     | NO   | 0       | Emote delay in milliseconds                         |
 | [VerifiedBuild](#verifiedbuild) | SMALLINT  |            |     | NO   | 0       | Game client Build number or manually set value      |
 
-**Description of the fields**
+## Description of the fields
 
 ### ID
 
@@ -59,11 +65,4 @@ Emote delay in milliseconds
 
 Emote delay in milliseconds
 
-### VerifiedBuild
-
-This field is used by the TrinityCore DB Team to determine whether a template has been verified from WDB files.
-
-- If value is 0, it has not been parsed yet.
-- If value is &gt; 0, it has been parsed with WDB files from that specific [Client Build](auth/realmlist#realmlist-gamebuild).
-- If value is -1, it is just a place holder until proper data are found on WDBs.
-- If value is -[Client Build](auth/realmlist#realmlist-gamebuild), it was parsed with WDB files from that specific [client build](auth/realmlist#realmlist-gamebuild) and manually edited later for some specific necessity.
+<!--@include: ./verified-build.md-->

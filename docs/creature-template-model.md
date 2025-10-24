@@ -1,12 +1,18 @@
-# creature_template_model
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# creature_template_model
 
 **The `creature_template_model` table**
 
 This table describes which model is assigned to a specific creature.
 
-**Table Structure**
+## Table Structure
 
 | Field                  | Type     | Attributes | Key | Null | Default | Extra | Comment |
 | ---------------------- | -------- | ---------- | --- | ---- | ------- | ----- | ------- |
@@ -24,7 +30,7 @@ This table describes which model is assigned to a specific creature.
 [5]: #probability
 [6]: #verifiedbuild
 
-**Description of the fields**
+## Description of the fields
 
 ### CreatureID
 
@@ -48,14 +54,4 @@ Modifies the model scale.
 
 If it exceeds or fall short of 1 the core will correct it during startup to equal 1.
 
-### VerifiedBuild
-
-This field was used to determine whether a template has been verified from WDB files.
-
-If value is 0 then it has not been parsed yet.
-
-If value is above 0 then it has been parsed with WDB files from that specific client build.
-
-If value is -1 then it is just a place holder until proper data are found on WDBs.
-
-If value is [client build](auth/realmlist#gamebuild) then it was parsed with WDB files from that specific client build and manually edited later for some special necessity.
+<!--@include: ./verified-build.md-->

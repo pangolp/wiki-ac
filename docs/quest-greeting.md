@@ -1,12 +1,18 @@
-# quest\_greeting
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# quest\_greeting
 
 **The \`quest_greeting\` table**
 
 This table add greeting behavior to an NPC or an Gameobject.
 
-**Table Structure**
+## Table Structure
 
 | Field                | Type      | Attributes | Key | NULL | Default | Comment |
 | -------------------- | --------- | ---------- | --- | ---- | ------- | ------- |
@@ -24,7 +30,7 @@ This table add greeting behavior to an NPC or an Gameobject.
 [5]: #greeting
 [6]: #verifiedbuild
 
-**Description of the fields:**
+## Description of the fields
 
 ### ID
 
@@ -32,8 +38,8 @@ Unique ID ([creature_template.entry](creature-template#entry) or [gameobject\_t
 
 ### Type
 
--   0=Creature (The ID is point to creature\_template.entry)
--   1=GameObject (The ID is point to gameobject\_template.entry)
+- 0 = Creature (The ID is point to creature\_template.entry)
+- 1 = GameObject (The ID is point to gameobject\_template.entry)
 
 ### GreetEmoteType
 
@@ -47,11 +53,4 @@ Emote delay in milliseconds
 
 Text to show
 
-### VerifiedBuild
-
-This field was used to determine whether a template has been verified from WDB files.
-
-- If value is 0 then it has not been parsed yet.
-- If value is above 0 then it has been parsed with WDB files from that specific client build.
-- If value is -1 then it is just a place holder until proper data are found on WDBs.
-- If value is -Client Build then it was parsed with WDB files from that specific client build and manually edited later for some special necessity.
+<!--@include: ./verified-build.md-->

@@ -1,12 +1,18 @@
-# lfg_dungeon_template
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# lfg_dungeon_template
 
 **The \`lfg_dungeon_template\` table**
 
 Used to give NPC spells cooldowns for mindcontroll.
 
-**Table Structure**
+## Table Structure
 
 | Field                           | Type         | Attributes | Key | Null | Default | Extra | Comment                        |
 | ------------------------------- | ------------ | ---------- | --- | ---- | ------- | ----- | ------------------------------ |
@@ -18,7 +24,7 @@ Used to give NPC spells cooldowns for mindcontroll.
 | [orientation](#orientation)     | FLOAT        |            |     | NO   | 0       |       |                                |
 | [VerifiedBuild](#verifiedbuild) | INT          |            |     | YES  | NULL    |       |                                |
 
-**Description of the fields**
+## Description of the fields
 
 ### DungionId
 
@@ -44,12 +50,4 @@ Dungeon Name
 
 `field-no-description|6`
 
-### VerifiedBuild
-
-This field is used to determine if the data originates from verified sniffs.
-
-If value is 0 then it has not been parsed yet or it has been inherited from an older DB or another Core.
-
-If value is above 0 then it has been parsed with sniffs from that specific client build.
-
-If value is -Client Build then it was parsed with WDB files from that specific client build and manually edited later for some special necessity.
+<!--@include: ./verified-build.md-->

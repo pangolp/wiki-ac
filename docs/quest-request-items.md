@@ -1,6 +1,12 @@
-# quest\_request\_items
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# quest\_request\_items
 
 **The \`quest\_request\_items\` table**
 
@@ -10,7 +16,7 @@ This table basically handles 3 quest details:
 2.  NPC Emote when quest is incomplete
 3.  Completion text for quests requiring quest items
 
-**Table Structure**
+## Table Structure
 
 | Field                                   | Type      | Attributes | Key | NULL | Default | Comment |
 | --------------------------------------- | --------- | ---------- | --- | ---- | ------- | ------- |
@@ -20,7 +26,7 @@ This table basically handles 3 quest details:
 | [CompletionText](#completiontext)       | text      |            |     | YES  | NULL    |         |
 | [VerifiedBuild](#verifiedbuild)         | SMALLINT  |            |     | NO   | 0       |         |
 
-**Description of the fields**
+## Description of the fields
 
 ### ID
 
@@ -40,11 +46,4 @@ Emote (from [Emotes.dbc](emotes)) played by the quest ender NPC if any of the 
 Quest gossip text shown in the final gossip dialogue window when turning in an item delivery quest.
 The quest item(s) involved in the quest can either be provided by the quest giver or collected by the player.
 
-### VerifiedBuild
-
-This field is used by the TrinityCore DB Team to determine whether a template has been verified from WDB files.
-
--   If value is 0, it has not been parsed yet.
--   If value is &gt; 0, it has been parsed with WDB files from that specific [Client Build](auth/realmlist#gamebuild).
--   If value is -1, it is just a place holder until proper data are found on WDBs.
--   If value is -[Client Build](auth/realmlist#gamebuild), it was parsed with WDB files from that specific [client build](auth/realmlist#gamebuild) and manually edited later for some specific necessity.
+<!--@include: ./verified-build.md-->

@@ -1,8 +1,14 @@
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
+
 # creature
 
-[<-Back-to:World](database-world)
-
-**Table Structure**
+## Table Structure
 
 Contains individual creature spawn data for each individual spawn of each individual creature in the game world.
 
@@ -64,7 +70,7 @@ Contains individual creature spawn data for each individual spawn of each indivi
 [26]: #createobject
 [27]: #comment
 
-**Field Descriptions**
+## Field Descriptions
 
 ### guid
 
@@ -125,9 +131,9 @@ This is a bit-mask field that describes all the phases that a creature will appe
 
 The ID as defined within [creature_equip_template](creature-equip-template) corresponding to the [entry](creature-template). The value essential defines the equip:
 
--   **-1**: A random equip from the set of equips in [creature_equip_template](creature-equip-template) will be chosen.
--   **0**: No equipment defined.
--   **1+**: The individual id within creature_equip_template.
+- **-1**: A random equip from the set of equips in [creature_equip_template](creature-equip-template) will be chosen.
+- **0**: No equipment defined.
+- **1+**: The individual id within creature_equip_template.
 
 If creature spawned with `.npc add`, then this value will be set automatically (0 if nothing in creature_equip_template).
 
@@ -199,15 +205,7 @@ Same as creature_template.scriptname.
 
 A creature.scriptname record will override a [creature_template.scriptname](creature-template#scriptname) record.
 
-### VerifiedBuild
-
-This field is used to determine if this creature originates from verified sniffs.
-
-If value is 0 then it has not been parsed yet or it has been inherited from an older DB or another Core.
-
-If value is above 0 then it has been parsed with sniffs from that specific client build.
-
-If value is -Client Build then it was parsed with WDB files from that specific client build and manually edited later for some special necessity.
+<!--@include: ./verified-build.md-->
 
 ### CreateObject
 

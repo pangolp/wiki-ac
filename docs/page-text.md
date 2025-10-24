@@ -1,12 +1,18 @@
-# page\_text
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# page\_text
 
 **The \`page\_text\` table**
 
 This table holds the text for letter items or any items that when moused-over turn the cursor into a magnifying glass and on right-click will open up a window where you can read the contents of the letter.
 
-**Table Structure**
+## Table Structure
 
 | Field              | Type      | Attributes | Key | Null | Default | Extra | Comment |
 | ------------------ | --------- | ---------- | --- | ---- | ------- | ----- | ------- |
@@ -20,7 +26,7 @@ This table holds the text for letter items or any items that when moused-over tu
 [3]: #nextpageid
 [4]: #verifiedbuild
 
-**Description of the fields**
+## Description of the fields
 
 ### ID
 
@@ -34,4 +40,4 @@ The actual text. The message in this field will be shown as the text on a page.
 
 The ID of the next page. [page_text.id](#id).
 
-### VerifiedBuild
+<!--@include: ./verified-build.md-->

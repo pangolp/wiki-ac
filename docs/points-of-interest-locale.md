@@ -1,12 +1,18 @@
-# points\_of\_interest\_locale
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# points\_of\_interest\_locale
 
 **The \`locales\_points\_of\_interest\` table**
 
 `table-no-description`
 
-**Table Structure**
+## Table Structure
 
 | Field                           | Type       | Attributes | Key | Null | Default | Extra | Comment |
 | ------------------------------- | ---------- | ---------- | --- | ---- | ------- | ----- | ------- |
@@ -15,7 +21,7 @@
 | [Name](#name)                   | TEXT       |            |     | YES  | NULL    |       |         |
 | [VerifiedBuild](#verifiedbuild) | INT        |            |     | YES  | NULL    |       |         |
 
-**Description of the fields**
+## Description of the fields
 
 ### ID
 
@@ -29,14 +35,4 @@
 
 `field-no-description|3`
 
-### VerifiedBuild
-
-### VerifiedBuild
-
-This field is used to determine if the data originates from verified sniffs.
-
-If value is 0 then it has not been parsed yet or it has been inherited from an older DB or another Core.
-
-If value is above 0 then it has been parsed with sniffs from that specific client build.
-
-If value is -Client Build then it was parsed with WDB files from that specific client build and manually edited later for some special necessity.
+<!--@include: ./verified-build.md-->

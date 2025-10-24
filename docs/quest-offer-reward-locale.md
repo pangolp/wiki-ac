@@ -1,10 +1,16 @@
-# quest\_offer\_reward\_locale
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# quest\_offer\_reward\_locale
 
 **The \`quest\_offer\_reward\_locale\` table**
 
-**Table Structure**
+## Table Structure
 
 | Field              | Type       | Attribute | Key | Null | Default | Extra | Comment |
 | ------------------ | ---------- | --------- | --- | ---- | ------- | ----- | ------- |
@@ -18,7 +24,7 @@
 [3]: #rewardtext
 [4]: #verifiedbuild
 
-**Description of the fields**
+## Description of the fields
 
 ### ID
 
@@ -26,8 +32,7 @@ Is the quest ID, obtained from quest_template
 
 ### locale
 
-It is the language in which you want to make the translation.
-You can choose from the following:
+It is the language in which you want to make the translation. You can choose from the following:
 
 | ID  | Language |
 | --- | -------- |
@@ -45,9 +50,10 @@ You can choose from the following:
 
 This is the text that is displayed when the quest is delivered. That is, before the reward is obtained.
 
-### VerifiedBuild
+<!--@include: ./verified-build.md-->
 
 ### Example
+
 ```sql
 DELETE FROM `quest_offer_reward_locale` WHERE `ID`=2 AND `locale`='esES';
 INSERT INTO `quest_offer_reward_locale` (`ID`, `locale`, `RewardText`, `VerifiedBuild`) VALUES

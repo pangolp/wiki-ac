@@ -1,10 +1,16 @@
-# gameobject_questitem
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# gameobject_questitem
 
 **The \`gameobject_questitem\` table**
 
-**Table Structure**
+## Table Structure
 
 | Field                               | Type | Attributes | Key | Null | Default | Extra | Comment |
 | ----------------------------------- | ---- | ---------- | --- | ---- | ------- | ----- | ------- |
@@ -13,7 +19,7 @@
 | [ItemId](#itemid)                   | INT  | UNSIGNED   |     | NO   | 0       |       |         |
 | [VerifiedBuild](#verifiedbuild)     | INT  | UNSIGNED   |     | YES  | NULL    |       |         |
 
-**Description of the fields**
+## Description of the fields
 
 ### GameObjectEntry
 
@@ -27,14 +33,4 @@ Index 0-3
 
 [item_template.entry](item-template#entry).
 
-### VerifiedBuild
-
-This field was used to determine whether the data has been verified from WDB files.
-
-If value is 0 then it has not been parsed yet.
-
-If value is above 0 then it has been parsed with WDB files from that specific client build.
-
-If value is -1 then it is just a place holder until proper data are found on WDBs.
-
-If value is -Client Build then it was parsed with WDB files from that specific [client build](auth/realmlist#gamebuild) and manually edited later for some special necessity.
+<!--@include: ./verified-build.md-->

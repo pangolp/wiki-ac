@@ -1,12 +1,18 @@
-# creature_template
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# creature_template
 
 **The \`creature_template\` table**
 
 This table contains the description of creatures. Each spawned creature is an instance of a template present in this table, this means every creature MUST be defined in this table.
 
-**Table Structure**
+## Table Structure
 
 | Field                                              | Type               | Null | Key | Default | Extra | Comment                              |
 | -------------------------------------------------- | ------------------ | ---- | --- | ------- | ----- | ------------------------------------ |
@@ -72,9 +78,7 @@ This table contains the description of creatures. Each spawned creature is an in
 | [ScriptName](#scriptname)                          | char(64)           | NO   |     |         |       |                                      |
 | [VerifiedBuild](#verifiedbuild)                    | SMALLINT           | YES  |     | 0       |       |                                      |
 
----
-
-**Description of the fields**
+## Description of the fields
 
 #### entry
 
@@ -709,14 +713,4 @@ These flags control certain creature specific attributes. Flags can be added tog
 
 The name of the script that this creature uses, if any. This ties a script from a scripting engine to this creature.
 
-#### VerifiedBuild
-
-This field was used to determine whether a template has been verified from WDB files.
-
-If value is 0 then it has not been parsed yet.
-
-If value is above 0 then it has been parsed with WDB files from that specific client build.
-
-If value is -1 then it is just a place holder until proper data are found on WDBs.
-
-If value is -Client Build then it was parsed with WDB files from that specific [client build](http://archive.trinitycore.info/DB:Auth:realmlist#gamebuild "DB:Auth:realmlist") and manually edited later for some special necessity.
+<!--@include: ./verified-build.md-->

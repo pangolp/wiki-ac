@@ -1,12 +1,18 @@
-# quest\_objectives
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# quest\_objectives
 
 Table: quest\_objectives
 
 This table provides answer for a very important question. What do I need to do in order to finish a quest?
 
-**Table Structure**
+## Table Structure
 
 | Field                  | Type      | Attributes | Null | Key | Default | Comment |
 | ---------------------- | --------- | ---------- | ---- | --- | ------- | ------- |
@@ -34,7 +40,7 @@ This table provides answer for a very important question. What do I need to do i
 [10]: #description
 [11]: #verifiedbuild
 
-**Description of the fields**
+## Description of the fields
 
 ### ID
 
@@ -100,4 +106,4 @@ Like all flag based fields, **QuestObjectiveFlags** can be added for the differe
 
 ### Description
 
-### VerifiedBuild
+<!--@include: ./verified-build.md-->

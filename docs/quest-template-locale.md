@@ -1,12 +1,18 @@
-# quest\_template\_locale
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# quest\_template\_locale
 
 **The \`quest\_template\_locale\` table**
 
 This table is used to provide to localized clients with localized string for quest templates.
 
-**Table Structure**
+## Table Structure
 
 | Field                | Type       | Attribute | Key | Null | Default | Extra | Comment |
 | -------------------- | ---------- | --------- | --- | ---- | ------- | ----- | ------- |
@@ -36,7 +42,7 @@ This table is used to provide to localized clients with localized string for que
 [11]: #objectivetext4
 [12]: #verifiedbuild
 
-**Description of the fields**
+## Description of the fields
 
 ### ID
 
@@ -92,12 +98,12 @@ In other words, it is the text that accompanies the counters.
 This is objective 4 of the search.
 In other words, it is the text that accompanies the counters.
 
-### VerifiedBuild
+<!--@include: ./verified-build.md-->
 
 ### Example
+
 ```sql
 DELETE FROM `quest_template_locale` WHERE `ID`=62 AND `locale`="esES";
-
 INSERT INTO `quest_template_locale` (`ID`, `locale`, `Title`, `Details`, `Objectives`, `EndText`, `CompletedText`, `ObjectiveText1`, `ObjectiveText2`, `ObjectiveText3`, `ObjectiveText4`, `VerifiedBuild`) VALUES
 (62, "esES", "La Mina Abisal", "¡La mina de Villanorte no es la única que tiene problemas! Según mis informes, la Mina Abisal de Elwynn también ha sido ocupada por los kóbolds.$B$BExplora la mina y comprueba la veracidad de mis informes. Luego vuelve aquí. La mina está hacia el sur de Villadorada, entre La Granja Pedregosa y la granja Maclure.", "Explora la Mina Abisal y vuelve junto al alguacil Dughan a Villadorada.", "Explora la Mina Abisal", "Vuelve con: Alguacil Dughan. Zona: Villadorada, Bosque de Elwynn.", "", "", "", "", 18019);
 ```

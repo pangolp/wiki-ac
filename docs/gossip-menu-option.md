@@ -1,3 +1,11 @@
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
+
 # gossip\_menu\_option
 
 **Table: gossip\_menu\_option**
@@ -42,13 +50,11 @@ This table holds information about menu options a gossip NPC can have. Example
 
 ### MenuID
 
-Gossip entry from Gossip\_menu.entry this option is associated with.
-If this is the default gossip option for the selected NPC, verify that the NPC has this value in it's [creature\_template.gossip\_menu\_id](creature-template#gossipmenuid) .
+Gossip entry from Gossip\_menu.entry this option is associated with. If this is the default gossip option for the selected NPC, verify that the NPC has this value in it's [creature\_template.gossip\_menu\_id](creature-template#gossipmenuid).
 
 ### OptionID
 
-The id associated with this gossip\_menu\_option. Must be unique for a given menu\_id starting from 0 (zero).
-Value increments by 1 if there are multiple options in the same gossip\_menu.
+The id associated with this gossip\_menu\_option. Must be unique for a given menu\_id starting from 0 (zero). Value increments by 1 if there are multiple options in the same gossip\_menu.
 
 ### OptionIcon
 
@@ -68,8 +74,7 @@ Value increments by 1 if there are multiple options in the same gossip\_menu.
 
 ### OptionText
 
-This is the text that you want to be displayed in the player selectable option. Examples would be: "Please train me.", "I would like to browse your goods.", "Learn Dual Spec".
-If OptionBroadcastTextID contains a valid broadcast\_text.ID, it links to broadcast\_text so the content from broadcast\_text is displayed directly instead of the option\_text field content.
+This is the text that you want to be displayed in the player selectable option. Examples would be: "Please train me.", "I would like to browse your goods.", "Learn Dual Spec". If OptionBroadcastTextID contains a valid broadcast\_text.ID, it links to broadcast\_text so the content from broadcast\_text is displayed directly instead of the option\_text field content.
 
 ### OptionBroadcastTextID
 
@@ -120,8 +125,7 @@ If you want a box to display where you have to enter a code, this is the field y
 
 ### BoxMoney
 
-The amount of money the player has to pay for the selected option, appears in the confirmation box as amount of gold, silver, copper.
-The DB value you insert here must be given in the number of copper, so 10 gold is entered as 100000 (10g 00s 00c).
+The amount of money the player has to pay for the selected option, appears in the confirmation box as amount of gold, silver, copper. The DB value you insert here must be given in the number of copper, so 10 gold is entered as 100000 (10g 00s 00c).
 
 ### BoxText
 
@@ -132,14 +136,4 @@ If BoxBroadCastTextID contains a valid broadcast\_text.ID, it links to broadcast
 
 The ID of the same text in [broadcast\_text.ID](broadcast-text#id).
 
-### VerifiedBuild
-
-This field was used to determine whether a template has been verified from WDB files.
-
-If value is 0 then it has not been parsed yet.
-
-If value is above 0 then it has been parsed with WDB files from that specific client build.
-
-If value is -1 then it is just a place holder until proper data are found on WDBs.
-
-If value is [client Build](auth/realmlist#gamebuild) then it was parsed with WDB files from that specific client build and manually edited later for some special necessity.
+<!--@include: ./verified-build.md-->

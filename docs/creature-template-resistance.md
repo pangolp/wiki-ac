@@ -1,10 +1,16 @@
-# creature_template_resistance
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
 
-[<-Back-to:World](database-world)
+# creature_template_resistance
 
 **The \`creature_template_resistance\` table**
 
-**Table Structure**
+## Table Structure
 
 | Field              | Type      | Attribute | Key | Null | Default | Extra | Comment |
 | ------------------ | --------- | --------- | --- | ---- | ------- | ----- | ------- |
@@ -18,7 +24,7 @@
 [3]: #resistance
 [4]: #verifiedbuild
 
-**Description of the fields**
+## Description of the fields
 
 ### CreatureID
 
@@ -41,14 +47,4 @@ Value must be within this range. If above or under the SQL will fail on `creatur
 
 Resistance value.
 
-### VerifiedBuild
-
-This field was used to determine whether a template has been verified from WDB files.
-
-If value is 0 then it has not been parsed yet.
-
-If value is above 0 then it has been parsed with WDB files from that specific client build.
-
-If value is -1 then it is just a place holder until proper data are found on WDBs.
-
-If value is -Client Build then it was parsed with WDB files from that specific client build and manually edited later for some special necessity.
+<!--@include: ./verified-build.md-->

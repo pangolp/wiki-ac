@@ -1,8 +1,14 @@
+---
+prev:
+  text: 'Database World'
+  link: 'database-world'
+next: false
+aside: false
+---
+
 # item\_template
 
-[<-Back-to:World](database-world)
-
-**Table Structure**
+## Table Structure
 
 Holds information on every item that exists in the game. All items are created from their template stored in this table.
 
@@ -288,7 +294,7 @@ Holds information on every item that exists in the game. All items are created f
 [137]: #flagscustom
 [138]: #verifiedbuild
 
-**Field Descriptions**
+## Field Descriptions
 
 ### entry
 
@@ -1156,9 +1162,4 @@ If the item is a container that can contain money, then this field defines the m
 | 2    | ITEM_FLAGS_CU_IGNORE_QUEST_STATUS | No quest status will be checked when this item drops                 |
 | 4    | ITEM_FLAGS_CU_FOLLOW_LOOT_RULES   | Item will always follow group/master/need before greed looting rules |
 
-### VerifiedBuild
-
-This field was used to determine whether a template has been verified from WDB files.
-- If value is 0 then it has not been parsed yet.
-- If value is above 0 then it has been parsed with WDB files from that specific client build.
-- If value is -1 then it is just a place holder until proper data are found on WDBs.
+<!--@include: ./verified-build.md-->
