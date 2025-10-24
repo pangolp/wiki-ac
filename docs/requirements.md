@@ -1,4 +1,5 @@
 ---
+aside: false
 prev:
   text: 'Start: Classic Installation'
   link: 'classic-installation'

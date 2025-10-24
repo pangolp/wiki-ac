@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # Contribute
 
 ## General information

@@ -1,7 +1,9 @@
 ---
+aside: false
 prev:
   text: 'Step 8: Client Setup'
   link: 'client-setup'
+next: false
 ---
 
 # Installing a Module

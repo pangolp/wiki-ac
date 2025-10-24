@@ -1,4 +1,5 @@
 ---
+aside: false
 prev:
   text: 'Step 3: Server Setup'
   link: 'server-setup'

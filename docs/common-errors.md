@@ -1,5 +1,7 @@
 ---
-tableofcontents: 1
+prev: false
+next: false
+aside: false
 ---
 
 # Common Errors

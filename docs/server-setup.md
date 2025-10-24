@@ -1,4 +1,5 @@
 ---
+aside: false
 prev:
   text: 'Step 2: Core Installation'
   link: 'core-installation'

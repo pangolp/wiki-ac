@@ -1,4 +1,5 @@
 ---
+aside: false
 prev:
   text: 'Step 6: Final Server Steps'
   link: 'final-server-steps'

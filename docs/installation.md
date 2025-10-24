@@ -1,3 +1,9 @@
+---
+prev: false
+next: false
+aside: false
+---
+
 # Installation Guide
 
 ## Choosing a setup
