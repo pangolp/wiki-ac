@@ -1,4 +1,5 @@
 ---
+aside: false
 prev:
   text: 'Step 7: Keeping the Server Up-to-Date'
   link: 'keeping-the-server-up-to-date'

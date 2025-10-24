@@ -1,3 +1,9 @@
+---
+prev: false
+next: false
+aside: false
+---
+
 # Frequently Asked Questions
 
 If you have trouble installing or compiling AzerothCore read [Common Errors](common-errors).

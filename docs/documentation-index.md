@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # Documentation index
 
 ## How to Install
@@ -75,5 +80,5 @@
 
 ## External resources
 
-* [https://github.com/azerothcore/azerothcore-wotlk/discussions/categories/guides-tips](Guides and Tips from our Forum)
-* [https://wowdev.wiki/Category:DBC_WotLK](DBC Documentation)
+* [Guides and Tips from our Forum](https://github.com/azerothcore/azerothcore-wotlk/discussions/categories/guides-tips)
+* [DBC Documentation](https://wowdev.wiki/Category:DBC_WotLK)

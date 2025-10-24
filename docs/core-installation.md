@@ -1,4 +1,5 @@
 ---
+aside: false
 prev:
   text: 'Step 1: Requirements'
   link: 'requirements'

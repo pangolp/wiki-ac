@@ -1,4 +1,5 @@
 ---
+aside: false
 prev:
   text: 'Start: Installation'
   link: 'installation'

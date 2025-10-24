@@ -1,4 +1,5 @@
 ---
+aside: false
 prev:
   text: 'Step 4: Database Installation'
   link: 'database-installation'

@@ -1,3 +1,9 @@
+---
+prev: false
+next: false
+aside: false
+---
+
 # How to test DB only changes
 
 ## Introduction

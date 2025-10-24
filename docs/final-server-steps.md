@@ -1,4 +1,5 @@
 ---
+aside: false
 prev:
   text: 'Step 5: Networking'
   link: 'networking'

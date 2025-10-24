@@ -1,3 +1,9 @@
+---
+prev: false
+next: false
+aside: false
+---
+
 # How to create a PR
 
 This guide explains how to open PRs to submit any kind of fixes (C++, SQL, etc...).
