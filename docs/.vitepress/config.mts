@@ -11,6 +11,18 @@ export default defineConfig({
     }
   },
 
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en'
+    },
+    es: {
+      label: 'Spanish',
+      lang: 'es',
+    //link: '/es/'
+    }
+  },
+
   themeConfig: {
     siteTitle: 'Wiki',
     lastUpdated: {
