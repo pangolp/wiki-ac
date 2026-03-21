@@ -5,9 +5,21 @@ export default defineConfig({
   title: "AzerothCore",
   description: "Wiki and Documentation of the AzerothCore project",
   base: '/wiki-ac/',
+  ignoreDeadLinks: true,
   vite: {
     build: {
       chunkSizeWarningLimit: 3000
+    }
+  },
+
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en'
+    },
+    es: {
+      label: 'Spanish',
+      lang: 'es',
     }
   },
 
