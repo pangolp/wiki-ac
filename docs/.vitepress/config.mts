@@ -15,11 +15,22 @@ export default defineConfig({
   locales: {
     root: {
       label: 'English',
-      lang: 'en'
+      lang: 'en',
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/' },
+        ],
+      }
     },
     es: {
       label: 'Spanish',
       lang: 'es',
+      link: '/es/',
+      themeConfig: {
+        nav: [
+          { text: 'Inicio', link: '/' },
+        ],
+      }
     }
   },
 
@@ -33,12 +44,35 @@ export default defineConfig({
       }
     },
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+        locales: {
+          es: {
+            translations: {
+              button: {
+                buttonText: 'Buscar',
+                buttonAriaLabel: 'Buscar'
+              },
+              modal: {
+                displayDetails: 'Mostrar lista detallada',
+                resetButtonTitle: 'Restablecer búsqueda',
+                backButtonTitle: 'Cerrar búsqueda',
+                noResultsText: 'No hay resultados',
+                footer: {
+                  selectText: 'Seleccionar',
+                  selectKeyAriaLabel: 'Intro',
+                  navigateText: 'Navegar',
+                  navigateUpKeyAriaLabel: 'Flecha arriba',
+                  navigateDownKeyAriaLabel: 'Flecha abajo',
+                  closeText: 'Cerrar',
+                  closeKeyAriaLabel: 'Esc'
+                }
+              }
+            }
+          }
+        }
+      }
     },
-
-    nav: [
-      { text: 'Home', link: '/' },
-    ],
 
     sidebar: [
       {
