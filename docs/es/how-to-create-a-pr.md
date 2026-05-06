@@ -31,7 +31,7 @@ git clone https://github.com/TU_USUARIO/wiki.git
 git clone https://github.com/pangolp/wiki.git
 ```
 
-> Al menos de crear el `fork`, se puedo haber elegido otro nombre, dado que puede existir otro proyecto dentro del perfil del usuario, que ya tengo como nombre wiki. Tener en cuenta el nombre, para poder clonarlo de manera correcta en la pc de manera local, para poder realizar las modificaciones. En caso de llamarse exactamente igual que en el ejemplo, continuamos, si no, revisa y tener en cuenta los nombres elegidos.
+> Al momento de crear el `fork`, se puedo haber elegido otro nombre, dado que puede existir otro proyecto dentro del perfil del usuario, que ya tenga como nombre `wiki`. Tener en cuenta el nombre, para poder clonarlo de manera correcta en la pc de manera local, para poder realizar las modificaciones. En caso de llamarse exactamente igual que en el ejemplo, continuamos, si no, revisa y tener en cuenta los nombres elegidos.
 
 Luego, entra en la carpeta que se acaba de crear:
 
@@ -39,9 +39,21 @@ Luego, entra en la carpeta que se acaba de crear:
 cd wiki
 ```
 
-Al ingresar a la carpeta, generalmente, dependiendo de la consola, se suele ver la rama del repositorio donde estas trabajando. Si el repositorio, fue clonado recientemente, y partió de la rama estable del mismo, la misma generalmente se llama por convención `main` o `master`. Puede tener otro nombre, porque depende de la comunidad que trabaje en ese código, pero el 99% de los repositorios, usara alguno de esos nombres, pero su versión mas estable.
+Al ingresar a la carpeta, generalmente, dependiendo de la consola, se suele ver la rama del repositorio donde estas trabajando. Si el repositorio, fue clonado recientemente, y partió de la rama estable del mismo, la misma generalmente se llama por convención `main` o `master`. Puede tener otro nombre, porque depende de la comunidad que trabaje en ese código, pero el 99% de los repositorios, usara alguno de esos 2 nombres, para su versión estable.
 
-Si estas sobre la rama `main` o `master` y la misma esta actualizada, vamos a crear una nueva rama, para poder realizar los cambios. Para saber en que rama estamos trabajando, se puede utilizar el comando `git branch` y la selecciona, generalmente aparece con un `*`. Por otro lado, también tenemos que familiarizarnos con el uso del comando `git remote --v` el cual, nos ayudara a entender, que es `origin`. `origin` no es mas que una URL, que también se utiliza el nombre por convención, que apunta a la dirección de donde se clono el proyecto.
+Si estas sobre la rama `main` o `master` y la misma esta actualizada, vamos a crear una nueva rama, para poder realizar los cambios. Para saber en que rama estamos trabajando, se puede utilizar el comando `git branch` y la seleccionada, generalmente aparece con un `*`. Por otro lado, también tenemos que familiarizarnos con el uso del comando `git remote --v` el cual, nos ayudara a entender, que es `origin`. `origin` no es mas que una URL, que también se utiliza el nombre por convención, que apunta a la dirección de donde se clono el proyecto.
+
+Voy a utilizar el comando `git remote --v` sobre el repositorio del emulador, no sobre la `wiki`, para que puedan ver que en mi caso, existen 2 remote, `origin`, que apunta a el `fork` que tuve que crear del emulador, y sobre el cual, voy a hacer cambios, para luego, compartirlo con la comunidad, y que la misma, los revise y finalmente, puede que termine aprobando o no, y `upstream`, que mas adelante hablaremos de el, pero que lo necesitamos, para mantener nuestra rama actualizada, y el master local y remoto también, a partir de los cambios, que otros contribuidores realizan, ademas de los nuestros.
+
+```sh
+Walter@DESKTOP-VDCIP76 MINGW64 /w/wotlk/azerothcore (master)
+$ git remote --v
+origin  git@github.com:pangolp/azerothcore-wotlk.git (fetch)
+origin  git@github.com:pangolp/azerothcore-wotlk.git (push)
+upstream        git@github.com:azerothcore/azerothcore-wotlk.git (fetch)
+upstream        git@github.com:azerothcore/azerothcore-wotlk.git (push)
+
+```
 
 ## 3. Crear una Rama (Branch)
 
