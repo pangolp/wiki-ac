@@ -20,6 +20,20 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/' },
         ],
+        outline: {
+          label: 'On this page'
+        },
+        docFooter: {
+          prev: 'Previous page',
+          next: 'Next page'
+        },
+        returnToTopLabel: 'Return to top',
+        sidebarMenuLabel: 'Menu',
+        darkModeSwitchLabel: 'Appearance',
+        editLink: {
+          pattern: 'https://github.com/pangolp/wiki-ac/edit/master/docs/:path',
+          text: 'Edit page'
+        },
       }
     },
     es: {
@@ -29,6 +43,75 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Inicio', link: '/' },
+        ],
+        outline: {
+          label: 'En esta página'
+        },
+        docFooter: {
+          prev: 'Página anterior',
+          next: 'Página siguiente'
+        },
+        returnToTopLabel: 'Volver arriba',
+        sidebarMenuLabel: 'Menú',
+        darkModeSwitchLabel: 'Apariencia',
+        editLink: {
+          pattern: 'https://github.com/pangolp/wiki-ac/edit/master/docs/:path',
+          text: 'Editar página'
+        },
+        sidebar: [
+          {
+            text: 'Instalación',
+            collapsed: true,
+            items: [
+              { text: 'Guía de instalación', link: 'installation' }
+            ]
+          },
+          {
+            text: 'Guía de instalación clásica',
+            collapsed: false,
+            items: [
+              { text: 'Requisitos', link: 'requirements' },
+              { text: 'Instalación del núcleo', link: 'core-installation' },
+              { text: 'Configuración del servidor', link: 'server-setup' },
+              { text: 'Instalación de la base de datos', link: 'database-installation' },
+              { text: 'Configuración de red', link: 'networking' },
+              { text: 'Pasos finales del servidor', link: 'final-server-steps' },
+              { text: 'Mantener el servidor actualizado', link: 'keeping-the-server-up-to-date' },
+              { text: 'Configuración del cliente', link: 'client-setup' },
+              { text: '(Opcional) Instalar un módulo', link: 'installing-a-module' }
+            ]
+          },
+          {
+            text: 'Documentación',
+            collapsed: true,
+            items: [
+              { text: 'Índice de documentación', link: 'documentation-index' },
+              { text: 'Documentación Doxygen', link: 'https://www.azerothcore.org/doxygen' },
+              { text: 'Procedimiento estándar', link: 'standard-operating-procedure' },
+              { text: 'Preguntas frecuentes', link: 'faq' },
+              { text: 'Errores comunes', link: 'common-errors' }
+            ]
+          },
+          {
+            text: 'Base de datos',
+            collapsed: true,
+            items: [
+              { text: 'Auth', link: 'auth/' },
+              { text: 'Characters', link: 'database-characters' },
+              { text: 'World', link: 'database-world' }
+            ]
+          },
+          {
+            text: 'Contribuir',
+            collapsed: true,
+            items: [
+              { text: 'Guía de clasificación de errores', link: 'guide-to-triaging' },
+              { text: 'Cómo contribuir', link: 'contribute' },
+              { text: 'Cómo crear un PR', link: 'how-to-create-a-pr' },
+              { text: 'Cómo probar un PR', link: 'how-to-test-a-pr' },
+              { text: 'Cómo probar cambios solo en la BD', link: 'how-to-test-db-only-changes' }
+            ]
+          },
         ],
       }
     }
