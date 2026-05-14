@@ -3,7 +3,7 @@ prev: false
 next: false
 ---
 
-# Guía Paso a Paso: Cómo contribuir a AzerothCore
+# Guía Paso a Paso: Cómo contribuir al open source
 
 > Vamos a tomar como ejemplo, la wiki, pero sirve para cualquier otro proyecto open source.
 
@@ -13,7 +13,7 @@ El "Fork" es una copia exacta del repositorio original que se creara en tu propi
 
 Esto te permite hacer cambios sin afectar el proyecto principal directamente.
 
-1. Ve a https://github.com/azerothcore/wiki.
+1. Ve a https://github.com/pangolp/wiki-ac.
 2. En la esquina superior derecha, haz clic en el botón Fork.
 3. Selecciona tu cuenta personal como destino.
 
@@ -21,14 +21,14 @@ Podria ser una organizacion tambien, la que hace el `fork`, pero por ahora, habl
 
 ## 2. Clonar el Repositorio localmente
 
-Ahora necesitas descargar tu copia (el `fork`) a tu computadora para poder trabajar en ella. Abre una terminal y ejecuta el siguiente comando (reemplaza `TU_USUARIO` con tu nombre de usuario de GitHub): A modo de ejemplo, yo donde dice `TU_USUARIO` usare el mio, que es `pangolp`.
+Ahora necesitas descargar tu copia (el `fork`) a tu computadora para poder trabajar en ella. Abre una terminal y ejecuta el siguiente comando (reemplaza `TU_USUARIO` con tu nombre de usuario de GitHub): A modo de ejemplo, yo donde dice `TU_USUARIO` usare el mio, que es `whpagani`.
 
 ```sh
-git clone https://github.com/TU_USUARIO/wiki.git
+git clone https://github.com/TU_USUARIO/wiki-ac
 ```
 
 ```sh
-git clone https://github.com/pangolp/wiki.git
+git clone https://github.com/whpagani/wiki-ac
 ```
 
 > Al momento de crear el `fork`, se puedo haber elegido otro nombre, dado que puede existir otro proyecto dentro del perfil del usuario, que ya tenga como nombre `wiki`. Tener en cuenta el nombre, para poder clonarlo de manera correcta en la pc de manera local, para poder realizar las modificaciones. En caso de llamarse exactamente igual que en el ejemplo, continuamos, si no, revisa y tener en cuenta los nombres elegidos.
@@ -36,7 +36,7 @@ git clone https://github.com/pangolp/wiki.git
 Luego, entra en la carpeta que se acaba de crear:
 
 ```sh
-cd wiki
+cd wiki-ac
 ```
 
 Al ingresar a la carpeta, generalmente, dependiendo de la consola, se suele ver la rama del repositorio donde estas trabajando. Si el repositorio, fue clonado recientemente, y partió de la rama estable del mismo, la misma generalmente se llama por convención `main` o `master`. Puede tener otro nombre, porque depende de la comunidad que trabaje en ese código, pero el 99% de los repositorios, usara alguno de esos 2 nombres, para su versión estable.
@@ -46,13 +46,12 @@ Si estas sobre la rama `main` o `master` y la misma esta actualizada, vamos a cr
 Voy a utilizar el comando `git remote --v` sobre el repositorio del emulador, no sobre la `wiki`, para que puedan ver que en mi caso, existen 2 remote, `origin`, que apunta a el `fork` que tuve que crear del emulador, y sobre el cual, voy a hacer cambios, para luego, compartirlo con la comunidad, y que la misma, los revise y finalmente, puede que termine aprobando o no, y `upstream`, que mas adelante hablaremos de el, pero que lo necesitamos, para mantener nuestra rama actualizada, y el master local y remoto también, a partir de los cambios, que otros contribuidores realizan, ademas de los nuestros.
 
 ```sh
-Walter@DESKTOP-VDCIP76 MINGW64 /w/wotlk/azerothcore (master)
+Walter@DESKTOP-VDCIP76 MINGW64 ~/Desktop/wiki-ac (master)
 $ git remote --v
-origin  git@github.com:pangolp/azerothcore-wotlk.git (fetch)
-origin  git@github.com:pangolp/azerothcore-wotlk.git (push)
-upstream        git@github.com:azerothcore/azerothcore-wotlk.git (fetch)
-upstream        git@github.com:azerothcore/azerothcore-wotlk.git (push)
-
+origin  https://github.com/whpagani/wiki-ac.git (fetch)
+origin  https://github.com/whpagani/wiki-ac.git (push)
+upstream        https://github.com/pangolp/wiki-ac.git (fetch)
+upstream        https://github.com/pangolp/wiki-ac.git (push)
 ```
 
 ## 3. Crear una Rama (Branch)
@@ -60,10 +59,10 @@ upstream        git@github.com:azerothcore/azerothcore-wotlk.git (push)
 Es una buena práctica no trabajar sobre la rama principal (`master` o `main`). Crear una rama te permite organizar tus cambios.
 
 ```sh
-git checkout -b mi-primera-contribucion
+git checkout -b walter
 ```
 
-> Esto crea una rama llamada "mi-primera-contribucion" y te cambia a ella automáticamente.
+> Esto crea una rama llamada "walter" y te cambia a ella automáticamente.
 
 ## 4. Realizar los cambios
 
@@ -92,7 +91,7 @@ git commit -m "Descripción breve de los cambios realizados"
 3. Subir la rama a tu GitHub:
 
 ```sh
-git push origin mi-primera-contribucion
+git push origin walter
 ```
 
 ## 6. Crear el Pull Request (PR)
@@ -110,7 +109,7 @@ Ahora que tus cambios están en tu cuenta de GitHub, es momento de pedirle a los
 
 Una vez abierto el PR, los mantenedores del proyecto revisarán tu trabajo.
 
-- Si te piden cambios: No necesitas cerrar el PR. Simplemente haz los cambios en tu computadora, repite los pasos de `git add`, `git commit` y `git push`. El PR se actualizará automáticamente. No es necesario crear otro PR, mientras estés en la rama creada anteriormente: `mi-primera-contribucion`, todas las modificaciones, se subirán dentro de esa rama, y al hacer un push, se irán añadiendo al pull request (en pocas palabras, el PR se crea 1 sola vez, y luego hay un ecosistema, donde la gente puede sugerir cambios, o simplemente, esperar retroalimentación de otras personas).
+- Si te piden cambios: No necesitas cerrar el PR. Simplemente haz los cambios en tu computadora, repite los pasos de `git add`, `git commit` y `git push`. El PR se actualizará automáticamente. No es necesario crear otro PR, mientras estés en la rama creada anteriormente: `walter`, todas las modificaciones, se subirán dentro de esa rama, y al hacer un push, se irán añadiendo al pull request (en pocas palabras, el PR se crea 1 sola vez, y luego hay un ecosistema, donde la gente puede sugerir cambios, o simplemente, esperar retroalimentación de otras personas).
 - Si todo está correcto: Un administrador aprobará tu PR y verás un mensaje de "Merged", lo que significa que tus cambios ya son parte oficial de la Wiki.
 
 ## 8. Limpieza (Eliminar la rama)
@@ -122,19 +121,19 @@ Una vez que tus cambios han sido aceptados (Merged), es recomendable borrar la r
 ```sh
 git checkout master
 git pull upstream master
-git branch -D mi-primera-contribucion
+git branch -D walter
 ```
 
 Podes ejecutar los 3 comandos al mismo tiempo, de la siguiente forma:
 
 ```sh
-git checkout master && git pull upstream master && git branch -D mi-primera-contribucion
+git checkout master && git pull upstream master && git branch -D walter
 ```
 
 2. Eliminar la rama remota (en GitHub):
 
 ```sh
-git push origin :mi-primera-contribucion
+git push origin :walter
 ```
 
 ### ¡Felicidades! Has completado tu primera contribución a la Wiki de AzerothCore.
@@ -146,7 +145,7 @@ git push origin :mi-primera-contribucion
 `upstream` es otra palabra, que se utiliza habitualmente, para apuntar a la URL del repositorio padre de donde hicimos el clone. Se puede añadir con el comando `git remote add`, y se realizaria de siguiente forma:
 
 ```sh
-git remote add upstream https://github.com/azerothcore/wiki
+git remote add upstream https://github.com/pangolp/wiki-ac.git
 ```
 
 De esa forma, origin, apunta a nuestra copia del repositorio, y upstream, apunta al repositorio al que queremos hacerle el reporte.
