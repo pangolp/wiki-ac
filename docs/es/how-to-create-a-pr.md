@@ -91,7 +91,7 @@ git commit -m "Descripción breve de los cambios realizados"
 3. Subir la rama a tu GitHub:
 
 ```sh
-git push origin mi-primera-contribucion
+git push origin walter
 ```
 
 ## 6. Crear el Pull Request (PR)
