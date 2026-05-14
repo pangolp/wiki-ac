@@ -109,7 +109,7 @@ Ahora que tus cambios están en tu cuenta de GitHub, es momento de pedirle a los
 
 Una vez abierto el PR, los mantenedores del proyecto revisarán tu trabajo.
 
-- Si te piden cambios: No necesitas cerrar el PR. Simplemente haz los cambios en tu computadora, repite los pasos de `git add`, `git commit` y `git push`. El PR se actualizará automáticamente. No es necesario crear otro PR, mientras estés en la rama creada anteriormente: `mi-primera-contribucion`, todas las modificaciones, se subirán dentro de esa rama, y al hacer un push, se irán añadiendo al pull request (en pocas palabras, el PR se crea 1 sola vez, y luego hay un ecosistema, donde la gente puede sugerir cambios, o simplemente, esperar retroalimentación de otras personas).
+- Si te piden cambios: No necesitas cerrar el PR. Simplemente haz los cambios en tu computadora, repite los pasos de `git add`, `git commit` y `git push`. El PR se actualizará automáticamente. No es necesario crear otro PR, mientras estés en la rama creada anteriormente: `walter`, todas las modificaciones, se subirán dentro de esa rama, y al hacer un push, se irán añadiendo al pull request (en pocas palabras, el PR se crea 1 sola vez, y luego hay un ecosistema, donde la gente puede sugerir cambios, o simplemente, esperar retroalimentación de otras personas).
 - Si todo está correcto: Un administrador aprobará tu PR y verás un mensaje de "Merged", lo que significa que tus cambios ya son parte oficial de la Wiki.
 
 ## 8. Limpieza (Eliminar la rama)
@@ -121,19 +121,19 @@ Una vez que tus cambios han sido aceptados (Merged), es recomendable borrar la r
 ```sh
 git checkout master
 git pull upstream master
-git branch -D mi-primera-contribucion
+git branch -D walter
 ```
 
 Podes ejecutar los 3 comandos al mismo tiempo, de la siguiente forma:
 
 ```sh
-git checkout master && git pull upstream master && git branch -D mi-primera-contribucion
+git checkout master && git pull upstream master && git branch -D walter
 ```
 
 2. Eliminar la rama remota (en GitHub):
 
 ```sh
-git push origin :mi-primera-contribucion
+git push origin :walter
 ```
 
 ### ¡Felicidades! Has completado tu primera contribución a la Wiki de AzerothCore.
@@ -145,7 +145,7 @@ git push origin :mi-primera-contribucion
 `upstream` es otra palabra, que se utiliza habitualmente, para apuntar a la URL del repositorio padre de donde hicimos el clone. Se puede añadir con el comando `git remote add`, y se realizaria de siguiente forma:
 
 ```sh
-git remote add upstream https://github.com/azerothcore/wiki
+git remote add upstream https://github.com/pangolp/wiki-ac.git
 ```
 
 De esa forma, origin, apunta a nuestra copia del repositorio, y upstream, apunta al repositorio al que queremos hacerle el reporte.
